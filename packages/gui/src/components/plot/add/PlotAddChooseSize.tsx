@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { useFormContext } from 'react-hook-form';
-import { CardStep, ConfirmDialog, Link, Select, StateColor, useOpenDialog } from '@chia/core';
+import { CardStep, ConfirmDialog, Link, Select, StateColor, useOpenDialog } from '@bpx/core';
 import {
   Grid,
   FormControl,
@@ -77,12 +77,6 @@ export default function PlotAddChooseSize(props: Props) {
           {
             'You do not need to be synced or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. '
           }
-          <Link
-            target="_blank"
-            href="https://github.com/Chia-Network/chia-blockchain/wiki/k-sizes"
-          >
-            Learn more
-          </Link>
         </Trans>
       </Typography>
 

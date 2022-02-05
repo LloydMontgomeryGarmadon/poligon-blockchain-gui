@@ -6,13 +6,13 @@ import {
   FormatLargeNumber,
   TooltipIcon,
   mojoToCATLocaleString,
-} from '@chia/core';
+} from '@bpx/core';
 import {
   Box,
   Typography,
 } from '@material-ui/core';
 import useAssetIdName from '../../hooks/useAssetIdName';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@bpx/api';
 import { formatAmountForWalletType } from './utils';
 import styled from 'styled-components';
 
@@ -63,7 +63,7 @@ export default function OfferSummaryRow(props: Props) {
   const { lookupByAssetId } = useAssetIdName();
   const assetIdInfo = lookupByAssetId(assetId);
   const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojoToCATLocaleString(amount);
-  const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
+  const displayName = assetIdInfo?.displayName ?? t`Unknown token`;
   const showMojoAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowMojoAmount(amount);
 
   return (

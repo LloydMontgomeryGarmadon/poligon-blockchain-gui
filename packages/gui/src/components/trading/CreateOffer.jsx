@@ -12,7 +12,7 @@ import {
   Button,
   InputLabel,
 } from '@material-ui/core';
-import { AlertDialog, Card, Flex, useShowSaveDialog } from '@chia/core';
+import { AlertDialog, Card, Flex, useShowSaveDialog } from '@bpx/core';
 import isElectron from 'is-electron';
 import { newBuy, newSell, addTrade, resetTrades } from '../../modules/trade';
 import { colouredcoin_to_mojo } from '../../util/chia';

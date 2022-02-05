@@ -10,7 +10,7 @@ import {
 } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
 import { Trans } from '@lingui/macro';
-import { useGetBlockQuery, useGetBlockRecordQuery  } from '@chia/api-react'
+import { useGetBlockQuery, useGetBlockRecordQuery  } from '@bpx/api-react'
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Back,
@@ -26,7 +26,7 @@ import {
   mojoToChia,
   DashboardTitle,
   Suspender,
-} from '@chia/core';
+} from '@bpx/core';
 import {
   unix_to_short_date,
   hex_to_array,
@@ -254,35 +254,15 @@ export default function Block() {
     },
     {
       name: <Trans>Farmer Puzzle Hash</Trans>,
-      value: (
-        <Link
-          target="_blank"
-          href={`https://www.chiaexplorer.com/blockchain/puzzlehash/${blockRecord.farmerPuzzleHash}`}
-        >
-          {currencyCode
-            ? toBech32m(
-                blockRecord.farmerPuzzleHash,
-                currencyCode.toLowerCase(),
-              )
-            : ''}
-        </Link>
-      ),
+      value: currencyCode
+        ? toBech32m(blockRecord.farmerPuzzleHash, currencyCode.toLowerCase())
+        : '',
     },
     {
       name: <Trans>Pool Puzzle Hash</Trans>,
-      value: (
-        <Link
-          target="_blank"
-          href={`https://www.chiaexplorer.com/blockchain/puzzlehash/${blockRecord.poolPuzzleHash}`}
-        >
-          {currencyCode
-            ? toBech32m(
-                blockRecord.poolPuzzleHash,
-                currencyCode.toLowerCase(),
-              )
-            : ''}
-        </Link>
-      ),
+      value: currencyCode
+        ? toBech32m(blockRecord.poolPuzzleHash, currencyCode.toLowerCase())
+        : '',
     },
     {
       name: <Trans>Plot Id</Trans>,
@@ -324,7 +304,7 @@ export default function Block() {
         title={
           <Back variant="h5">
             <Trans>
-              Block at height {blockRecord.height} in the Chia blockchain
+              Block at height {blockRecord.height} in the BPX blockchain
             </Trans>
           </Back>
         }

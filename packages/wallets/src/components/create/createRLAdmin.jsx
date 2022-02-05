@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, chiaToMojo } from '@chia/core';
+import { AlertDialog, chiaToMojo } from '@bpx/core';
 import {
   Typography,
   Button,

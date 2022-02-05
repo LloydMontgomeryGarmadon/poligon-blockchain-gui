@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { useFormContext } from 'react-hook-form';
-import { Wallet, WalletType, type CATToken } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
+import { Wallet, WalletType, type CATToken } from '@bpx/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@bpx/api-react';
 import { Trans } from '@lingui/macro';
 import { FormControl, InputLabel, MenuItem } from '@material-ui/core';
-import { Select } from '@chia/core';
+import { Select } from '@bpx/core';
 import type OfferEditorRowData from './OfferEditorRowData';
 
 type WalletOfferAssetSelection = {
@@ -58,8 +58,8 @@ function buildAssetSelectorList(
     }
 
     if (wallet.type === WalletType.STANDARD_WALLET) {
-      name = 'Chia';
-      symbol = 'XCH';
+      name = 'BPX';
+      symbol = 'BPX';
     }
     else if (wallet.type === WalletType.CAT) {
       name = wallet.name;
@@ -124,7 +124,7 @@ function OfferAssetSelector(props: OfferAssetSelectorProps) {
             key={-1}
             onClick={() => {}}
           >
-            <Trans>Add CAT wallets to have more options</Trans>
+            <Trans>Add token wallets to have more options</Trans>
           </MenuItem>
         )}
         {options.map((option) => (

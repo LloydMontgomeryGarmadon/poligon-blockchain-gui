@@ -9,8 +9,8 @@ import {
   LinearProgress,
   Typography,
 } from '@material-ui/core';
-import { Flex, Log } from '@chia/core';
-import { useGetPlotQueueQuery, useThrottleQuery } from '@chia/api-react';
+import { Flex, Log } from '@bpx/core';
+import { useGetPlotQueueQuery, useThrottleQuery } from '@bpx/api-react';
 import styled from 'styled-components';
 
 const StyledLinearProgress = styled(LinearProgress)`

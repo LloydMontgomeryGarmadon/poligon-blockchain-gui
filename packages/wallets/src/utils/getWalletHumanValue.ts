@@ -1,6 +1,6 @@
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
-import { mojoToCATLocaleString, mojoToChiaLocaleString } from '@chia/core';
+import type { Wallet } from '@bpx/api';
+import { WalletType } from '@bpx/api';
+import { mojoToCATLocaleString, mojoToChiaLocaleString } from '@bpx/core';
 
 export default function getWalletHumanValue(wallet: Wallet, value: number): string {
   return wallet.type === WalletType.CAT

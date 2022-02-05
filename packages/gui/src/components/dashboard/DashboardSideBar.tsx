@@ -8,8 +8,8 @@ import {
   Home as HomeIcon,
   Plot as PlotIcon,
   Pool as PoolIcon,
-} from '@chia/icons';
-import { Flex, SideBarItem } from '@chia/core';
+} from '@bpx/icons';
+import { Flex, SideBarItem } from '@bpx/core';
 
 const StyledRoot = styled(Flex)`
   height: 100%;

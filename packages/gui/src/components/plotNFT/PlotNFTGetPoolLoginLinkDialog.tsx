@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { t, Trans } from '@lingui/macro';
 import { Alert } from '@material-ui/lab';
 import styled from 'styled-components';
-import { CopyToClipboard, Flex, Link, Loading } from '@chia/core';
+import { CopyToClipboard, Flex, Link, Loading } from '@bpx/core';
 import {
   Button,
   Dialog,
@@ -11,8 +11,8 @@ import {
   DialogContent,
   Typography,
 } from '@material-ui/core';
-import { useGetPoolLoginLinkQuery } from '@chia/api-react';
-import type { PlotNFT, PlotNFTExternal } from '@chia/api';
+import { useGetPoolLoginLinkQuery } from '@bpx/api-react';
+import type { PlotNFT, PlotNFTExternal } from '@bpx/api';
 
 const StyledLoginLink = styled(Typography)`
   word-break: break-all;
@@ -69,13 +69,6 @@ export default function PlotNFTGetPoolLoginLinkDialog(props: Props) {
                   pool's website. It contains a signature using the farmer's key
                   from the plot NFT. Not all pools support this feature.
                 </Trans>{' '}
-                <Link
-                  target="_blank"
-                  href="https://github.com/Chia-Network/pool-reference/blob/main/SPECIFICATION.md#get-login"
-                  noWrap
-                >
-                  <Trans>Learn More</Trans>
-                </Link>
               </Typography>
             </Flex>
           )}

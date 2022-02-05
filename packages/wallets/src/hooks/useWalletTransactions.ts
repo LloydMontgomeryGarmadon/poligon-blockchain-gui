@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@chia/api-react';
-import type { Transaction } from '@chia/api';
+import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@bpx/api-react';
+import type { Transaction } from '@bpx/api';
 
 export default function useWalletTransactions(
   walletId: number, 

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString } from '@chia/core';
-import { useGetFarmedAmountQuery } from '@chia/api-react';
+import { useCurrencyCode, mojoToChiaLocaleString } from '@bpx/core';
+import { useGetFarmedAmountQuery } from '@bpx/api-react';
 import FarmCard from './FarmCard';
 
 export default function FarmCardBlockRewards() {

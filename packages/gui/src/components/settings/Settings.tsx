@@ -8,8 +8,8 @@ import {
   Suspender,
   useOpenDialog,
   useSkipMigration,
-} from '@chia/core';
-import { useGetKeyringStatusQuery } from '@chia/api-react';
+} from '@bpx/core';
+import { useGetKeyringStatusQuery } from '@bpx/api-react';
 import {
   Grid,
   Typography,

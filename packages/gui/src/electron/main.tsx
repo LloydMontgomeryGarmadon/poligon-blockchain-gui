@@ -16,7 +16,7 @@ import chiaConfig from '../util/config';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
-import AppIcon from '../assets/img/chia64x64.png';
+import AppIcon from '../assets/img/bpx64x64.png';
 
 initialize();
 
@@ -448,58 +448,19 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
-            click: () => {
-              openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/wiki',
-              );
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
-            click: () => {
-              openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/wiki/FAQ',
-              );
-            },
-          },
-          {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/releases',
+                'https://github.com/bpx-network/bpx-blockchain/releases',
               );
             },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
-            click: () => {
-              openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/blob/main/CONTRIBUTING.md',
-              );
-            },
-          },
-          {
-            type: 'separator',
           },
           {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/issues',
+                'https://github.com/bpx-network/bpx-blockchain/issues',
               );
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
-            click: () => {
-              openExternal('https://keybase.io/team/chia_network.public');
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
-            click: () => {
-              openExternal('https://twitter.com/chia_project');
             },
           },
         ],
@@ -507,12 +468,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // Chia Blockchain menu (Mac)
+      // BPX Blockchain menu (Mac)
       template.unshift({
-        label: i18n._(/* i18n */ { id: 'Chia' }),
+        label: i18n._(/* i18n */ { id: 'BPX' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About BPX Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -599,7 +560,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About BPX Blockchain' }),
           click() {
             openAbout();
           },

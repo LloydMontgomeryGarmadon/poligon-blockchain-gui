@@ -1,8 +1,8 @@
-import { WalletType, type OfferSummaryRecord } from '@chia/api';
+import { WalletType, type OfferSummaryRecord } from '@bpx/api';
 import {
   mojoToChiaLocaleString,
   mojoToCATLocaleString,
-} from '@chia/core';
+} from '@bpx/core';
 import OfferState from './OfferState';
 import { AssetIdMapEntry } from '../../hooks/useAssetIdName';
 

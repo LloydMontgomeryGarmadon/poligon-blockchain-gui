@@ -1,14 +1,14 @@
 import React, { useMemo } from "react";
 import {
   Flex
-} from '@chia/core';
+} from '@bpx/core';
 import {
   TextField,
   Typography,
 } from '@material-ui/core';
 import { ImportExport } from '@material-ui/icons';
 import { AssetIdMapEntry } from '../../hooks/useAssetIdName';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@bpx/api';
 
 type Props = {
   makerAssetInfo: AssetIdMapEntry;

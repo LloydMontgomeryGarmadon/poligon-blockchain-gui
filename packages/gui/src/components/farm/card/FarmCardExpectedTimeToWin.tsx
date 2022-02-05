@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetBlockchainStateQuery, useGetCombinedPlotsQuery } from '@chia/api-react';
+import { useGetBlockchainStateQuery, useGetCombinedPlotsQuery } from '@bpx/api-react';
 import moment from 'moment';
-import { State } from '@chia/core';
+import { State } from '@bpx/core';
 import FarmCard from './FarmCard';
 import type Plot from '../../../types/Plot';
 import FullNodeState from '../../../constants/FullNodeState';

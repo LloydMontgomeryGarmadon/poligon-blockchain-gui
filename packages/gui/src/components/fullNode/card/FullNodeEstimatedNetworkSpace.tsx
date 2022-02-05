@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatBytes, CardSimple } from '@chia/core';
-import { useGetBlockchainStateQuery } from '@chia/api-react';
+import { FormatBytes, CardSimple } from '@bpx/core';
+import { useGetBlockchainStateQuery } from '@bpx/api-react';
 
 export default function FullNodeEstimatedNetworkSpace() {
   const { data, isLoading } = useGetBlockchainStateQuery();

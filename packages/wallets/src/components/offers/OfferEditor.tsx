@@ -10,8 +10,8 @@ import {
   Form,
   useShowError,
   useShowSaveDialog,
-} from '@chia/core';
-import { useCreateOfferForIdsMutation } from '@chia/api-react';
+} from '@bpx/core';
+import { useCreateOfferForIdsMutation } from '@bpx/api-react';
 import {
   Button,
   Divider,
@@ -20,11 +20,11 @@ import {
 import type OfferEditorRowData from './OfferEditorRowData';
 import { suggestedFilenameForOffer } from './utils';
 import useAssetIdName from '../../hooks/useAssetIdName';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@bpx/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferLocalStorageKeys from './OfferLocalStorage';
 import styled from 'styled-components';
-import { chiaToMojo, catToMojo } from '@chia/core';
+import { chiaToMojo, catToMojo } from '@bpx/core';
 import fs from 'fs';
 
 const StyledEditorBox = styled.div`

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog, More, useOpenDialog } from '@chia/core';
+import { ConfirmDialog, More, useOpenDialog } from '@bpx/core';
 import { Box, ListItemIcon, MenuItem, Typography } from '@material-ui/core';
 import { DeleteForever as DeleteForeverIcon } from '@material-ui/icons';
-import { useDeletePlotMutation } from '@chia/api-react';
-import type { Plot } from '@chia/api';
+import { useDeletePlotMutation } from '@bpx/api-react';
+import type { Plot } from '@bpx/api';
 
 type Props = {
   plot: Plot;

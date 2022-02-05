@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { Typography } from '@material-ui/core';
-import { Link, Table, Card } from '@chia/core';
-import { useGetSignagePointsQuery, useGetCombinedPlotsQuery } from '@chia/api-react';
+import { Link, Table, Card } from '@bpx/core';
+import { useGetSignagePointsQuery, useGetCombinedPlotsQuery } from '@bpx/api-react';
 import type { Row } from '../core/components/Table/Table';
 
 const cols = [
@@ -54,19 +54,6 @@ export default function FarmLatestBlockChallenges() {
         rowsPerPage={5}
         pages
       />
-      <Typography variant="caption">
-        <Trans>
-          *Want to explore Chia’s blocks further? Check out{' '}
-          <Link
-            color="primary"
-            href="https://www.chiaexplorer.com/"
-            target="_blank"
-          >
-            Chia Explorer
-          </Link>{' '}
-          built by an open source developer.
-        </Trans>
-      </Typography>
     </Card>
   );
 }

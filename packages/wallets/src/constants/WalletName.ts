@@ -1,5 +1,5 @@
 import { defineMessage } from '@lingui/macro';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@bpx/api';
 
 const WalletName = {
   [WalletType.STANDARD_WALLET]: defineMessage({
@@ -21,7 +21,7 @@ const WalletName = {
     message: 'Custody Wallet',
   }),
   [WalletType.CAT]: defineMessage({
-    message: 'CAT Wallet',
+    message: 'Token Wallet',
   }),
   [WalletType.RECOVERABLE]: defineMessage({
     message: 'Recoverable Wallet',

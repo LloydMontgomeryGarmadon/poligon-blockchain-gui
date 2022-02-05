@@ -1,5 +1,5 @@
 import React, { useMemo, ReactNode } from 'react';
-import { Table, mojoToChiaLocaleString } from '@chia/core';
+import { Table, mojoToChiaLocaleString } from '@bpx/core';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { Box } from '@material-ui/core';

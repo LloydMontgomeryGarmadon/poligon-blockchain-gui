@@ -23,7 +23,7 @@ import {
   chiaToMojo,
   mojoToChiaLocaleString,
   mojoToCATLocaleString,
-} from '@chia/core';
+} from '@bpx/core';
 import {
   Box,
   Button,
@@ -38,8 +38,8 @@ import {
   Tooltip,
   Typography
 } from '@material-ui/core';
-import { OfferSummaryRecord, OfferTradeRecord, OfferCoinOfInterest, WalletType } from '@chia/api';
-import { useCheckOfferValidityMutation, useTakeOfferMutation } from '@chia/api-react';
+import { OfferSummaryRecord, OfferTradeRecord, OfferCoinOfInterest, WalletType } from '@bpx/api';
+import { useCheckOfferValidityMutation, useTakeOfferMutation } from '@bpx/api-react';
 import {
   colorForOfferState,
   displayStringForOfferState,
@@ -237,11 +237,7 @@ function OfferDetails(props: OfferDetailsProps) {
             }
             interactive
           >
-            <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chiaexplorer.com/blockchain/coin/${coin.parentCoinInfo}`)}
-            >
               {coin.parentCoinInfo}
-            </Link>
           </Tooltip>
         )
       },
@@ -260,11 +256,7 @@ function OfferDetails(props: OfferDetailsProps) {
             }
             interactive
           >
-            <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chiaexplorer.com/blockchain/puzzlehash/${coin.puzzleHash}`)}
-            >
               {coin.puzzleHash}
-            </Link>
           </Tooltip>
         )
       },
@@ -302,7 +294,7 @@ function OfferDetails(props: OfferDetailsProps) {
                 </Trans>
               </Typography>
               <Typography variant="subtitle1">
-                Unknown CATs:
+                Unknown tokens:
               </Typography>
               <StyledSummaryBox>
                 <Flex flexDirection="column">
@@ -409,7 +401,7 @@ function OfferDetails(props: OfferDetailsProps) {
   function OfferSummaryEntry({ assetId, amount, ...rest}: { assetId: string, amount: number }) {
     const assetIdInfo = lookupByAssetId(assetId);
     const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojoToCATLocaleString(amount);
-    const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
+    const displayName = assetIdInfo?.displayName ?? t`Unknown token`;
 
     return (
       <Flex flexDirections="row" gap={1}>
@@ -419,7 +411,7 @@ function OfferDetails(props: OfferDetailsProps) {
             {!(assetIdInfo?.displayName) && (
               <TooltipIcon interactive>
                 <Flex flexDirection="column" gap={1}>
-                  <StyledTitle>TAIL</StyledTitle>
+                  <StyledTitle>Limiter</StyledTitle>
                   <Flex alignItems="center" gap={1}>
                     <StyledValue>{assetId.toLowerCase()}</StyledValue>
                     <CopyToClipboard value={assetId.toLowerCase()} fontSize="small" />

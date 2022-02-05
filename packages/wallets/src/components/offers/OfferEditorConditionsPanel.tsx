@@ -8,15 +8,15 @@ import {
   mojoToChiaLocaleString,
   mojoToCAT,
   mojoToCATLocaleString,
-} from '@chia/core';
+} from '@bpx/core';
 import { 
   Divider, 
   IconButton, 
   Typography,
 } from '@material-ui/core';
 import { Add, Remove } from '@material-ui/icons';
-import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@chia/api-react';
-import { Wallet, WalletType } from '@chia/api';
+import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@bpx/api-react';
+import { Wallet, WalletType } from '@bpx/api';
 import type OfferEditorRowData from './OfferEditorRowData';
 import OfferAssetSelector from './OfferAssetSelector';
 import OfferExchangeRate from './OfferExchangeRate';

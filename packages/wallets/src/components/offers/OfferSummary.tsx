@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { type OfferSummaryRecord  } from '@chia/api';
+import { type OfferSummaryRecord  } from '@bpx/api';
 import {
   Flex,
   StateColor,
   mojoToChia,
   mojoToCAT,
-} from '@chia/core';
+} from '@bpx/core';
 import {
   Box,
   Divider,
@@ -40,8 +40,8 @@ export default function OfferSummary(props: Props) {
   const takerEntries: [string, number][] = Object.entries(summary.requested);
   const makerAssetInfo = makerEntries.length === 1 ? lookupByAssetId(makerEntries[0][0]) : undefined;
   const takerAssetInfo = takerEntries.length === 1 ? lookupByAssetId(takerEntries[0][0]) : undefined;
-  const makerAmount = makerEntries[0][0].toLowerCase() === 'xch' ? Number(mojoToChia(makerEntries[0][1])) : Number(mojoToCAT(makerEntries[0][1]));
-  const takerAmount = takerEntries[0][0].toLowerCase() === 'xch' ? Number(mojoToChia(takerEntries[0][1])) : Number(mojoToCAT(takerEntries[0][1]));
+  const makerAmount = makerEntries[0][0].toLowerCase() === 'bpx' ? Number(mojoToChia(makerEntries[0][1])) : Number(mojoToCAT(makerEntries[0][1]));
+  const takerAmount = takerEntries[0][0].toLowerCase() === 'bpx' ? Number(mojoToChia(takerEntries[0][1])) : Number(mojoToCAT(takerEntries[0][1]));
   const makerExchangeRate = makerAssetInfo && takerAssetInfo ? takerAmount / makerAmount : undefined;
   const takerExchangeRate = makerAssetInfo && takerAssetInfo ? makerAmount / takerAmount : undefined;
 
@@ -50,7 +50,7 @@ export default function OfferSummary(props: Props) {
       return [];
     }
 
-    // Identify unknown CATs offered/requested by the maker
+    // Identify unknown tokens offered/requested by the maker
     const takerUnknownCATs = makerEntries.filter(([assetId, _]) => lookupByAssetId(assetId) === undefined).map(([assetId, _]) => assetId);
     const makerUnknownCATs = takerEntries.filter(([assetId, _]) => lookupByAssetId(assetId) === undefined).map(([assetId, _]) => assetId);
 
@@ -87,7 +87,7 @@ export default function OfferSummary(props: Props) {
               {unknownCATs !== undefined && unknownCATs.length > 0 && (
                 <Flex flexDirection="row" gap={1}>
                   {tradeSide === 'sell' && (
-                    <StyledWarningText variant="caption"><Trans>Warning: Verify that the offered CAT asset IDs match the asset IDs of the tokens you expect to receive.</Trans></StyledWarningText>
+                    <StyledWarningText variant="caption"><Trans>Warning: Verify that the offered token asset IDs match the asset IDs of the tokens you expect to receive.</Trans></StyledWarningText>
                   )}
                   {tradeSide === 'buy' && (
                     <StyledWarningText variant="caption">Offer cannot be accepted because you don't possess the requested assets</StyledWarningText>

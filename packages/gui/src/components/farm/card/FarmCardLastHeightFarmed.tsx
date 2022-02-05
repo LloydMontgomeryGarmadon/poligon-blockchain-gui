@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber } from '@chia/core';
-import { useGetFarmedAmountQuery } from '@chia/api-react';
+import { FormatLargeNumber } from '@bpx/core';
+import { useGetFarmedAmountQuery } from '@bpx/api-react';
 import FarmCard from './FarmCard';
 
 export default function FarmCardLastHeightFarmed() {

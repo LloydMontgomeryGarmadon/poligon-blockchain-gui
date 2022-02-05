@@ -1,8 +1,8 @@
 {
-  "name": "@chia/api",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
-  "description": "Chia API Library",
-  "productName": "Chia Blockchain",
+  "name": "@bpx/api",
+  "author": "BPX Network <hello@bpxcoin.cc> (https://bpxcoin.cc/)",
+  "description": "BPX API Library",
+  "productName": "BPX Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

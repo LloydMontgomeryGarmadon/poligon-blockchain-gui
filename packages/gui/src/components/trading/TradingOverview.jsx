@@ -11,7 +11,7 @@ import {
   Box,
   Typography,
 } from '@material-ui/core';
-import { Card, Flex, mojoToChiaLocaleString } from '@chia/core';
+import { Card, Flex, mojoToChiaLocaleString } from '@bpx/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Grid from '@material-ui/core/Grid';
 import HelpIcon from '@material-ui/icons/Help';

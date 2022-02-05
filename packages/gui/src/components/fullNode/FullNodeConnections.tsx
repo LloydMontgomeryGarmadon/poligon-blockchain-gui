@@ -10,8 +10,8 @@ import {
   Table,
   IconButton,
   useOpenDialog,
-} from '@chia/core';
-import { useGetFullNodeConnectionsQuery } from '@chia/api-react';
+} from '@bpx/core';
+import { useGetFullNodeConnectionsQuery } from '@bpx/api-react';
 import { Button, Tooltip } from '@material-ui/core';
 import { service_connection_types } from '../../util/service_names';
 import Connection from '../../types/Connection';

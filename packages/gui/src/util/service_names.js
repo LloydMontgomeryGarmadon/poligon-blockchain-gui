@@ -1,10 +1,10 @@
-export const service_wallet = 'chia_wallet';
-export const service_full_node = 'chia_full_node';
-export const service_farmer = 'chia_farmer';
-export const service_harvester = 'chia_harvester';
-export const service_simulator = 'chia_full_node_simulator';
+export const service_wallet = 'bpx_wallet';
+export const service_full_node = 'bpx_full_node';
+export const service_farmer = 'bpx_farmer';
+export const service_harvester = 'bpx_harvester';
+export const service_simulator = 'bpx_full_node_simulator';
 export const service_daemon = 'daemon';
-export const service_plotter = 'chia_plotter';
+export const service_plotter = 'bpx_plotter';
 
 // Corresponds with outbound_message.py NodeTypes
 export const service_connection_types = {

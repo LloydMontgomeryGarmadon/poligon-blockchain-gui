@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { ListItemIcon, ListItemText, Typography } from '@material-ui/core';
-import { Dropdown, Flex, Loading, useTrans } from '@chia/core';
-import { useGetWalletsQuery } from '@chia/api-react';
-import { WalletType } from '@chia/api';
+import { Dropdown, Flex, Loading, useTrans } from '@bpx/core';
+import { useGetWalletsQuery } from '@bpx/api-react';
+import { WalletType } from '@bpx/api';
 import { useNavigate } from 'react-router';
 import WalletName from '../constants/WalletName';
 import WalletIcon from './WalletIcon';

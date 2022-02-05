@@ -22,8 +22,8 @@ import {
   mojoToCATLocaleString,
   useShowSaveDialog,
   Tooltip,
-} from '@chia/core';
-import { OfferTradeRecord } from '@chia/api';
+} from '@bpx/core';
+import { OfferTradeRecord } from '@bpx/api';
 import fs from 'fs';
 import { Remote } from 'electron';
 import {
@@ -39,8 +39,8 @@ import {
   Typography
 } from '@material-ui/core';
 import { Cancel, GetApp as Download, Info, Reply as Share, Visibility } from '@material-ui/icons';
-import { Trade as TradeIcon } from '@chia/icons';
-import { useCancelOfferMutation, useGetOfferDataMutation, useGetWalletsQuery } from '@chia/api-react';
+import { Trade as TradeIcon } from '@bpx/icons';
+import { useCancelOfferMutation, useGetOfferDataMutation, useGetWalletsQuery } from '@bpx/api-react';
 import { colorForOfferState, displayStringForOfferState, formatAmountForWalletType, suggestedFilenameForOffer } from './utils';
 import useAssetIdName from '../../hooks/useAssetIdName';
 import useWalletOffers from '../../hooks/useWalletOffers';
@@ -48,7 +48,6 @@ import { CreateOfferEditor } from './OfferEditor';
 import { OfferImport } from './OfferImport';
 import { OfferViewer } from './OfferViewer';
 import OfferDataDialog from './OfferDataDialog';
-import OfferShareDialog from './OfferShareDialog';
 import OfferState from './OfferState';
 
 const StyledTradeIcon = styled(TradeIcon)`
@@ -217,15 +216,6 @@ function OfferList(props: OfferListProps) {
     });
   }
 
-  async function handleShare(event: any, row: OfferTradeRecord) {
-    openDialog((
-      <OfferShareDialog
-        offerRecord={row}
-        offerData={row._offerData}
-      />
-    ));
-  }
-
   const cols = useMemo(() => {
     return [
       {
@@ -247,7 +237,7 @@ function OfferList(props: OfferListProps) {
           const resolvedOfferInfo = Object.entries(row.summary.offered).map(([assetId, amount]) => {
             const assetIdInfo = lookupByAssetId(assetId);
             const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojoToCATLocaleString(amount);
-            const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
+            const displayName = assetIdInfo?.displayName ?? t`Unknown token`;
             return {
               displayAmount,
               displayName,
@@ -270,7 +260,7 @@ function OfferList(props: OfferListProps) {
           const resolvedOfferInfo = Object.entries(row.summary.requested).map(([assetId, amount]) => {
             const assetIdInfo = lookupByAssetId(assetId);
             const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojoToCATLocaleString(amount);
-            const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
+            const displayName = assetIdInfo?.displayName ?? t`Unknown token`;
             return {
               displayAmount,
               displayName,
@@ -314,19 +304,6 @@ function OfferList(props: OfferListProps) {
 
           return (
             <Flex flexDirection="row" justifyContent="center" gap={0}>
-              <Flex style={{width: '32px'}}>
-                {canShare && (
-                  <Tooltip title={<Trans>Share</Trans>}>
-                    <IconButton
-                      size="small"
-                      disabled={!canShare}
-                      onClick={() => handleShare(undefined, row)}
-                    >
-                      <Share style={{transform: 'scaleX(-1)'}} />
-                    </IconButton>
-                  </Tooltip>
-                )}
-              </Flex>
               <Flex style={{width: '32px'}}>
                 <More>
                   {({ onClose }: { onClose: () => void }) => (
@@ -477,7 +454,7 @@ export function OfferManager() {
             <StyledTradeIcon color="primary" />
             <Typography variant="body1">
               <Trans>
-                Create an offer to exchange XCH or other tokens. View an offer to inspect and accept an offer made by another party.
+                Create an offer to exchange BPX or other tokens. View an offer to inspect and accept an offer made by another party.
               </Trans>
             </Typography>
             <Button onClick={handleCreateOffer} variant="contained" color="primary">
@@ -509,25 +486,6 @@ export function CreateOffer() {
   const [offerCreated, setOfferCreated] = React.useState<boolean>(false);
   const [offerRecord, setOfferRecord] = React.useState<Object>({});
   const [offerData, setOfferData] = React.useState<Object>({});
-
-  useEffect(() => {
-    async function showOfferShareDialog() {
-      await openDialog(
-        <OfferShareDialog
-          offerRecord={offerRecord}
-          offerData={offerData as string}
-          showSuppressionCheckbox={true}
-        />
-      );
-      setOfferCreated(false);
-      setOfferRecord({});
-      setOfferData({});
-    }
-
-    if (offerCreated) {
-      showOfferShareDialog();
-    }
-  }, [offerCreated]);
 
   return (
     <Routes>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Trans } from '@lingui/macro';
-import { Back, Card, Dropzone, Flex, useOpenDialog, useShowError } from '@chia/core';
+import { Back, Card, Dropzone, Flex, useOpenDialog, useShowError } from '@bpx/core';
 import { Button, Grid, Typography } from '@material-ui/core';
-import { useGetOfferSummaryMutation } from '@chia/api-react';
-import { type OfferSummaryRecord } from '@chia/api';
+import { useGetOfferSummaryMutation } from '@bpx/api-react';
+import { type OfferSummaryRecord } from '@bpx/api';
 import OfferDataEntryDialog from './OfferDataEntryDialog';
 import fs, { Stats } from 'fs';
 

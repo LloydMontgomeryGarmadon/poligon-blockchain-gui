@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Card, Table } from '@chia/core';
+import { Card, Table } from '@bpx/core';
 import { Typography } from '@material-ui/core';
-import { useGetCombinedNotFoundFilenamesQuery } from '@chia/api-react';
+import { useGetCombinedNotFoundFilenamesQuery } from '@bpx/api-react';
 import PlotAction from './PlotAction';
-import type { Plot } from '@chia/api';
+import type { Plot } from '@bpx/api';
 
 const cols = [
   {

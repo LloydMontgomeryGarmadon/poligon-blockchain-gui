@@ -37,24 +37,6 @@ export default function SettingsApp(props: SettingsAppProps) {
     setMode(Mode.WALLET);
   }
 
-  async function handleOpenFAQURL(): Promise<void> {
-    try {
-      const shell: Shell = (window as any).shell;
-      await shell.openExternal('https://github.com/Chia-Network/chia-blockchain/wiki/FAQ');
-    } catch (error: any) {
-      showError(error);
-    }
-  }
-  
-  async function handleOpenSendFeedbackURL(): Promise<void> {
-    try {
-      const shell: Shell = (window as any).shell;
-      await shell.openExternal('https://feedback.chia.net/lightwallet');
-    } catch (error: any) {
-      showError(error);
-    }
-  }
-
   return (
     <Flex flexDirection="column" gap={3}>
       <Flex flexDirection="column" gap={1}>
@@ -100,14 +82,6 @@ export default function SettingsApp(props: SettingsAppProps) {
         <SettingsLabel>
           <Trans>Help</Trans>
         </SettingsLabel>
-        <Flex flexDirection="column">
-          <Link onClick={handleOpenFAQURL}>
-            <Trans>Frequently Asked Questions</Trans>
-          </Link>
-          <Link onClick={handleOpenSendFeedbackURL}>
-            <Trans>Send Feedback</Trans>
-          </Link>
-        </Flex>
       </Flex>
     </Flex>
   );

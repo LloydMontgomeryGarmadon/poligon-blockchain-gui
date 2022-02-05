@@ -10,8 +10,8 @@ import {
   Typography,
 } from '@material-ui/core';
 import { Trans, t } from '@lingui/macro';
-import { AlertDialog, Flex, TooltipIcon, useOpenDialog, Suspender } from '@chia/core';
-import { useRemoveKeyringPassphraseMutation, useGetKeyringStatusQuery } from '@chia/api-react';
+import { AlertDialog, Flex, TooltipIcon, useOpenDialog, Suspender } from '@bpx/core';
+import { useRemoveKeyringPassphraseMutation, useGetKeyringStatusQuery } from '@bpx/api-react';
 
 type Props = {
   onSuccess: () => void;

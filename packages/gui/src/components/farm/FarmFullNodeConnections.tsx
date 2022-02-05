@@ -10,10 +10,10 @@ import {
   FormatBytes,
   FormatConnectionStatus,
   Loading,
-} from '@chia/core';
-import { useGetFarmerFullNodeConnectionsQuery, useIsServiceRunningQuery } from '@chia/api-react';
-import type { Connection } from '@chia/api';
-import { ServiceName } from '@chia/api';
+} from '@bpx/core';
+import { useGetFarmerFullNodeConnectionsQuery, useIsServiceRunningQuery } from '@bpx/api-react';
+import type { Connection } from '@bpx/api';
+import { ServiceName } from '@bpx/api';
 import FarmCloseConnection from './FarmCloseConnection';
 
 const StyledIconButton = styled(IconButton)`
@@ -94,12 +94,6 @@ export default function FarmFullNodeConnections() {
       tooltip={
         <Trans>
           {'The full node that your farmer is connected to is below. '}
-          <Link
-            target="_blank"
-            href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
-          >
-            Learn more
-          </Link>
         </Trans>
       }
       interactive

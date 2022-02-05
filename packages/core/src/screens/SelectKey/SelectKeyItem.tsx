@@ -16,7 +16,7 @@ import {
 import {
   useCheckDeleteKeyMutation,
   useDeleteKeyMutation,
-} from '@chia/api-react';
+} from '@bpx/api-react';
 import SelectKeyDetailDialog from './SelectKeyDetailDialog';
 import ConfirmDialog from '../../components/ConfirmDialog';
 import LoadingOverlay from '../../components/LoadingOverlay';

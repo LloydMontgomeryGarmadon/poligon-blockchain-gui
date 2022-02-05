@@ -1,5 +1,5 @@
-import { ServiceName } from '@chia/api';
-import { Mode } from '@chia/core';
+import { ServiceName } from '@bpx/api';
+import { Mode } from '@bpx/core';
 
 export default {
   [Mode.WALLET]: [

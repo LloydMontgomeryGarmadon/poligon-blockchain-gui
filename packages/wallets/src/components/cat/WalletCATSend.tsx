@@ -17,13 +17,13 @@ import {
   useCurrencyCode,
   toBech32m,
   getTransactionResult,
-} from '@chia/core';
+} from '@bpx/core';
 import { 
   useSpendCATMutation,
   useGetSyncStatusQuery,
   useFarmBlockMutation,
-} from '@chia/api-react';
-import { SyncingStatus } from '@chia/api';
+} from '@bpx/api-react';
+import { SyncingStatus } from '@bpx/api';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import { Button, Grid } from '@material-ui/core';
@@ -116,7 +116,7 @@ export default function WalletCATSend(props: Props) {
     }
 
     if (address.includes('colour')) {
-      throw new Error(t`Cannot send chia to coloured address. Please enter a chia address.`);
+      throw new Error(t`Cannot send BPX to coloured address. Please enter a BPX address.`);
     }
 
     if (address.includes('chia_addr') || address.includes('colour_desc')) {
@@ -130,7 +130,7 @@ export default function WalletCATSend(props: Props) {
       }
     }
 
-    if (address.slice(0, 12) === 'chia_addr://') {
+    if (address.slice(0, 12) === 'bpx_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {

@@ -13,9 +13,9 @@ import {
   State,
   mojoToChiaLocaleString,
   chiaToMojo,
-} from '@chia/core';
+} from '@bpx/core';
 import { useForm } from 'react-hook-form';
-import { usePwAbsorbRewardsMutation, useGetPlotNFTsQuery } from '@chia/api-react'
+import { usePwAbsorbRewardsMutation, useGetPlotNFTsQuery } from '@bpx/api-react'
 import { ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 import { Grid, Typography } from '@material-ui/core';
 import { useParams } from 'react-router';
