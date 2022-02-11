@@ -4,7 +4,7 @@ import { FormatLargeNumber, CardSimple } from '@bpx/core';
 import { useGetBlockchainStateQuery } from '@bpx/api-react';
 
 export default function FullNodeCardDifficulty() {
-  const { data, isLoading } = useGetBlockchainStateQuery();
+  const { data, isLoading, error } = useGetBlockchainStateQuery();
   const value = data?.difficulty;
 
   return (
@@ -13,6 +13,7 @@ export default function FullNodeCardDifficulty() {
       valueColor="textPrimary"
       title={<Trans>Difficulty</Trans>}
       value={<FormatLargeNumber value={value} />}
+      error={error}
     />
   );
 }

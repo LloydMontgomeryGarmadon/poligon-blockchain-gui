@@ -483,23 +483,15 @@ export function OfferManager() {
 export function CreateOffer() {
   const location: any = useLocation();
   const openDialog = useOpenDialog();
-  const [offerCreated, setOfferCreated] = React.useState<boolean>(false);
-  const [offerRecord, setOfferRecord] = React.useState<Object>({});
-  const [offerData, setOfferData] = React.useState<Object>({});
+  
+  async function handleOfferCreated(obj: { offerRecord: any, offerData: any }) {
+  }
 
   return (
     <Routes>
       <Route
         path="create"
-        element={
-          <CreateOfferEditor
-            onOfferCreated={(obj: { offerRecord: any, offerData: any }) => {
-              setOfferRecord(obj.offerRecord);
-              setOfferData(obj.offerData);
-              setOfferCreated(true);
-            }}
-          />
-        }
+        element={<CreateOfferEditor onOfferCreated={handleOfferCreated} />}
       />
       <Route path="import" element={<OfferImport />} />
 

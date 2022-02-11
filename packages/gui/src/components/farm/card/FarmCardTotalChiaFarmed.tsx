@@ -1,12 +1,11 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString } from '@bpx/core';
+import { useCurrencyCode, mojoToChiaLocaleString, CardSimple } from '@bpx/core';
 import { useGetFarmedAmountQuery } from '@bpx/api-react';
-import FarmCard from './FarmCard';
 
 export default function FarmCardTotalChiaFarmed() {
   const currencyCode = useCurrencyCode();
-  const { data, isLoading } = useGetFarmedAmountQuery();
+  const { data, isLoading, error } = useGetFarmedAmountQuery();
 
   const farmedAmount = data?.farmedAmount;
 
@@ -23,10 +22,11 @@ export default function FarmCardTotalChiaFarmed() {
   }, [farmedAmount]);
 
   return (
-    <FarmCard
+    <CardSimple
       title={<Trans>Total BPX Farmed</Trans>}
       value={totalChiaFarmed}
       loading={isLoading}
+      error={error}
     />
   );
 }

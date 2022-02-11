@@ -4,7 +4,7 @@ import { FormatBytes, CardSimple } from '@bpx/core';
 import { useGetBlockchainStateQuery } from '@bpx/api-react';
 
 export default function FullNodeEstimatedNetworkSpace() {
-  const { data, isLoading } = useGetBlockchainStateQuery();
+  const { data, isLoading, error } = useGetBlockchainStateQuery();
   const value = data?.space;
 
   return (
@@ -19,6 +19,7 @@ export default function FullNodeEstimatedNetworkSpace() {
         </Trans>
       }
       value={value && <FormatBytes value={value} precision={3} />}
+      error={error}
     />
   );
 }
