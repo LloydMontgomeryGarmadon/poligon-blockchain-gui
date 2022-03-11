@@ -1,9 +1,8 @@
 import React from 'react';
-import { Logo } from '@bpx/core';
+import { useCurrencyCode } from '@bpx/core';
 import styled from 'styled-components';
 import { useGetCatListQuery } from '@bpx/api-react';
-import type { Wallet } from '@bpx/api';
-import { WalletType } from '@bpx/api';
+import { WalletType, type Wallet } from '@bpx/api';
 import { Typography } from '@material-ui/core';
 
 const StyledSymbol = styled(Typography)`
@@ -18,9 +17,10 @@ type Props = {
 export default function WalletIcon(props: Props) {
   const { wallet } = props;
   const { data: catList = [], isLoading } = useGetCatListQuery();
+  const currencyCode = useCurrencyCode();
 
   if (wallet.type === WalletType.STANDARD_WALLET) {
-    return <Logo width={32} />;
+    return <StyledSymbol color="primary">{currencyCode}</StyledSymbol>;
   }
 
   if (!isLoading && wallet.type === WalletType.CAT) {

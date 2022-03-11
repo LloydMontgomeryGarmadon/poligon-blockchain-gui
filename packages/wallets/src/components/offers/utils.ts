@@ -1,4 +1,5 @@
-import { WalletType, type OfferSummaryRecord } from '@bpx/api';
+import { WalletType } from '@bpx/api';
+import type { OfferSummaryRecord } from '@bpx/api';
 import {
   mojoToChiaLocaleString,
   mojoToCATLocaleString,
