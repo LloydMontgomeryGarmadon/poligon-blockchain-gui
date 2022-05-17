@@ -1,10 +1,9 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Folder as FolderIcon, Delete as DeleteIcon } from '@material-ui/icons';
+import { Folder as FolderIcon, Delete as DeleteIcon } from '@mui/icons-material';
 import {
   Avatar,
   Box,
-  Button,
   Dialog,
   DialogActions,
   DialogTitle,
@@ -16,8 +15,8 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   Typography,
-} from '@material-ui/core';
-import { useShowError, Suspender } from '@bpx/core';
+} from '@mui/material';
+import { useShowError, Button, Suspender } from '@bpx/core';
 import { useAddPlotDirectoryMutation, useRemovePlotDirectoryMutation, useGetPlotDirectoriesQuery } from '@bpx/api-react';
 import useSelectDirectory from '../../hooks/useSelectDirectory';
 

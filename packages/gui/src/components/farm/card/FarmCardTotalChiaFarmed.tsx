@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString, CardSimple } from '@bpx/core';
+import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@bpx/core';
 import { useGetFarmedAmountQuery } from '@bpx/api-react';
 
 export default function FarmCardTotalChiaFarmed() {
   const currencyCode = useCurrencyCode();
+  const [locale] = useLocale();
   const { data, isLoading, error } = useGetFarmedAmountQuery();
 
   const farmedAmount = data?.farmedAmount;
@@ -13,13 +14,13 @@ export default function FarmCardTotalChiaFarmed() {
     if (farmedAmount !== undefined) {
       return (
         <>
-          {mojoToChiaLocaleString(farmedAmount)}
+          {mojoToChiaLocaleString(farmedAmount, locale)}
           &nbsp;
           {currencyCode}
         </>
       );
     }
-  }, [farmedAmount]);
+  }, [farmedAmount, locale, currencyCode]);
 
   return (
     <CardSimple

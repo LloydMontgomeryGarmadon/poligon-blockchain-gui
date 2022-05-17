@@ -1,42 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Button,
+  Alert,
   Paper,
   TableRow,
   Table,
   TableBody,
   TableCell,
   TableContainer,
-} from '@material-ui/core';
-import { Alert } from '@material-ui/lab';
+} from '@mui/material';
+import moment from 'moment';
 import { Trans } from '@lingui/macro';
 import { useGetBlockQuery, useGetBlockRecordQuery  } from '@bpx/api-react'
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Back,
+  Button,
   Card,
   FormatLargeNumber,
   Link,
   Loading,
+  LayoutDashboardSub,
   TooltipIcon,
   Flex,
   calculatePoolReward,
   calculateBaseFarmerReward,
   useCurrencyCode,
   mojoToChia,
-  DashboardTitle,
   Suspender,
+  toBech32m,
 } from '@bpx/core';
 import {
-  unix_to_short_date,
   hex_to_array,
   arr_to_hex,
   sha256,
 } from '../../util/utils';
-import toBech32m from '../../util/toBech32m';
 import BlockTitle from './BlockTitle';
-
-/* global BigInt */
 
 async function computeNewPlotId(block) {
   const { poolPublicKey, plotPublicKey } =
@@ -112,46 +110,37 @@ export default function Block() {
 
   if (isLoading) {
     return (
-      <>
-        <DashboardTitle><Trans>Block</Trans></DashboardTitle>
-        <Suspender />
-      </>
+      <Suspender />
     );
   }
 
   if (error) {
     return (
-      <>
-        <DashboardTitle><Trans>Block</Trans></DashboardTitle>
-        <Card
-          title={
-            <BlockTitle>
-              <Trans>Block with hash {headerHash}</Trans>
-            </BlockTitle>
-          }
-        >
-          <Alert severity="error">{error.message}</Alert>
-        </Card>
-      </>
+      <Card
+        title={
+          <BlockTitle>
+            <Trans>Block with hash {headerHash}</Trans>
+          </BlockTitle>
+        }
+      >
+        <Alert severity="error">{error.message}</Alert>
+      </Card>
     );
   }
 
   if (!block) {
     return (
-      <>
-        <DashboardTitle><Trans>Block</Trans></DashboardTitle>
-        <Card
-          title={
-            <BlockTitle>
-              <Trans>Block</Trans>
-            </BlockTitle>
-          }
-        >
-          <Alert severity="warning">
-            <Trans>Block with hash {headerHash} does not exist.</Trans>
-          </Alert>
-        </Card>
-      </>
+      <Card
+        title={
+          <BlockTitle>
+            <Trans>Block</Trans>
+          </BlockTitle>
+        }
+      >
+        <Alert severity="warning">
+          <Trans>Block with hash {headerHash} does not exist.</Trans>
+        </Alert>
+      </Card>
     );
   }
 
@@ -177,7 +166,7 @@ export default function Block() {
     {
       name: <Trans>Timestamp</Trans>,
       value: blockRecord.timestamp
-        ? unix_to_short_date(blockRecord.timestamp)
+        ? moment(blockRecord.timestamp * 1000).format('LLL')
         : null,
       tooltip: (
         <Trans>
@@ -254,15 +243,35 @@ export default function Block() {
     },
     {
       name: <Trans>Farmer Puzzle Hash</Trans>,
-      value: currencyCode
-        ? toBech32m(blockRecord.farmerPuzzleHash, currencyCode.toLowerCase())
-        : '',
+      value: (
+        <Link
+          target="_blank"
+          href={`https://alltheblocks.net/bpx/puzzlehash/${blockRecord.farmerPuzzleHash}`}
+        >
+          {currencyCode
+            ? toBech32m(
+                blockRecord.farmerPuzzleHash,
+                currencyCode.toLowerCase(),
+              )
+            : ''}
+        </Link>
+      ),
     },
     {
       name: <Trans>Pool Puzzle Hash</Trans>,
-      value: currencyCode
-        ? toBech32m(blockRecord.poolPuzzleHash, currencyCode.toLowerCase())
-        : '',
+      value: (
+        <Link
+          target="_blank"
+          href={`https://alltheblocks.net/bpx/puzzlehash/${blockRecord.poolPuzzleHash}`}
+        >
+          {currencyCode
+            ? toBech32m(
+                blockRecord.poolPuzzleHash,
+                currencyCode.toLowerCase(),
+              )
+            : ''}
+        </Link>
+      ),
     },
     {
       name: <Trans>Plot Id</Trans>,
@@ -298,8 +307,7 @@ export default function Block() {
   ];
 
   return (
-    <>
-      <DashboardTitle><Trans>Block</Trans></DashboardTitle>
+    <LayoutDashboardSub>
       <Card
         title={
           <Back variant="h5">
@@ -321,6 +329,7 @@ export default function Block() {
             </Button>
           </Flex>
         }
+        transparent
       >
         <TableContainer component={Paper}>
           <Table>
@@ -340,6 +349,6 @@ export default function Block() {
           </Table>
         </TableContainer>
       </Card>
-    </>
+    </LayoutDashboardSub>
   );
 }

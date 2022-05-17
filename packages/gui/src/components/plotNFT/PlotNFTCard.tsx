@@ -19,19 +19,18 @@ import {
 } from '@bpx/core';
 import {
   Box,
-  Button,
   Grid,
   Card,
   CardContent,
   Typography,
   MenuItem,
   ListItemIcon,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   Delete as DeleteIcon,
   Link as LinkIcon,
   Payment as PaymentIcon,
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import { Plot as PlotIcon } from '@bpx/icons';
 import { useDeleteUnconfirmedTransactionsMutation } from '@bpx/api-react';
 import type PlotNFT from '../../types/PlotNFT';
@@ -61,7 +60,7 @@ const StyledCardContent = styled(CardContent)`
 
 const StyledSyncingFooter = styled(CardContent)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#515151' : '#F6F6F6'};
+    theme.palette.mode === 'dark' ? '#515151' : '#F6F6F6'};
   padding: 2rem 3rem;
   text-align: center;
   borer-top: 1px solid #d8d6d6;
@@ -84,6 +83,7 @@ export default function PlotNFTCard(props: Props) {
         poolConfig: { launcherId, poolUrl },
         pointsFound24H,
         pointsAcknowledged24H,
+        plotCount,
       },
       poolWalletStatus: { walletId },
     },
@@ -99,7 +99,7 @@ export default function PlotNFTCard(props: Props) {
 
   const navigate = useNavigate();
   const openDialog = useOpenDialog();
-  const { isSelfPooling, isSynced, plots, balance } = usePlotNFTDetails(nft);
+  const { isSelfPooling, isSynced, balance } = usePlotNFTDetails(nft);
   const totalPointsFound24 = pointsFound24H.reduce(
     (accumulator, item) => accumulator + item[1],
     0,
@@ -155,10 +155,8 @@ export default function PlotNFTCard(props: Props) {
     {
       key: 'plotsCount',
       label: <Trans>Number of Plots</Trans>,
-      value: plots ? (
-        <FormatLargeNumber value={plots.length} />
-      ) : (
-        <Loading size="small" />
+      value: (
+        <FormatLargeNumber value={plotCount} />
       ),
     },
     !isSelfPooling && {

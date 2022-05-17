@@ -3,7 +3,7 @@ import { useFormContext } from 'react-hook-form';
 import { Wallet, WalletType, type CATToken } from '@bpx/api';
 import { useGetCatListQuery, useGetWalletsQuery } from '@bpx/api-react';
 import { Trans } from '@lingui/macro';
-import { FormControl, InputLabel, MenuItem } from '@material-ui/core';
+import { FormControl, InputLabel, MenuItem } from '@mui/material';
 import { Select } from '@bpx/core';
 import type OfferEditorRowData from './OfferEditorRowData';
 

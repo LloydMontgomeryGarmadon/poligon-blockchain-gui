@@ -6,12 +6,11 @@ import {
   DialogActions,
   TextField,
   Typography,
-  Button,
-} from '@material-ui/core';
+} from '@mui/material';
 import { Trans, t } from '@lingui/macro';
 import { PassphrasePromptReason } from '@bpx/api';
 import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@bpx/api-react';
-import { Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@bpx/core';
+import { Button, Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@bpx/core';
 
 type Props = {
   reason: PassphrasePromptReason;
