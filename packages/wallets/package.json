@@ -53,7 +53,7 @@
     "@babel/preset-env": "7.16.8",
     "@babel/preset-react": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
-    "@chia/api-react": "1.0.0",
+    "@bpx/api-react": "1.0.0",
     "@lingui/cli": "3.13.0",
     "@lingui/core": "3.13.0",
     "@lingui/react": "3.13.0",
