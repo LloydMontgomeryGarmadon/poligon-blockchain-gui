@@ -15,7 +15,7 @@ describe('units', () => {
     it('gets unit of coloured coin', () => {
       const result = units.getUnit('colouredcoin');
 
-      expect(result).toBe(1e-9);
+      expect(result).toBe(1e-6);
     });
     it('supports uppercase characters', () => {
       const result = units.getUnit('CHIA');
@@ -35,7 +35,7 @@ describe('units', () => {
     it('gets unit of coloured coin using alias', () => {
       const result = units.getUnit('cc');
 
-      expect(result).toBe(1e-9);
+      expect(result).toBe(1e-6);
     });
     it('throws an error if unit is not supported', () => {
       try {
@@ -67,7 +67,7 @@ describe('units', () => {
 
       expect(result).toEqual({
         format: '{amount} CC',
-        fractionDigits: 3,
+        fractionDigits: 6,
       });
     });
     it('throws an error if unit is not supported', () => {

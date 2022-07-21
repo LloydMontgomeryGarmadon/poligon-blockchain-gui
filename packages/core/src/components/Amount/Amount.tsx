@@ -77,7 +77,7 @@ export default function Amount(props: AmountProps) {
           spellCheck: false,
           inputComponent: NumberFormatCustom as any,
           inputProps: {
-            decimalScale: isChiaCurrency ? 12 : 3,
+            decimalScale: isChiaCurrency ? 12 : 6,
           },
           endAdornment: (
             <InputAdornment position="end">{currencyCode}</InputAdornment>

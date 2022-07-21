@@ -1,7 +1,7 @@
 const units = {
   chia: 1,
   mojo: 1 / 1e12,
-  colouredcoin: 1 / 1e9,
+  colouredcoin: 1 / 1e6,
 };
 
 const aliases = {
@@ -21,7 +21,7 @@ const display = {
   },
   colouredcoin: {
     format: '{amount} CC',
-    fractionDigits: 3,
+    fractionDigits: 6,
   },
 };
 

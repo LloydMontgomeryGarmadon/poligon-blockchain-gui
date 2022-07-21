@@ -22,7 +22,7 @@ const display: {
   },
   cat: {
     format: '{amount} TOKEN',
-    fractionDigits: 3,
+    fractionDigits: 6,
   },
 };
 
