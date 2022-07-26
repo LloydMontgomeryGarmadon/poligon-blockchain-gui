@@ -15,7 +15,6 @@ import {
   catToMojo,
   useIsSimulator,
   useCurrencyCode,
-  toBech32m,
   getTransactionResult,
   TooltipIcon,
 } from '@bpx/core';
@@ -23,7 +22,7 @@ import {
   useSpendCATMutation,
   useFarmBlockMutation,
 } from '@bpx/api-react';
-import { SyncingStatus } from '@bpx/api';
+import { SyncingStatus, toBech32m } from '@bpx/api';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import { Grid, Typography } from '@mui/material';

@@ -1,6 +1,6 @@
+import { toBech32m, fromBech32m } from '@bpx/api';
 import type { PlotNFT } from '@bpx/api';
 import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@bpx/api-react';
-import { toBech32m, fromBech32m } from '@bpx/core';
 
 export default function usePayoutAddress(nft: PlotNFT): {
   loading: boolean;

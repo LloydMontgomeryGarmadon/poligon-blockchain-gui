@@ -2,12 +2,18 @@ import React, { useMemo, useState } from 'react';
 import { WalletType } from '@bpx/api';
 import { useSetCATNameMutation } from '@bpx/api-react';
 import { Trans } from '@lingui/macro';
-import { Box, Typography, Switch, CircularProgress, TextField } from '@mui/material';
+import {
+  Box,
+  Typography,
+  Switch,
+  CircularProgress,
+  TextField,
+} from '@mui/material';
 import { Tooltip, CardListItem, Flex, Link, useShowError } from '@bpx/core';
 
 export type WalletTokenCardProps = {
   item: {
-    type: 'WALLET',
+    type: 'WALLET';
     walletType: WalletType;
     hidden: boolean;
     name: string;
@@ -19,14 +25,7 @@ export type WalletTokenCardProps = {
 
 export default function WalletTokenCard(props: WalletTokenCardProps) {
   const {
-    item: {
-      type,
-      walletType,
-      walletId,
-      assetId,
-      hidden,
-      name,
-    },
+    item: { type, walletType, walletId, assetId, hidden, name },
     onHide,
     onShow,
   } = props;
@@ -103,21 +102,32 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
   return (
     <CardListItem>
       <Flex gap={1} alignItems="center" width="100%">
-        <Flex flexDirection="column" gap={0.5} flexGrow={1} flexBasis={0} minWidth={0}>
+        <Flex
+          flexDirection="column"
+          gap={0.5}
+          flexGrow={1}
+          flexBasis={0}
+          minWidth={0}
+        >
           {walletType === WalletType.STANDARD_WALLET ? (
             <Typography noWrap>{name}</Typography>
           ) : (
             <TextField
               label="Name"
               defaultValue={currentName}
-              onBlur={(event) => handleRename(event.target.value)}
+              onBlur={event => handleRename(event.target.value)}
               size="small"
               fullWidth
               hiddenLabel
             />
           )}
           {(!!subTitle || assetId) && (
-            <Flex flexDirection="column" flexGrow={1} flexBasis={0} minWidth={0}>
+            <Flex
+              flexDirection="column"
+              flexGrow={1}
+              flexBasis={0}
+              minWidth={0}
+            >
               {!!subTitle && (
                 <Tooltip title={subTitle} copyToClipboard>
                   <Typography color="textSecondary" variant="caption" noWrap>
@@ -128,13 +138,15 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
             </Flex>
           )}
         </Flex>
-        <Box width="60px" textAlign="center">
-          {isLoading ? (
-            <CircularProgress size={32} />
-          ) : (
-            <Switch checked={!hidden} onChange={handleVisibleChange} />
-          )}
-        </Box>
+        {walletType !== WalletType.STANDARD_WALLET && (
+          <Box width="60px" textAlign="center">
+            {isLoading ? (
+              <CircularProgress size={32} />
+            ) : (
+              <Switch checked={!hidden} onChange={handleVisibleChange} />
+            )}
+          </Box>
+        )}
       </Flex>
     </CardListItem>
   );
