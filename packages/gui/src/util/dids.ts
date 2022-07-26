@@ -8,7 +8,7 @@ function stripHexPrefix(hex: string) {
 }
 
 export function didToDIDId(did: string): string {
-  return toBech32m(stripHexPrefix(did), 'did:chia:');
+  return toBech32m(stripHexPrefix(did), 'did:bpx:');
 }
 
 export function didFromDIDId(didId: string): string | undefined {
