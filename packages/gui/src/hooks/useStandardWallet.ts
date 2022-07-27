@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import type { Wallet } from '@bpx/api';
 import { WalletType } from '@bpx/api';
 import { useGetWalletsQuery, useGetWalletBalanceQuery } from '@bpx/api-react';
-import WalletType from '../constants/WalletType';
 
 export default function useStandardWallet(): {
   loading: boolean;

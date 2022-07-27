@@ -7,7 +7,7 @@ import {
   useCreateNewPoolWalletMutation,
 } from '@bpx/api-react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { Back, useShowError, ButtonLoading, Flex, Form, toBech32m } from '@bpx/core';
+import { Back, useShowError, ButtonLoading, Flex, Form } from '@bpx/core';
 import PlotAddChoosePlotter from './PlotAddChoosePlotter';
 import PlotAddChooseSize from './PlotAddChooseSize';
 import PlotAddNumberOfPlots from './PlotAddNumberOfPlots';
