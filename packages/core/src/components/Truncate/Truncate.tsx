@@ -28,7 +28,10 @@ export function truncateValue(
     return children;
   }
 
-  const parts = children.toString().split(splitSeparator);
+  const stringValue = children.toString();
+
+  const parts = stringValue.split(splitSeparator);
+
   if (!parts.length) {
     return children;
   }

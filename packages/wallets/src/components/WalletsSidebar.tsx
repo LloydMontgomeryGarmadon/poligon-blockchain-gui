@@ -47,7 +47,11 @@ export default function WalletsSidebar() {
   const navigate = useNavigate();
   const { walletId } = useParams();
   const { data: wallets, isLoading } = useGetWalletsQuery();
-  const { isHidden, hidden, isLoading: isLoadingHiddenWallet } = useHiddenWallet();
+  const {
+    isHidden,
+    hidden,
+    isLoading: isLoadingHiddenWallet,
+  } = useHiddenWallet();
 
   function handleSelectWallet(walletId: number) {
     navigate(`/dashboard/wallets/${walletId}`);
@@ -61,8 +65,12 @@ export default function WalletsSidebar() {
     const orderedWallets = orderBy(wallets, ['type', 'name'], ['asc', 'asc']);
 
     return orderedWallets
-      .filter(wallet => [WalletType.STANDARD_WALLET, WalletType.CAT].includes(wallet.type) && !isHidden(wallet.id))
-      .map((wallet) => {
+      .filter(
+        wallet =>
+          [WalletType.STANDARD_WALLET, WalletType.CAT].includes(wallet.type) &&
+          !isHidden(wallet.id)
+      )
+      .map(wallet => {
         const primaryTitle = getWalletPrimaryTitle(wallet);
 
         function handleSelect() {
@@ -70,10 +78,18 @@ export default function WalletsSidebar() {
         }
 
         return (
-          <CardListItem onSelect={handleSelect} key={wallet.id} selected={wallet.id === Number(walletId)}>
+          <CardListItem
+            onSelect={handleSelect}
+            key={wallet.id}
+            selected={wallet.id === Number(walletId)}
+          >
             <Flex flexDirection="column">
               <Typography>{primaryTitle}</Typography>
-              <WalletIcon wallet={wallet} color="textSecondary" variant="caption" />
+              <WalletIcon
+                wallet={wallet}
+                color="textSecondary"
+                variant="caption"
+              />
             </Flex>
           </CardListItem>
         );
