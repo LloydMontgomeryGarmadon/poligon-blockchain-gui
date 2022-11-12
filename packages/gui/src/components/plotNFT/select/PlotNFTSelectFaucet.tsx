@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Button, Flex, CardStep, useCurrencyCode } from '@bpx/core';
+import { Button, Flex, CardStep, useCurrencyCode } from '@floteo/core';
 import { Box, Typography } from '@mui/material';
 import useOpenExternal from '../../../hooks/useOpenExternal';
 
@@ -15,7 +15,7 @@ export default function PlotNFTSelectFaucet(props: Props) {
   const openExternal = useOpenExternal();
 
   function handleClick() {
-    openExternal('https://faucet.bpxcoin.cc/');
+    openExternal('https://faucet.floteoblockchain.pl/');
   }
 
   return (

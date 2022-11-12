@@ -8,10 +8,10 @@ import {
   Card,
   FormatBytes,
   FormatConnectionStatus,
-} from '@bpx/core';
-import { useGetFarmerFullNodeConnectionsQuery, useIsServiceRunningQuery } from '@bpx/api-react';
-import type { Connection } from '@bpx/api';
-import { ServiceName } from '@bpx/api';
+} from '@floteo/core';
+import { useGetFarmerFullNodeConnectionsQuery, useIsServiceRunningQuery } from '@floteo/api-react';
+import type { Connection } from '@floteo/api';
+import { ServiceName } from '@floteo/api';
 import FarmCloseConnection from './FarmCloseConnection';
 
 const StyledIconButton = styled(IconButton)`

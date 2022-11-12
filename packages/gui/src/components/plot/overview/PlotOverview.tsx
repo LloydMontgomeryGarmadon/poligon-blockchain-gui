@@ -1,6 +1,6 @@
 import React from 'react';
-import { Loading, Flex } from '@bpx/core';
-import { useGetThrottlePlotQueueQuery, useGetTotalHarvestersSummaryQuery } from '@bpx/api-react';
+import { Loading, Flex } from '@floteo/core';
+import { useGetThrottlePlotQueueQuery, useGetTotalHarvestersSummaryQuery } from '@floteo/api-react';
 import { Grid } from '@mui/material';
 import PlotHero from './PlotOverviewHero';
 import PlotOverviewPlots from './PlotOverviewPlots';

@@ -1,5 +1,5 @@
-import { Farmer } from '@bpx/api';
-import type { Plot, FarmerConnection, RewardTargets, SignagePoint, Pool, FarmingInfo } from '@bpx/api';
+import { Farmer } from '@floteo/api';
+import type { Plot, FarmerConnection, RewardTargets, SignagePoint, Pool, FarmingInfo } from '@floteo/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 

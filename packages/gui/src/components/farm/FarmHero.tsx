@@ -2,8 +2,8 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
 import { Divider, Grid, Typography } from '@mui/material';
-import { Button, CardHero, Link, useOpenDialog } from '@bpx/core';
-import { Farming } from '@bpx/icons';
+import { Button, CardHero, Link, useOpenDialog } from '@floteo/core';
+import { Farming } from '@floteo/icons';
 import PlotAddDirectoryDialog from '../plot/PlotAddDirectoryDialog';
 
 export default function FarmHero() {

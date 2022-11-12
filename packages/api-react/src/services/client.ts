@@ -1,4 +1,4 @@
-import { ConnectionState, ServiceName } from '@bpx/api';
+import { ConnectionState, ServiceName } from '@floteo/api';
 import api, { baseQuery } from '../api';
 
 const apiWithTag = api.enhanceEndpoints({addTagTypes: []});

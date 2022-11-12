@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
-import { useGetBlockchainStateQuery, useGetTotalHarvestersSummaryQuery } from '@bpx/api-react';
+import { useGetBlockchainStateQuery, useGetTotalHarvestersSummaryQuery } from '@floteo/api-react';
 import moment from 'moment';
-import { State, CardSimple } from '@bpx/core';
+import { State, CardSimple } from '@floteo/core';
 import FullNodeState from '../../../constants/FullNodeState';
 import useFullNodeState from '../../../hooks/useFullNodeState';
 import FarmCardNotAvailable from './FarmCardNotAvailable';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tab, Typography } from '@mui/material';
-import { Flex } from '@bpx/core';
+import { Flex } from '@floteo/core';
 import Wallet from "../../types/Wallet";
 import WalletName from "../../constants/WalletName";
 import useTrans from '../../hooks/useTrans';

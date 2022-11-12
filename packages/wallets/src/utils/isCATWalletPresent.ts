@@ -1,5 +1,5 @@
-import type { Wallet, CATToken } from '@bpx/api';
-import { WalletType } from '@bpx/api';
+import type { Wallet, CATToken } from '@floteo/api';
+import { WalletType } from '@floteo/api';
 
 export default function isCATWalletPresent(wallets: Wallet[], token: CATToken): boolean {
   return !!wallets?.find((wallet) => {

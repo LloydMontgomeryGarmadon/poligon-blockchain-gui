@@ -18,7 +18,7 @@ import {
   useShowError,
   useOpenExternal,
   mojoToChiaLocaleString,
-} from '@bpx/core';
+} from '@floteo/core';
 import {
   Box,
   Button,
@@ -38,8 +38,8 @@ import {
   OfferTradeRecord,
   OfferCoinOfInterest,
   WalletType,
-} from '@bpx/api';
-import { useCheckOfferValidityMutation } from '@bpx/api-react';
+} from '@floteo/api';
+import { useCheckOfferValidityMutation } from '@floteo/api-react';
 import { colorForOfferState, displayStringForOfferState } from './utils';
 import useAcceptOfferHook from '../../hooks/useAcceptOfferHook';
 import OfferHeader from './OfferHeader';
@@ -217,7 +217,7 @@ function OfferDetails(props: OfferDetailsProps) {
               onClick={(event: React.SyntheticEvent) =>
                 handleLinkClicked(
                   event,
-                  `https://alltheblocks.net/bpx/coin/${coin.parentCoinInfo}`,
+                  `https://alltheblocks.net/floteo/coin/${coin.parentCoinInfo}`,
                 )
               }
             >
@@ -245,7 +245,7 @@ function OfferDetails(props: OfferDetailsProps) {
               onClick={(event: React.SyntheticEvent) =>
                 handleLinkClicked(
                   event,
-                  `https://alltheblocks.net/bpx/puzzlehash/${coin.puzzleHash}`,
+                  `https://alltheblocks.net/floteo/puzzlehash/${coin.puzzleHash}`,
                 )
               }
             >

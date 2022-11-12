@@ -16,8 +16,8 @@ import {
   ListItemText,
   Typography,
 } from '@mui/material';
-import { useShowError, Button, Suspender } from '@bpx/core';
-import { useAddPlotDirectoryMutation, useRemovePlotDirectoryMutation, useGetPlotDirectoriesQuery } from '@bpx/api-react';
+import { useShowError, Button, Suspender } from '@floteo/core';
+import { useAddPlotDirectoryMutation, useRemovePlotDirectoryMutation, useGetPlotDirectoriesQuery } from '@floteo/api-react';
 import useSelectDirectory from '../../hooks/useSelectDirectory';
 
 type Props = {

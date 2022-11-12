@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { Back, Flex, LayoutDashboardSub, Loading } from '@bpx/core';
-import type { NFTInfo, Wallet } from '@bpx/api';
-import { useGetNFTWallets } from '@bpx/api-react';
+import { Back, Flex, LayoutDashboardSub, Loading } from '@floteo/core';
+import type { NFTInfo, Wallet } from '@floteo/api';
+import { useGetNFTWallets } from '@floteo/api-react';
 import { Box, Typography } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import NFTPreview from '../NFTPreview';

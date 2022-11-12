@@ -8,7 +8,7 @@ import {
   InputAdornment,
   TextField,
 } from '@mui/material';
-import { Button, CopyToClipboard, DialogActions, Loading, Link, Flex } from '@bpx/core';
+import { Button, CopyToClipboard, DialogActions, Loading, Link, Flex } from '@floteo/core';
 import useWallet from '../../hooks/useWallet';
 
 type Props = {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Flex } from '@bpx/core';
-import { type NFTInfo } from '@bpx/api';
+import { Flex } from '@floteo/core';
+import { type NFTInfo } from '@floteo/api';
 import { Dialog, Paper } from '@mui/material';
 import NFTPreview from './NFTPreview';
 import { styled } from '@mui/styles';

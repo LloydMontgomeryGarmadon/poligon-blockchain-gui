@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, Fee, Back, ButtonLoading, Card, Flex, Form, TextField } from '@bpx/core';
+import { AlertDialog, Fee, Back, ButtonLoading, Card, Flex, Form, TextField } from '@floteo/core';
 import { Box, Grid } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
 import { create_cc_for_colour_action } from '../../../modules/message';
-import { chiaToMojo } from '@bpx/core';
+import { chiaToMojo } from '@floteo/core';
 import { openDialog } from '../../../modules/dialog';
 import config from '../../../config/config';
 

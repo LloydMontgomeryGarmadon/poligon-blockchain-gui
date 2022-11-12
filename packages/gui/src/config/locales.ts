@@ -2,8 +2,8 @@ import { i18n } from '@lingui/core';
 import {
   en,
 } from 'make-plural/plurals';
-import * as coreLocales from '@bpx/core/src/locales';
-import * as walletsLocales from '@bpx/wallets/src/locales';
+import * as coreLocales from '@floteo/core/src/locales';
+import * as walletsLocales from '@floteo/wallets/src/locales';
 import * as guiLocales from '../locales';
 
 export const defaultLocale = 'en-US';

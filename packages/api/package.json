@@ -1,8 +1,8 @@
 {
-  "name": "@bpx/api",
-  "author": "BPX Network <hello@bpxcoin.cc> (https://bpxcoin.cc/)",
-  "description": "BPX API Library",
-  "productName": "BPX Blockchain",
+  "name": "@floteo/api",
+  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://floteoblockchain.pl/)",
+  "description": "Floteo API Library",
+  "productName": "Floteo Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import type { NFTInfo } from '@bpx/api';
-import { useGetNFTsQuery } from '@bpx/api-react';
+import type { NFTInfo } from '@floteo/api';
+import { useGetNFTsQuery } from '@floteo/api-react';
 
 type UseFetchNFTsResult = {
   nfts: NFTInfo[];

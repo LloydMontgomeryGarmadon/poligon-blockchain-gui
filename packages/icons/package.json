@@ -1,8 +1,8 @@
 {
-  "name": "@bpx/icons",
-  "author": "BPX Network <hello@bpxcoin.cc> (https://bpxcoin.cc/)",
-  "description": "BPX Icons Library",
-  "productName": "BPX Blockchain",
+  "name": "@floteo/icons",
+  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://floteoblockchain.pl/)",
+  "description": "Floteo Icons Library",
+  "productName": "Floteo Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

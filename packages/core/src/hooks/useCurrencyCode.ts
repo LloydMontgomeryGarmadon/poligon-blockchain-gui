@@ -1,4 +1,4 @@
-import { useGetNetworkInfoQuery } from '@bpx/api-react';
+import { useGetNetworkInfoQuery } from '@floteo/api-react';
 
 export default function useCurrencyCode(): string | undefined {
   const { data: networkInfo, isLoading } = useGetNetworkInfoQuery();

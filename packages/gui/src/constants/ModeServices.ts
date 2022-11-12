@@ -1,5 +1,5 @@
-import { ServiceName } from '@bpx/api';
-import { Mode } from '@bpx/core';
+import { ServiceName } from '@floteo/api';
+import { Mode } from '@floteo/core';
 
 export default {
   [Mode.WALLET]: [

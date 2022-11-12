@@ -1,7 +1,7 @@
 import React, { type ReactNode, useState } from 'react';
 import { Trans } from '@lingui/macro';
 import { Box, IconButton, InputBase } from '@mui/material';
-import { WalletType } from '@bpx/api';
+import { WalletType } from '@floteo/api';
 import {
   Button,
   useColorModeValue,
@@ -9,7 +9,7 @@ import {
   Flex,
   Tooltip,
   useTrans,
-} from '@bpx/core';
+} from '@floteo/core';
 import styled from 'styled-components';
 import { Add, KeyboardArrowDown, KeyboardArrowUp } from '@mui/icons-material';
 import { useToggle } from 'react-use';

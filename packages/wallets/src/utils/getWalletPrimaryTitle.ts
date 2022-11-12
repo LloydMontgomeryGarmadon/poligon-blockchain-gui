@@ -1,10 +1,10 @@
-import { WalletType } from '@bpx/api';
-import type { Wallet } from '@bpx/api';
+import { WalletType } from '@floteo/api';
+import type { Wallet } from '@floteo/api';
 
 export default function getWalletPrimaryTitle(wallet: Wallet): string {
   switch (wallet.type) {
     case WalletType.STANDARD_WALLET:
-      return 'BPX';
+      return 'FLO';
     default:
       return wallet.name;
   }

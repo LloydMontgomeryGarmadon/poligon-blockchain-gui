@@ -1,9 +1,9 @@
 import React, { useState, useEffect, ReactNode, useMemo } from 'react';
 import isElectron from 'is-electron';
 import { Trans } from '@lingui/macro';
-import { ConnectionState, ServiceHumanName, ServiceName, PassphrasePromptReason } from '@bpx/api';
-import { useCloseMutation, useGetStateQuery, useGetKeyringStatusQuery, useServices } from '@bpx/api-react';
-import { Flex, useSkipMigration, LayoutHero, LayoutLoading, useMode, useIsSimulator } from '@bpx/core';
+import { ConnectionState, ServiceHumanName, ServiceName, PassphrasePromptReason } from '@floteo/api';
+import { useCloseMutation, useGetStateQuery, useGetKeyringStatusQuery, useServices } from '@floteo/api-react';
+import { Flex, useSkipMigration, LayoutHero, LayoutLoading, useMode, useIsSimulator } from '@floteo/core';
 import { Typography, Collapse } from '@mui/material';
 import AppKeyringMigrator from './AppKeyringMigrator';
 import AppPassPrompt from './AppPassPrompt';

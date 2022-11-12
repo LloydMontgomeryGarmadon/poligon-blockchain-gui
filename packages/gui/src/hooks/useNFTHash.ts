@@ -1,4 +1,4 @@
-import type NFTInfo from '@bpx/api';
+import type NFTInfo from '@floteo/api';
 import useVerifyURIHash from './useVerifyURIHash';
 
 export default function useNFTHash(nft: NFTInfo) {

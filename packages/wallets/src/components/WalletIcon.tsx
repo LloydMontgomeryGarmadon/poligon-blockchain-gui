@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCurrencyCode } from '@bpx/core';
+import { useCurrencyCode } from '@floteo/core';
 import styled from 'styled-components';
-import { useGetCatListQuery } from '@bpx/api-react';
-import { WalletType, type Wallet } from '@bpx/api';
+import { useGetCatListQuery } from '@floteo/api-react';
+import { WalletType, type Wallet } from '@floteo/api';
 import { Typography, type TypographyProps } from '@mui/material';
 
 const StyledSymbol = styled(Typography)`

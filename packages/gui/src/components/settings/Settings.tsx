@@ -11,8 +11,8 @@ import {
   useOpenDialog,
   useSkipMigration,
   LayoutDashboardSub,
-} from '@bpx/core';
-import { useGetKeyringStatusQuery } from '@bpx/api-react';
+} from '@floteo/core';
+import { useGetKeyringStatusQuery } from '@floteo/api-react';
 import { Grid, Typography, Box, Tooltip, Tab, Tabs } from '@mui/material';
 import {
   Help as HelpIcon,

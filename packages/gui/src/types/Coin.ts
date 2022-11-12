@@ -1,4 +1,4 @@
-import { WalletType } from '@bpx/api';
+import { WalletType } from '@floteo/api';
 
 type Coin = {
   confirmed_block_index: number;

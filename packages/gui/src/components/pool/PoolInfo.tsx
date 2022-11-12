@@ -2,7 +2,7 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { Typography } from '@mui/material';
 import type PoolInfoType from '../../types/PoolInfo';
-import { CardKeyValue, Flex, Link } from '@bpx/core';
+import { CardKeyValue, Flex, Link } from '@floteo/core';
 
 type Props = {
   poolInfo: PoolInfoType;

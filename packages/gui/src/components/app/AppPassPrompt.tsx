@@ -14,9 +14,9 @@ import {
   KeyboardCapslock as KeyboardCapslockIcon,
   Visibility as VisibilityIcon,
 } from '@mui/icons-material';
-import { PassphrasePromptReason } from '@bpx/api';
-import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@bpx/api-react';
-import { Button, Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@bpx/core';
+import { PassphrasePromptReason } from '@floteo/api';
+import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@floteo/api-react';
+import { Button, Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@floteo/core';
 
 type Props = {
   reason: PassphrasePromptReason;

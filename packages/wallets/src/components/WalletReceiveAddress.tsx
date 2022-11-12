@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Button, CopyToClipboard, Card, Loading, Flex, TooltipIcon } from '@bpx/core';
-import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@bpx/api-react';
+import { Button, CopyToClipboard, Card, Loading, Flex, TooltipIcon } from '@floteo/core';
+import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@floteo/api-react';
 import {
   Box,
   TextField,

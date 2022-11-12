@@ -1,4 +1,4 @@
-import { ServiceName } from '@bpx/api';
+import { ServiceName } from '@floteo/api';
 import useService, { ServiceState } from './useService';
 
 type Options = {

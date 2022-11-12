@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Trans } from '@lingui/macro';
 import { useToggle } from 'react-use';
-import { Accordion, Flex, FormatBytes, Tooltip, FormatLargeNumber } from '@bpx/core';
-import { useGetHarvesterQuery } from '@bpx/api-react';
+import { Accordion, Flex, FormatBytes, Tooltip, FormatLargeNumber } from '@floteo/core';
+import { useGetHarvesterQuery } from '@floteo/api-react';
 import { Typography, Chip } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 import { Box, Tab, Tabs } from '@mui/material';

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useGetLoggedInFingerprintQuery, useGetPlottersQuery } from '@bpx/api-react';
-import { useCurrencyCode, Suspender } from '@bpx/core';
+import { useGetLoggedInFingerprintQuery, useGetPlottersQuery } from '@floteo/api-react';
+import { useCurrencyCode, Suspender } from '@floteo/core';
 import PlotAddConfig from '../../../types/PlotAdd';
 import useUnconfirmedPlotNFTs from '../../../hooks/useUnconfirmedPlotNFTs';
 import PlotAddForm from './PlotAddForm';

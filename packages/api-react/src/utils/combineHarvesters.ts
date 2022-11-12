@@ -1,4 +1,4 @@
-import type { Plot } from '@bpx/api';
+import type { Plot } from '@floteo/api';
 
 export default function combineHarvesters(harvesters): {
   plots: Plot[];

@@ -1,14 +1,14 @@
 import React, { useMemo } from 'react';
 import { t, Trans } from '@lingui/macro';
-import type { NFTAttribute } from '@bpx/api';
-import { useGetNFTInfoQuery } from '@bpx/api-react';
+import type { NFTAttribute } from '@floteo/api';
+import { useGetNFTInfoQuery } from '@floteo/api-react';
 import {
   CopyToClipboard,
   Flex,
   Loading,
   TooltipIcon,
   truncateValue,
-} from '@bpx/core';
+} from '@floteo/core';
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useNFTMetadata from '../../hooks/useNFTMetadata';

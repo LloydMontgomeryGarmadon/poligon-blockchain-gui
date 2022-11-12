@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
-import { CardListItem, Flex, Truncate } from '@bpx/core';
+import { CardListItem, Flex, Truncate } from '@floteo/core';
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import styled from 'styled-components';
 import { orderBy } from 'lodash';
 
-import { useGetDIDQuery, useGetWalletsQuery } from '@bpx/api-react';
-import { WalletType } from '@bpx/api';
+import { useGetDIDQuery, useGetWalletsQuery } from '@floteo/api-react';
+import { WalletType } from '@floteo/api';
 import { didToDIDId } from '../../util/dids';
 
 const StyledRoot = styled(Box)`

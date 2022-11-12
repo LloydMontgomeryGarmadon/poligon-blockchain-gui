@@ -8,10 +8,10 @@ import {
   useOpenDialog,
   useSerializedNavigationState,
   useShowError,
-} from '@bpx/core';
+} from '@floteo/core';
 import { Button, Grid, Typography } from '@mui/material';
-import { useGetOfferSummaryMutation } from '@bpx/api-react';
-import { type OfferSummaryRecord } from '@bpx/api';
+import { useGetOfferSummaryMutation } from '@floteo/api-react';
+import { type OfferSummaryRecord } from '@floteo/api';
 import OfferDataEntryDialog from './OfferDataEntryDialog';
 import { offerContainsAssetOfType } from './utils';
 import fs, { Stats } from 'fs';

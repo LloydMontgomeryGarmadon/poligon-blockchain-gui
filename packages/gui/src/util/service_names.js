@@ -1,10 +1,10 @@
-export const service_wallet = 'bpx_wallet';
-export const service_full_node = 'bpx_full_node';
-export const service_farmer = 'bpx_farmer';
-export const service_harvester = 'bpx_harvester';
-export const service_simulator = 'bpx_full_node_simulator';
+export const service_wallet = 'floteo_wallet';
+export const service_full_node = 'floteo_full_node';
+export const service_farmer = 'floteo_farmer';
+export const service_harvester = 'floteo_harvester';
+export const service_simulator = 'floteo_full_node_simulator';
 export const service_daemon = 'daemon';
-export const service_plotter = 'bpx_plotter';
+export const service_plotter = 'floteo_plotter';
 
 // Corresponds with outbound_message.py NodeTypes
 export const service_connection_types = {

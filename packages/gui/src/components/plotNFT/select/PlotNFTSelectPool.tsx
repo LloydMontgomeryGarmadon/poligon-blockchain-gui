@@ -6,7 +6,7 @@ import React, {
 } from 'react';
 import { t, Trans } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { ButtonLoading, Loading, Flex, Form, Back, chiaToMojo } from '@bpx/core';
+import { ButtonLoading, Loading, Flex, Form, Back, chiaToMojo } from '@floteo/core';
 import PlotNFTSelectBase from './PlotNFTSelectBase';
 import normalizeUrl from '../../../util/normalizeUrl';
 import getPoolInfo from '../../../util/getPoolInfo';

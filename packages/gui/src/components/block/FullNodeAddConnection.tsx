@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Button, DialogActions, Flex, Form, TextField } from '@bpx/core';
-import { useOpenFullNodeConnectionMutation } from '@bpx/api-react';
+import { Button, DialogActions, Flex, Form, TextField } from '@floteo/core';
+import { useOpenFullNodeConnectionMutation } from '@floteo/api-react';
 import { useForm } from 'react-hook-form';
 import { Alert, Dialog, DialogTitle, DialogContent } from '@mui/material';
 

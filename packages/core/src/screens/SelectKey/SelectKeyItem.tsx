@@ -17,7 +17,7 @@ import {
   useCheckDeleteKeyMutation,
   useDeleteKeyMutation,
   useGetKeyringStatusQuery,
-} from '@bpx/api-react';
+} from '@floteo/api-react';
 import SelectKeyDetailDialog from './SelectKeyDetailDialog';
 import ConfirmDialog from '../../components/ConfirmDialog';
 import LoadingOverlay from '../../components/LoadingOverlay';

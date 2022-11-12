@@ -6,13 +6,13 @@ import {
   LayoutDashboard,
   Mode,
   useMode,
-} from '@bpx/core';
+} from '@floteo/core';
 import {
   WalletAdd,
   WalletImport,
   Wallets,
   WalletStatusHeader,
-} from '@bpx/wallets';
+} from '@floteo/wallets';
 import AppProviders from './AppProviders';
 import FullNode from '../fullNode/FullNode';
 import Block from '../block/Block';

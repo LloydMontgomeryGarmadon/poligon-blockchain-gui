@@ -7,7 +7,7 @@ import {
 } from '@mui/material';
 // import { shuffle } from 'lodash';
 import { useForm, useFieldArray } from 'react-hook-form';
-import { useAddKeyMutation, useLogInMutation } from '@bpx/api-react';
+import { useAddKeyMutation, useLogInMutation } from '@floteo/api-react';
 import { useNavigate } from 'react-router';
 import {
   AlertDialog,
@@ -19,8 +19,8 @@ import {
   Logo,
   useOpenDialog,
   useTrans
-} from '@bpx/core';
-import { english } from '@bpx/api';
+} from '@floteo/core';
+import { english } from '@floteo/api';
 import MnemonicPaste from './PasteMnemonic';
 
 /*
@@ -132,7 +132,7 @@ export default function WalletImport() {
           <Typography variant="subtitle1" align="center">
             <Trans>
               Enter the 24 word mnemonic that you have saved in order to restore
-              your BPX wallet.
+              your floteo wallet.
             </Trans>
           </Typography>
           <Grid container spacing={2}>

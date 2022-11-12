@@ -13,15 +13,15 @@ import {
   Form,
   useOpenDialog,
   useShowError,
-} from '@bpx/core';
-import { useCreateOfferForIdsMutation } from '@bpx/api-react';
+} from '@floteo/core';
+import { useCreateOfferForIdsMutation } from '@floteo/api-react';
 import { Grid } from '@mui/material';
 import type OfferEditorRowData from './OfferEditorRowData';
-import { WalletType } from '@bpx/api';
+import { WalletType } from '@floteo/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferEditorConfirmationDialog from './OfferEditorConfirmationDialog';
 import OfferLocalStorageKeys from './OfferLocalStorage';
-import { chiaToMojo, catToMojo } from '@bpx/core';
+import { chiaToMojo, catToMojo } from '@floteo/core';
 
 /* ========================================================================== */
 /*                                Offer Editor                                */

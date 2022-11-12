@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Trans, t } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { SyncingStatus } from '@bpx/api';
+import { SyncingStatus } from '@floteo/api';
 import {
   useExtendDerivationIndexMutation,
   useGetCurrentDerivationIndexQuery,
-} from '@bpx/api-react';
+} from '@floteo/api-react';
 import {
   AlertDialog,
   ButtonLoading,
@@ -13,8 +13,8 @@ import {
   Form,
   TextField,
   useOpenDialog,
-} from '@bpx/core';
-import { useWalletState } from '@bpx/wallets';
+} from '@floteo/core';
+import { useWalletState } from '@floteo/wallets';
 
 type FormData = {
   index: string;

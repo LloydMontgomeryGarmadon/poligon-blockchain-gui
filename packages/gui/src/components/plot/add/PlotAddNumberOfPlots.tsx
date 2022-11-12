@@ -8,7 +8,7 @@ import {
   Flex,
   Checkbox,
   TooltipIcon,
-} from '@bpx/core';
+} from '@floteo/core';
 import {
   Grid,
   FormControl,

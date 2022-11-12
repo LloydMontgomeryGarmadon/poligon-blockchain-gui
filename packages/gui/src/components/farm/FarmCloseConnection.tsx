@@ -1,4 +1,4 @@
-import { useCloseFarmerConnectionMutation } from '@bpx/api-react';
+import { useCloseFarmerConnectionMutation } from '@floteo/api-react';
 
 type Props = {
   nodeId: string;

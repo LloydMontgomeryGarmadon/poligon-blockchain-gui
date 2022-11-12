@@ -5,10 +5,10 @@ import {
   FormatBytes,
   Loading,
   Table,
-} from '@bpx/core';
+} from '@floteo/core';
 import { Tooltip } from '@mui/material';
-import { Connection, ServiceConnectionName } from '@bpx/api';
-import { useGetWalletConnectionsQuery } from '@bpx/api-react';
+import { Connection, ServiceConnectionName } from '@floteo/api';
+import { useGetWalletConnectionsQuery } from '@floteo/api-react';
 
 const cols = [
   {

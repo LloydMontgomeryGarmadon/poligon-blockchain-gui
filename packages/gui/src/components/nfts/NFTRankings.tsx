@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
-import type { NFTAttribute } from '@bpx/api';
+import type { NFTAttribute } from '@floteo/api';
 import { Trans } from '@lingui/macro';
-import { Flex } from '@bpx/core';
+import { Flex } from '@floteo/core';
 import { styled, useTheme } from '@mui/material/styles';
 import { Grid, Typography, LinearProgress } from '@mui/material';
 import isRankingAttribute from '../../util/isRankingAttribute';

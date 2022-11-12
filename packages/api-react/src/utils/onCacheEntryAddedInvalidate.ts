@@ -1,4 +1,4 @@
-import type { Service } from '@bpx/api';
+import type { Service } from '@floteo/api';
 
 type Invalidate = {
   command: string;

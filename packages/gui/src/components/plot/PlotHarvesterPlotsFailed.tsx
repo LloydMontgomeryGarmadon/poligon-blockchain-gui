@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { TableControlled } from '@bpx/core';
-import { type Plot } from '@bpx/api';
-import { useGetHarvesterPlotsInvalidQuery, useGetHarvesterQuery } from '@bpx/api-react';
+import { TableControlled } from '@floteo/core';
+import { type Plot } from '@floteo/api';
+import { useGetHarvesterPlotsInvalidQuery, useGetHarvesterQuery } from '@floteo/api-react';
 import { Typography } from '@mui/material';
 import PlotAction from './PlotAction';
 

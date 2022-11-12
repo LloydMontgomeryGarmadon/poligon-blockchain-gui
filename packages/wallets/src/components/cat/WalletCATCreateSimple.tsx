@@ -3,13 +3,13 @@ import { useRouteMatch, useNavigate } from 'react-router-dom';
 import { Trans, t } from '@lingui/macro';
 import { Grid } from '@mui/material';
 import { Add as AddIcon } from '@mui/icons-material';
-import { Back, Flex, Loading, useShowError } from '@bpx/core';
-import { useGetWalletsQuery, useAddCATTokenMutation, useGetCatListQuery } from '@bpx/api-react';
+import { Back, Flex, Loading, useShowError } from '@floteo/core';
+import { useGetWalletsQuery, useAddCATTokenMutation, useGetCatListQuery } from '@floteo/api-react';
 import WalletCreateCard from '../create/WalletCreateCard';
 import isCATWalletPresent from '../../utils/isCATWalletPresent';
-import type { CATToken } from '@bpx/api';
+import type { CATToken } from '@floteo/api';
 import useWalletState from '../../hooks/useWalletState';
-import { SyncingStatus } from '@bpx/api';
+import { SyncingStatus } from '@floteo/api';
 
 export default function WalletCATCreateSimple() {
   const navigate = useNavigate();

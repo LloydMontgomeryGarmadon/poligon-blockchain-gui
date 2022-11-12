@@ -7,9 +7,9 @@ import {
   useCheckOfferValidityMutation,
   useGetNFTInfoQuery,
   useGetNFTWallets,
-} from '@bpx/api-react';
-import type { Wallet } from '@bpx/api';
-import { OfferSummaryRecord, OfferTradeRecord } from '@bpx/api';
+} from '@floteo/api-react';
+import type { Wallet } from '@floteo/api';
+import { OfferSummaryRecord, OfferTradeRecord } from '@floteo/api';
 import {
   Back,
   Button,
@@ -26,7 +26,7 @@ import {
   useColorModeValue,
   useCurrencyCode,
   useShowError,
-} from '@bpx/core';
+} from '@floteo/core';
 import { Box, Divider, Grid, Typography } from '@mui/material';
 import { Warning as WarningIcon } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';
@@ -92,7 +92,7 @@ function NFTOfferSummaryRow(props: NFTOfferSummaryRowProps) {
         const infoDict = summaryInfo[key];
         let assetType: OfferAsset | undefined;
 
-        if (['bpx', 'tbpx'].includes(key.toLowerCase())) {
+        if (['flo', 'tflo'].includes(key.toLowerCase())) {
           assetType = OfferAsset.CHIA;
         } else if (infoDict?.type) {
           switch (infoDict.type.toLowerCase()) {

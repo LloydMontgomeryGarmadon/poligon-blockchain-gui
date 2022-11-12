@@ -1,6 +1,6 @@
-import { OfferTradeRecord } from '@bpx/api';
-import { useGetOfferDataMutation } from '@bpx/api-react';
-import { useShowSaveDialog } from '@bpx/core';
+import { OfferTradeRecord } from '@floteo/api';
+import { useGetOfferDataMutation } from '@floteo/api-react';
+import { useShowSaveDialog } from '@floteo/core';
 import fs from 'fs';
 import { suggestedFilenameForOffer } from '../components/offers/utils';
 import useAssetIdName from './useAssetIdName';

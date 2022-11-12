@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple } from '@bpx/core';
-import { useGetBlockchainStateQuery } from '@bpx/api-react';
+import { FormatLargeNumber, CardSimple } from '@floteo/core';
+import { useGetBlockchainStateQuery } from '@floteo/api-react';
 
 export default function FullNodeCardVDFSubSlotIterations() {
   const { data, isLoading, error } = useGetBlockchainStateQuery();

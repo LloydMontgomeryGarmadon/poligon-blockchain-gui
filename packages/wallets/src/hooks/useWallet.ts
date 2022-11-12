@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
-import { useGetWalletsQuery, useGetCatListQuery } from '@bpx/api-react';
-import { WalletType } from '@bpx/api';
-import type { Wallet } from '@bpx/api';
-import { useCurrencyCode } from '@bpx/core';
+import { useGetWalletsQuery, useGetCatListQuery } from '@floteo/api-react';
+import { WalletType } from '@floteo/api';
+import type { Wallet } from '@floteo/api';
+import { useCurrencyCode } from '@floteo/core';
 
 export default function useWallet(walletId?: number | string): {
   loading: boolean;

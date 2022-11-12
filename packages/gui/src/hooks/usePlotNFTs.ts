@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import type { PlotNFT } from '@bpx/api';
-import { useGetPlotNFTsQuery } from '@bpx/api-react';
+import type { PlotNFT } from '@floteo/api';
+import { useGetPlotNFTsQuery } from '@floteo/api-react';
 import useUnconfirmedPlotNFTs from './useUnconfirmedPlotNFTs';
 import PlotNFTExternal from 'types/PlotNFTExternal';
 

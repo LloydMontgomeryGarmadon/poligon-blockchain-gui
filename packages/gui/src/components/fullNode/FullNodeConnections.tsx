@@ -10,8 +10,8 @@ import {
   Table,
   IconButton,
   useOpenDialog,
-} from '@bpx/core';
-import { useGetFullNodeConnectionsQuery } from '@bpx/api-react';
+} from '@floteo/core';
+import { useGetFullNodeConnectionsQuery } from '@floteo/api-react';
 import { Tooltip } from '@mui/material';
 import { service_connection_types } from '../../util/service_names';
 import Connection from '../../types/Connection';

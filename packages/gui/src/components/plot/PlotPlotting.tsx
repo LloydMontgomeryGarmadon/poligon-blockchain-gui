@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetThrottlePlotQueueQuery } from '@bpx/api-react';
+import { useGetThrottlePlotQueueQuery } from '@floteo/api-react';
 import { TableRow } from '@mui/material';
-import { Card, Table } from '@bpx/core';
+import { Card, Table } from '@floteo/core';
 import styled from 'styled-components';
 import PlotQueueSize from './queue/PlotQueueSize';
 import PlotQueueIndicator from './queue/PlotQueueIndicator';

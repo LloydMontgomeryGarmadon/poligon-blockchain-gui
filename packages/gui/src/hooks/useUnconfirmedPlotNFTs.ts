@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLocalStorage, writeStorage } from '@rehooks/local-storage';
-import { useGetLoggedInFingerprintQuery } from '@bpx/api-react';
+import { useGetLoggedInFingerprintQuery } from '@floteo/api-react';
 import UnconfirmedPlotNFT from '../types/UnconfirmedPlotNFT';
 
 const LOCAL_STORAGE_KEY = 'unconfirmedPlotNFTsV2';

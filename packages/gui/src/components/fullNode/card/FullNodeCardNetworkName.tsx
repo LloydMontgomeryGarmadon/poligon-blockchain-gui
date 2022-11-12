@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetNetworkInfoQuery } from '@bpx/api-react';
-import { CardSimple } from '@bpx/core';
+import { useGetNetworkInfoQuery } from '@floteo/api-react';
+import { CardSimple } from '@floteo/core';
 
 export default function FullNodeCardNetworkName() {
   const { data: networkInfo, isLoading, error } = useGetNetworkInfoQuery(); 

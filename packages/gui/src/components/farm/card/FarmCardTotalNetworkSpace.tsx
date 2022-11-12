@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatBytes, CardSimple } from '@bpx/core';
-import { useGetBlockchainStateQuery } from '@bpx/api-react';
+import { FormatBytes, CardSimple } from '@floteo/core';
+import { useGetBlockchainStateQuery } from '@floteo/api-react';
 
 export default function FarmCardTotalNetworkSpace() {
   const { data, isLoading, error } = useGetBlockchainStateQuery();

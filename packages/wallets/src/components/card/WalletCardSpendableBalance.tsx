@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetWalletBalanceQuery } from '@bpx/api-react';
-import { CardSimple } from '@bpx/core';
+import { useGetWalletBalanceQuery } from '@floteo/api-react';
+import { CardSimple } from '@floteo/core';
 import useWallet from '../../hooks/useWallet';
 import useWalletHumanValue from '../../hooks/useWalletHumanValue';
 

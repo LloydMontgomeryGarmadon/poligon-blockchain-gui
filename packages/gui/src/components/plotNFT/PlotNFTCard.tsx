@@ -16,7 +16,7 @@ import {
   ConfirmDialog,
   useOpenDialog,
   mojoToChiaLocaleString,
-} from '@bpx/core';
+} from '@floteo/core';
 import {
   Box,
   Grid,
@@ -31,8 +31,8 @@ import {
   Link as LinkIcon,
   Payment as PaymentIcon,
 } from '@mui/icons-material';
-import { Plot as PlotIcon } from '@bpx/icons';
-import { useDeleteUnconfirmedTransactionsMutation } from '@bpx/api-react';
+import { Plot as PlotIcon } from '@floteo/icons';
+import { useDeleteUnconfirmedTransactionsMutation } from '@floteo/api-react';
 import type PlotNFT from '../../types/PlotNFT';
 import PlotNFTName from './PlotNFTName';
 import PlotNFTStatus from './PlotNFTState';

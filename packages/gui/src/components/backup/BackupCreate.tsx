@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Button } from '@bpx/core';
+import { Button } from '@floteo/core';
 import { Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions, Modal, Typography } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
 import type { RootState } from '../../modules/rootReducer';

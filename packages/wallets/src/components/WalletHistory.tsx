@@ -31,14 +31,14 @@ import {
   mojoToChia,
   mojoToCAT,
   FormatLargeNumber,
-} from '@bpx/core';
+} from '@floteo/core';
 import {
   useGetOfferRecordMutation,
   useGetSyncStatusQuery,
-} from '@bpx/api-react';
+} from '@floteo/api-react';
 import styled from 'styled-components';
-import type { Row } from '@bpx/core';
-import { WalletType, TransactionType, toBech32m } from '@bpx/api';
+import type { Row } from '@floteo/core';
+import { WalletType, TransactionType, toBech32m } from '@floteo/api';
 import useWallet from '../hooks/useWallet';
 import useWalletTransactions from '../hooks/useWalletTransactions';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog } from '@bpx/core';
+import { ConfirmDialog } from '@floteo/core';
 import { Typography } from '@mui/material';
 
 /* ========================================================================== */

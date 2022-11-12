@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
-import { Flex, Link, Loading } from '@bpx/core';
-import { useGetTransactionQuery } from '@bpx/api-react';
+import { Flex, Link, Loading } from '@floteo/core';
+import { useGetTransactionQuery } from '@floteo/api-react';
 import { Box, Card, CardContent, Typography } from '@mui/material';
-import type { UnconfirmedPlotNFT } from '@bpx/api';
+import type { UnconfirmedPlotNFT } from '@floteo/api';
 import PlotNFTState from '../../constants/PlotNFTState';
 import useUnconfirmedPlotNFTs from '../../hooks/useUnconfirmedPlotNFTs';
 

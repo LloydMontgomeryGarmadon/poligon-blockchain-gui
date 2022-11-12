@@ -1,4 +1,4 @@
-import { SyncingStatus } from '@bpx/api';
+import { SyncingStatus } from '@floteo/api';
 import useWalletState from './useWalletState';
 
 export default function useIsWalletSynced(): boolean {

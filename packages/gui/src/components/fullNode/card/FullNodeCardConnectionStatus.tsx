@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { CardSimple } from '@bpx/core';
-import { ServiceName } from '@bpx/api';
-import { useIsServiceRunningQuery } from '@bpx/api-react';
+import { CardSimple } from '@floteo/core';
+import { ServiceName } from '@floteo/api';
+import { useIsServiceRunningQuery } from '@floteo/api-react';
 
 export default function FullNodeCardConnectionStatus() {
   const { data: isRunning, isLoading, error } = useIsServiceRunningQuery({

@@ -7,7 +7,7 @@ import {
   Flex,
   useOpenDialog,
   useOpenExternal,
-} from '@bpx/core';
+} from '@floteo/core';
 import {
   Checkbox,
   FormControlLabel,

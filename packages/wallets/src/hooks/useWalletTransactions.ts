@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@bpx/api-react';
-import type { Transaction } from '@bpx/api';
+import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@floteo/api-react';
+import type { Transaction } from '@floteo/api';
 
 export default function useWalletTransactions(
   walletId: number, 

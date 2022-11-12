@@ -1,4 +1,4 @@
-import { SyncingStatus } from '@bpx/api';
+import { SyncingStatus } from '@floteo/api';
 
 export default function getWalletSyncingStatus(walletState) {
   const { syncing, synced } = walletState;

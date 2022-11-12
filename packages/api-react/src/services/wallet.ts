@@ -8,7 +8,7 @@ import {
   Wallet,
   WalletType,
   toBech32m,
-} from '@bpx/api';
+} from '@floteo/api';
 import type {
   NFTInfo,
   PlotNFT,
@@ -16,7 +16,7 @@ import type {
   Transaction,
   WalletBalance,
   WalletConnections,
-} from '@bpx/api';
+} from '@floteo/api';
 import BigNumber from 'bignumber.js';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import normalizePoolState from '../utils/normalizePoolState';

@@ -1,5 +1,5 @@
-import { useGetSyncStatusQuery } from '@bpx/api-react';
-import { SyncingStatus } from '@bpx/api';
+import { useGetSyncStatusQuery } from '@floteo/api-react';
+import { SyncingStatus } from '@floteo/api';
 import getWalletSyncingStatus from '../utils/getWalletSyncingStatus';
 
 export default function useWalletState(): {

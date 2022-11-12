@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { useWatch } from 'react-hook-form';
 import { t, Trans } from '@lingui/macro';
-import { CardStep, Select, StateColor } from '@bpx/core';
-import { useGetPlottersQuery } from '@bpx/api-react';
+import { CardStep, Select, StateColor } from '@floteo/core';
+import { useGetPlottersQuery } from '@floteo/api-react';
 import {
   FormControl,
   FormHelperText,
@@ -12,8 +12,8 @@ import {
   Typography,
 } from '@mui/material';
 import styled from 'styled-components';
-import { defaultPlotter, PlotterName } from '@bpx/api';
-import type { Plotter, PlotterMap } from '@bpx/api';
+import { defaultPlotter, PlotterName } from '@floteo/api';
+import type { Plotter, PlotterMap } from '@floteo/api';
 
 type Props = {
   step: number;

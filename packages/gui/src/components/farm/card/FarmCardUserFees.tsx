@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@bpx/core';
-import { useGetFarmedAmountQuery } from '@bpx/api-react';
+import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@floteo/core';
+import { useGetFarmedAmountQuery } from '@floteo/api-react';
 
 export default function FarmCardUserFees() {
   const currencyCode = useCurrencyCode();

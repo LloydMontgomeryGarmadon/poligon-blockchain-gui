@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import type NFTInfo from '@bpx/api';
+import type NFTInfo from '@floteo/api';
 import useVerifyURIHash from './useVerifyURIHash';
 import getRemoteFileContent from '../util/getRemoteFileContent';
 

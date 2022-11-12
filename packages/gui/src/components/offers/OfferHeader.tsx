@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, useColorModeValue } from '@bpx/core';
+import { Flex, useColorModeValue } from '@floteo/core';
 import { Typography } from '@mui/material';
 import styled from 'styled-components';
 

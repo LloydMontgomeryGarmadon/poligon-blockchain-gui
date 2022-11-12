@@ -14,16 +14,16 @@ export default function WalletStandardCards(props: Props) {
       walletId={walletId}
       totalBalanceTooltip={
         <Trans>
-          This is the total amount of BPX in the blockchain at the current peak
+          This is the total amount of Floteo in the blockchain at the current peak
           block that is controlled by your private keys. It includes frozen
           farming rewards, but not pending incoming and outgoing transactions.
         </Trans>
       }
       spendableBalanceTooltip={
         <Trans>
-          This is the amount of BPX that you can currently use to make
+          This is the amount of Floteo that you can currently use to make
           transactions. It does not include pending farming rewards, pending
-          incoming transactions, and BPX that you have just spent but is not
+          incoming transactions, and Floteo that you have just spent but is not
           yet in the blockchain.
         </Trans>
       }

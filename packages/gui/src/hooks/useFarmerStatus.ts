@@ -1,5 +1,5 @@
-import { ServiceName } from '@bpx/api';
-import { useIsServiceRunningQuery } from '@bpx/api-react';
+import { ServiceName } from '@floteo/api';
+import { useIsServiceRunningQuery } from '@floteo/api-react';
 import FarmerStatus from '../constants/FarmerStatus';
 import FullNodeState from '../constants/FullNodeState';
 import useFullNodeState from './useFullNodeState';
