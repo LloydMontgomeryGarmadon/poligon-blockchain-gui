@@ -8,8 +8,8 @@ import {
   LinearProgress,
   Typography,
 } from '@mui/material';
-import { Button, Flex, Log } from '@cryptomines/core';
-import { useGetPlotQueueQuery, useThrottleQuery } from '@cryptomines/api-react';
+import { Button, Flex, Log } from '@floteo/core';
+import { useGetPlotQueueQuery, useThrottleQuery } from '@floteo/api-react';
 import styled from 'styled-components';
 
 const StyledLinearProgress = styled(LinearProgress)`

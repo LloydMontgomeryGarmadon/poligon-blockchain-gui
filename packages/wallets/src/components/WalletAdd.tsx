@@ -6,10 +6,10 @@ import {
   Grid,
   Container,
 } from '@mui/material';
-import { useGenerateMnemonicMutation, useAddKeyMutation, useLogInMutation } from '@cryptomines/api-react';
+import { useGenerateMnemonicMutation, useAddKeyMutation, useLogInMutation } from '@floteo/api-react';
 import { useNavigate } from 'react-router';
 import { useEffectOnce } from 'react-use';
-import { ButtonLoading, Flex, Loading, Logo, useShowError } from '@cryptomines/core';
+import { ButtonLoading, Flex, Loading, Logo, useShowError } from '@floteo/core';
 
 const MnemonicField = (props: any) => (
   <Grid item xs={2}>

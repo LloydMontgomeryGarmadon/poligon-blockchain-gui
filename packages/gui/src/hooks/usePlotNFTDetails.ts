@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import type { PlotNFT, Plot } from '@cryptomines/api';
-import { useIsWalletSynced } from '@cryptomines/wallets';
+import type { PlotNFT, Plot } from '@floteo/api';
+import { useIsWalletSynced } from '@floteo/wallets';
 import PlotNFTState from '../constants/PlotNFTState';
 import usePlotNFTName from './usePlotNFTName';
 

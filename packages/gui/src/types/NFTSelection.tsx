@@ -1,4 +1,4 @@
-import type NFTInfo from '@cryptomines/api';
+import type NFTInfo from '@floteo/api';
 
 type NFTSelection = {
   items: NFTInfo[];

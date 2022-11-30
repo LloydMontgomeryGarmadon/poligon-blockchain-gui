@@ -2,7 +2,7 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useFormContext } from 'react-hook-form';
 import { useLocalStorage, writeStorage } from '@rehooks/local-storage';
-import { ButtonSelected, CardStep, Flex, TextField } from '@cryptomines/core';
+import { ButtonSelected, CardStep, Flex, TextField } from '@floteo/core';
 import { Typography } from '@mui/material';
 import useSelectDirectory from '../../../hooks/useSelectDirectory';
 import Plotter from '../../../types/Plotter';

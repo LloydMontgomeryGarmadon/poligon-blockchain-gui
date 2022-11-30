@@ -1,4 +1,4 @@
-import { useGetNetworkInfoQuery } from '@cryptomines/api-react';
+import { useGetNetworkInfoQuery } from '@floteo/api-react';
 
 export default function useIsMainnet(): boolean | undefined {
   const { data: networkInfo, isLoading } = useGetNetworkInfoQuery(); 

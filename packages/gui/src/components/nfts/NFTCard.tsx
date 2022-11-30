@@ -2,11 +2,11 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardActionArea, CardContent, Typography } from '@mui/material';
-import { IconButton, Flex, Loading } from '@cryptomines/core';
+import { IconButton, Flex, Loading } from '@floteo/core';
 import { MoreVert } from '@mui/icons-material';
 import styled from 'styled-components';
 import NFTPreview from './NFTPreview';
-import { type NFTInfo } from '@cryptomines/api';
+import { type NFTInfo } from '@floteo/api';
 import useNFTMetadata from '../../hooks/useNFTMetadata';
 import NFTContextualActions, {
   NFTContextualActionTypes,

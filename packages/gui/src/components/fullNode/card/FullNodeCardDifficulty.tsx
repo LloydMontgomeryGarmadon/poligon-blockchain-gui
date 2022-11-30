@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple } from '@cryptomines/core';
-import { useGetBlockchainStateQuery } from '@cryptomines/api-react';
+import { FormatLargeNumber, CardSimple } from '@floteo/core';
+import { useGetBlockchainStateQuery } from '@floteo/api-react';
 
 export default function FullNodeCardDifficulty() {
   const { data, isLoading, error } = useGetBlockchainStateQuery();

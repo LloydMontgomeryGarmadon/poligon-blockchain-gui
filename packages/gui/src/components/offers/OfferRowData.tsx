@@ -1,5 +1,5 @@
 import type BigNumber from 'bignumber.js';
-import { type WalletType } from '@cryptomines/api';
+import { type WalletType } from '@floteo/api';
 
 type OfferRowData = {
   amount: string;

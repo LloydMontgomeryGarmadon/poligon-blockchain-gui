@@ -6,9 +6,9 @@ import {
   LayoutDashboardSub,
   Loading,
   useOpenDialog,
-} from '@cryptomines/core';
-import type { NFTInfo } from '@cryptomines/api';
-import { useGetNFTWallets } from '@cryptomines/api-react';
+} from '@floteo/core';
+import type { NFTInfo } from '@floteo/api';
+import { useGetNFTWallets } from '@floteo/api-react';
 import { Box, Grid, Typography, IconButton, Dialog, Paper } from '@mui/material';
 import { MoreVert } from '@mui/icons-material';
 import { useParams } from 'react-router-dom';

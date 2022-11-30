@@ -8,7 +8,7 @@ import {
   DialogContent,
   TextField,
 } from '@mui/material';
-import { Button, DialogActions } from '@cryptomines/core';
+import { Button, DialogActions } from '@floteo/core';
 
 type Props ={
   open: boolean;

@@ -7,9 +7,9 @@ import {
   useCheckOfferValidityMutation,
   useGetNFTInfoQuery,
   useGetNFTWallets,
-} from '@cryptomines/api-react';
-import type { Wallet } from '@cryptomines/api';
-import { OfferSummaryRecord, OfferTradeRecord } from '@cryptomines/api';
+} from '@floteo/api-react';
+import type { Wallet } from '@floteo/api';
+import { OfferSummaryRecord, OfferTradeRecord } from '@floteo/api';
 import {
   Back,
   Button,
@@ -26,7 +26,7 @@ import {
   useColorModeValue,
   useCurrencyCode,
   useShowError,
-} from '@cryptomines/core';
+} from '@floteo/core';
 import { Box, Divider, Grid, Typography } from '@mui/material';
 import { Warning as WarningIcon } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';

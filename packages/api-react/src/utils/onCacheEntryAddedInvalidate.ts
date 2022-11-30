@@ -1,4 +1,4 @@
-import type { Service } from '@cryptomines/api';
+import type { Service } from '@floteo/api';
 
 type Invalidate = {
   command: string;

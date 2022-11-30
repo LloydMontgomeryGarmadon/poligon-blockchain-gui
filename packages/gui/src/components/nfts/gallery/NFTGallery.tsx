@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { Flex, LayoutDashboardSub, Loading, useTrans, usePersistState } from '@cryptomines/core';
+import { Flex, LayoutDashboardSub, Loading, useTrans, usePersistState } from '@floteo/core';
 import { defineMessage } from '@lingui/macro';
-import { WalletReceiveAddressField } from '@cryptomines/wallets';
-import type { NFTInfo, Wallet } from '@cryptomines/api';
-import { useGetNFTWallets } from '@cryptomines/api-react';
+import { WalletReceiveAddressField } from '@floteo/wallets';
+import type { NFTInfo, Wallet } from '@floteo/api';
+import { useGetNFTWallets } from '@floteo/api-react';
 import { Box, Grid } from '@mui/material';
 // import NFTGallerySidebar from './NFTGallerySidebar';
 import NFTCardLazy from '../NFTCardLazy';

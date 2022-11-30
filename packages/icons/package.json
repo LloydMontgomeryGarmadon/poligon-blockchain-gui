@@ -1,8 +1,8 @@
 {
-  "name": "@cryptomines/icons",
-  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://cryptominesblockchain.pl/)",
-  "description": "Cryptomines Icons Library",
-  "productName": "Cryptomines Blockchain",
+  "name": "@floteo/icons",
+  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://floteoblockchain.pl/)",
+  "description": "Floteo Icons Library",
+  "productName": "Floteo Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

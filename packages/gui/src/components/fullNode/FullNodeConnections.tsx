@@ -10,8 +10,8 @@ import {
   Table,
   IconButton,
   useOpenDialog,
-} from '@cryptomines/core';
-import { useGetFullNodeConnectionsQuery } from '@cryptomines/api-react';
+} from '@floteo/core';
+import { useGetFullNodeConnectionsQuery } from '@floteo/api-react';
 import { Tooltip } from '@mui/material';
 import { service_connection_types } from '../../util/service_names';
 import Connection from '../../types/Connection';

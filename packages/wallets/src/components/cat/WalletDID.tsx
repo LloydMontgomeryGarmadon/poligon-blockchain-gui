@@ -11,7 +11,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-import { AlertDialog, Card, Flex, Loading, Dropzone, mojoToChiaLocaleString } from '@cryptomines/core';
+import { AlertDialog, Card, Flex, Loading, Dropzone, mojoToChiaLocaleString } from '@floteo/core';
 import {
   did_generate_backup_file,
   did_spend,
@@ -612,7 +612,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojoToChiaLocaleString(props.balance)} TKOP
+            {mojoToChiaLocaleString(props.balance)} TFLO
           </Typography>
         </Box>
       </Box>

@@ -9,9 +9,9 @@ import {
   StateColor,
   Table,
   LayoutDashboardSub,
-} from '@cryptomines/core';
-import { Status } from '@cryptomines/icons';
-import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@cryptomines/api-react';
+} from '@floteo/core';
+import { Status } from '@floteo/icons';
+import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@floteo/api-react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Tooltip, Typography } from '@mui/material';
 // import HelpIcon from '@mui/icons-material/Help';

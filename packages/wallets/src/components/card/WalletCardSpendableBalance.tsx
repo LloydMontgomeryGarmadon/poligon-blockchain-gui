@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetWalletBalanceQuery } from '@cryptomines/api-react';
-import { CardSimple } from '@cryptomines/core';
+import { useGetWalletBalanceQuery } from '@floteo/api-react';
+import { CardSimple } from '@floteo/core';
 import useWallet from '../../hooks/useWallet';
 import useWalletHumanValue from '../../hooks/useWalletHumanValue';
 

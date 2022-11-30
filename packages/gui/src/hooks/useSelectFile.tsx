@@ -1,4 +1,4 @@
-import { useShowSaveDialog, useShowError } from '@cryptomines/core';
+import { useShowSaveDialog, useShowError } from '@floteo/core';
 
 export default function useSelectFile(): () => Promise<string | undefined> {
   const showSaveDialog = useShowSaveDialog();

@@ -1,5 +1,5 @@
-import { FullNode } from '@cryptomines/api';
-import type { Block, BlockRecord, BlockHeader, BlockchainState, FullNodeConnection } from '@cryptomines/api';
+import { FullNode } from '@floteo/api';
+import type { Block, BlockRecord, BlockHeader, BlockchainState, FullNodeConnection } from '@floteo/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 

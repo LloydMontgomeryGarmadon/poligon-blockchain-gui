@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import icon from '../../assets/img/cryptomines_circle.svg';
+import icon from '../../assets/img/floteo_circle.svg';
 
 const GlobalStyle = createGlobalStyle`
   body,
@@ -71,7 +71,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://cryptominesblockchain.pl';
+const url = 'https://floteoblockchain.pl';
 
 type Props = {
   version: string;
@@ -147,7 +147,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/serwisgalena/cryptomines-blockchain/issues"
+          href="https://github.com/serwisgalena/floteo-blockchain/issues"
           target="_blank"
         >
           Report an issue

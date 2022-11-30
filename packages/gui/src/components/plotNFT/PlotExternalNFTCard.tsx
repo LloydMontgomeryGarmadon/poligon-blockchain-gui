@@ -12,7 +12,7 @@ import {
   FormatLargeNumber,
   Link,
   useOpenDialog,
-} from '@cryptomines/core';
+} from '@floteo/core';
 import {
   Box,
   Card,
@@ -21,7 +21,7 @@ import {
   MenuItem,
   ListItemIcon,
 } from '@mui/material';
-import { Plot as PlotIcon } from '@cryptomines/icons';
+import { Plot as PlotIcon } from '@floteo/icons';
 import { /* Link as LinkIcon, */ Payment as PaymentIcon } from '@mui/icons-material';
 import PlotNFTName from './PlotNFTName';
 import PlotNFTExternalState from './PlotNFTExternalState';

@@ -1,5 +1,5 @@
-import { Daemon, optionsForPlotter, defaultsForPlotter } from '@cryptomines/api';
-import type { KeyringStatus, ServiceName } from '@cryptomines/api';
+import { Daemon, optionsForPlotter, defaultsForPlotter } from '@floteo/api';
+import type { KeyringStatus, ServiceName } from '@floteo/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 

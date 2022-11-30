@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { t, Trans } from '@lingui/macro';
 import styled from 'styled-components';
-import { Button, CopyToClipboard, Flex, Link, Loading } from '@cryptomines/core';
+import { Button, CopyToClipboard, Flex, Link, Loading } from '@floteo/core';
 import {
   Alert,
   Dialog,
@@ -10,8 +10,8 @@ import {
   DialogContent,
   Typography,
 } from '@mui/material';
-import { useGetPoolLoginLinkQuery } from '@cryptomines/api-react';
-import type { PlotNFT, PlotNFTExternal } from '@cryptomines/api';
+import { useGetPoolLoginLinkQuery } from '@floteo/api-react';
+import type { PlotNFT, PlotNFTExternal } from '@floteo/api';
 
 const StyledLoginLink = styled(Typography)`
   word-break: break-all;

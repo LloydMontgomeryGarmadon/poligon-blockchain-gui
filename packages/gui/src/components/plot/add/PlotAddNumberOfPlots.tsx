@@ -8,7 +8,7 @@ import {
   Flex,
   Checkbox,
   TooltipIcon,
-} from '@cryptomines/core';
+} from '@floteo/core';
 import {
   Grid,
   FormControl,

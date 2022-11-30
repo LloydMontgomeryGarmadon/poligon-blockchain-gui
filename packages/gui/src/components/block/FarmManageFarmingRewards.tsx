@@ -2,8 +2,8 @@ import React, { useMemo, useState } from 'react';
 import { Trans } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-import { Button, Flex, Form, TextField, Loading } from '@cryptomines/core';
-import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@cryptomines/api-react';
+import { Button, Flex, Form, TextField, Loading } from '@floteo/core';
+import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@floteo/api-react';
 import {
   Alert,
   Dialog,
@@ -163,7 +163,7 @@ export default function FarmManageFarmingRewards(props: Props) {
                   <Trans>
                     Note that this does not change your pooling payout
                     addresses. This only affects old format plots, and the
-                    25 KOP reward for pooling plots.
+                    25 FLO reward for pooling plots.
                   </Trans>
                 </Typography>
               </>

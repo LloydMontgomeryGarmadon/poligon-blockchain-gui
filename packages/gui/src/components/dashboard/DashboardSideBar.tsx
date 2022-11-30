@@ -11,8 +11,8 @@ import {
   Offers as OffersIcon,
   Tokens as TokensIcon,
   Settings as SettingsIcon,
-} from '@cryptomines/icons';
-import { Flex, SideBarItem } from '@cryptomines/core';
+} from '@floteo/icons';
+import { Flex, SideBarItem } from '@floteo/core';
 
 const StyledItemsContainer = styled(Flex)`
   flex-direction: column;

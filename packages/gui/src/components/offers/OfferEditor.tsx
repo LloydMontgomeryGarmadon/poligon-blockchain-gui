@@ -13,15 +13,15 @@ import {
   Form,
   useOpenDialog,
   useShowError,
-} from '@cryptomines/core';
-import { useCreateOfferForIdsMutation } from '@cryptomines/api-react';
+} from '@floteo/core';
+import { useCreateOfferForIdsMutation } from '@floteo/api-react';
 import { Grid } from '@mui/material';
 import type OfferEditorRowData from './OfferEditorRowData';
-import { WalletType } from '@cryptomines/api';
+import { WalletType } from '@floteo/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferEditorConfirmationDialog from './OfferEditorConfirmationDialog';
 import OfferLocalStorageKeys from './OfferLocalStorage';
-import { chiaToMojo, catToMojo } from '@cryptomines/core';
+import { chiaToMojo, catToMojo } from '@floteo/core';
 
 /* ========================================================================== */
 /*                                Offer Editor                                */

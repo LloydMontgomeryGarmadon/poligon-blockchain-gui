@@ -1,8 +1,8 @@
 {
-  "name": "@cryptomines/api",
-  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://cryptominesblockchain.pl/)",
-  "description": "Cryptomines API Library",
-  "productName": "Cryptomines Blockchain",
+  "name": "@floteo/api",
+  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://floteoblockchain.pl/)",
+  "description": "Floteo API Library",
+  "productName": "Floteo Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

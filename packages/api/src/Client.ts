@@ -49,7 +49,7 @@ export default class Client extends EventEmitter {
     this.options = {
       timeout: 60 * 1000 * 10, // 10 minutes
       camelCase: true,
-      backupHost: 'https://backup.cryptominesblockchain.pl',
+      backupHost: 'https://backup.floteoblockchain.pl',
       debug: false,
       services: [],
       ...options,

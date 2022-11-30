@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { WalletType } from '@cryptomines/api';
-import { useSetCATNameMutation } from '@cryptomines/api-react';
+import { WalletType } from '@floteo/api';
+import { useSetCATNameMutation } from '@floteo/api-react';
 import { Trans } from '@lingui/macro';
 import {
   Box,
@@ -9,7 +9,7 @@ import {
   CircularProgress,
   TextField,
 } from '@mui/material';
-import { Tooltip, CardListItem, Flex, Link, useShowError } from '@cryptomines/core';
+import { Tooltip, CardListItem, Flex, Link, useShowError } from '@floteo/core';
 
 export type WalletTokenCardProps = {
   item: {
@@ -97,7 +97,7 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
     return assetId;
   }, [assetId, type, walletType]);
 
-  const currentName = walletType === WalletType.STANDARD_WALLET ? 'KOP' : name;
+  const currentName = walletType === WalletType.STANDARD_WALLET ? 'FLO' : name;
 
   return (
     <CardListItem>

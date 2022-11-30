@@ -5,7 +5,7 @@ import {
   ConfirmDialog,
   useOpenDialog,
   DropdownActions,
-} from '@cryptomines/core';
+} from '@floteo/core';
 import {
   Typography,
   ListItemIcon,
@@ -16,7 +16,7 @@ import {
 import {
   Delete as DeleteIcon,
 } from '@mui/icons-material';
-import { useDeleteUnconfirmedTransactionsMutation } from '@cryptomines/api-react';
+import { useDeleteUnconfirmedTransactionsMutation } from '@floteo/api-react';
 import WalletName from './WalletName';
 
 type StandardWalletProps = {

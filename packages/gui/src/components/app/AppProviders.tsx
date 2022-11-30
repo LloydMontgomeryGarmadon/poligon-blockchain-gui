@@ -1,8 +1,8 @@
 import React, { ReactNode, useEffect, useState, Suspense } from 'react';
 import { Provider } from 'react-redux';
 import { Outlet } from 'react-router-dom';
-import { useDarkMode, sleep, ThemeProvider, ModalDialogsProvider, ModalDialogs, LocaleProvider, LayoutLoading, dark, light, ErrorBoundary } from '@cryptomines/core';
-import { store, api } from '@cryptomines/api-react';
+import { useDarkMode, sleep, ThemeProvider, ModalDialogsProvider, ModalDialogs, LocaleProvider, LayoutLoading, dark, light, ErrorBoundary } from '@floteo/core';
+import { store, api } from '@floteo/api-react';
 import { Trans } from '@lingui/macro';
 import { i18n, defaultLocale, locales } from '../../config/locales';
 import AppState from './AppState';

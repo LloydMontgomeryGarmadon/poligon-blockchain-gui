@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog, CopyToClipboard, Flex } from '@cryptomines/core';
+import { ConfirmDialog, CopyToClipboard, Flex } from '@floteo/core';
 import { Divider, Typography } from '@mui/material';
 import styled from 'styled-components';
 

@@ -1,16 +1,16 @@
-import { WalletType } from '@cryptomines/api';
+import { WalletType } from '@floteo/api';
 import { t } from '@lingui/macro';
 import type { ChipProps } from '@mui/material';
 import type {
   OfferSummaryAssetInfo,
   OfferSummaryInfos,
   OfferSummaryRecord,
-} from '@cryptomines/api';
+} from '@floteo/api';
 import {
   mojoToChia,
   mojoToChiaLocaleString,
   mojoToCATLocaleString,
-} from '@cryptomines/core';
+} from '@floteo/core';
 import NFTOfferExchangeType from './NFTOfferExchangeType';
 import OfferState from './OfferState';
 import OfferAsset from './OfferAsset';
@@ -49,7 +49,7 @@ export function summaryStringsForNFTOffer(
   ) => string,
 ): [makerString: string, takerString: string] {
   // const makerAssetType = offerAssetTypeForAssetId
-  // TODO: Remove 1:1 NFT <--> KOP assumption
+  // TODO: Remove 1:1 NFT <--> FLO assumption
   const makerEntry: [string, string] = Object.entries(summary.offered)[0];
   const takerEntry: [string, string] = Object.entries(summary.requested)[0];
   const makerAssetType = offerAssetTypeForAssetId(makerEntry[0], summary);
@@ -313,7 +313,7 @@ export function determineNFTOfferExchangeType(
 export function getNFTPriceWithoutRoyalties(
   summary: OfferSummaryRecord,
 ): number | undefined {
-  // NFTs can only be exchanged for KOP currently
+  // NFTs can only be exchanged for FLO currently
   const amountInMojos = offerAssetAmountForAssetId('flo', summary);
   if (amountInMojos === undefined) {
     return undefined;

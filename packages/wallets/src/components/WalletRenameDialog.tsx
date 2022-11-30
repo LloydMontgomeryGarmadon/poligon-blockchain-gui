@@ -7,7 +7,7 @@ import {
   DialogTitle,
   DialogContent,
 } from '@mui/material';
-import { AlertDialog, ButtonLoading, DialogActions, Flex, Form, TextField, useOpenDialog } from '@cryptomines/core';
+import { AlertDialog, ButtonLoading, DialogActions, Flex, Form, TextField, useOpenDialog } from '@floteo/core';
 
 type WalletRenameDialogFormData = {
   name: string;

@@ -1,4 +1,4 @@
-import type { Point } from '@cryptomines/api';
+import type { Point } from '@floteo/api';
 
 const DAY_SECONDS = 60 * 60 * 24;
 

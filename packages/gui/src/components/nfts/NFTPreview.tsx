@@ -15,9 +15,9 @@ import {
   Flex,
   SandboxedIframe,
   usePersistState,
-} from '@cryptomines/core';
+} from '@floteo/core';
 import styled from 'styled-components';
-import { type NFTInfo } from '@cryptomines/api';
+import { type NFTInfo } from '@floteo/api';
 import isURL from 'validator/lib/isURL';
 import useNFTHash from '../../hooks/useNFTHash';
 

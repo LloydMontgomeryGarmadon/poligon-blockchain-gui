@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import { StateColor } from '@cryptomines/core';
+import { StateColor } from '@floteo/core';
 import { FiberManualRecord as FiberManualRecordIcon } from '@mui/icons-material';
 
 const StyledFiberManualRecordIcon = styled(({ color, ...rest }) => (

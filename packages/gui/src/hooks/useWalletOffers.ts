@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useGetOffersCountQuery, useGetAllOffersQuery } from '@cryptomines/api-react';
-import { OfferTradeRecord } from '@cryptomines/api';
+import { useGetOffersCountQuery, useGetAllOffersQuery } from '@floteo/api-react';
+import { OfferTradeRecord } from '@floteo/api';
 
 export default function useWalletOffers(
   defaultRowsPerPage = 5,

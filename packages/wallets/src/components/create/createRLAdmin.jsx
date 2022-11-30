@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, chiaToMojo } from '@cryptomines/core';
+import { AlertDialog, chiaToMojo } from '@floteo/core';
 import {
   Typography,
   Button,

@@ -14,17 +14,17 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    name: "cryptomines-blockchain",
-    appDirectory: path.join(rootPath, 'Cryptomines-win32-x64'),
+    name: "floteo-blockchain",
+    appDirectory: path.join(rootPath, 'Floteo-win32-x64'),
     authors: 'Kopalnie Krypto',
-    version: process.env.CRYPTOMINES_INSTALLER_VERSION,
+    version: process.env.FLOTEO_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/serwisgalena/cryptomines-blockchain-gui/main/packages/gui/src/assets/img/cryptomines.ico',
+    iconUrl: 'https://raw.githubusercontent.com/serwisgalena/floteo-blockchain-gui/main/packages/gui/src/assets/img/floteo.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: 'Cryptomines.exe',
-    setupExe: 'CryptominesSetup-' + process.env.CRYPTOMINES_INSTALLER_VERSION + '.exe',
-    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'cryptomines.ico')
+    exe: 'Floteo.exe',
+    setupExe: 'FloteoSetup-' + process.env.FLOTEO_INSTALLER_VERSION + '.exe',
+    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'floteo.ico')
   })
 }

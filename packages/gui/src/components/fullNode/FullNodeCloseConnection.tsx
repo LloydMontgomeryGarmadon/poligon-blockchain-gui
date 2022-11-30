@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog, useOpenDialog } from '@cryptomines/core';
-import { useCloseFullNodeConnectionMutation } from '@cryptomines/api-react';
+import { ConfirmDialog, useOpenDialog } from '@floteo/core';
+import { useCloseFullNodeConnectionMutation } from '@floteo/api-react';
 
 type Props = {
   nodeId: string;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatBytes, CardSimple } from '@cryptomines/core';
-import { useGetTotalHarvestersSummaryQuery } from '@cryptomines/api-react';
+import { FormatBytes, CardSimple } from '@floteo/core';
+import { useGetTotalHarvestersSummaryQuery } from '@floteo/api-react';
 
 export default function FarmCardTotalSizeOfPlots() {
   const { totalPlotSize, isLoading } = useGetTotalHarvestersSummaryQuery();

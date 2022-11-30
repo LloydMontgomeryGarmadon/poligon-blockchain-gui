@@ -1,11 +1,11 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Tooltip } from '@cryptomines/core';
-import { useGetCatListQuery } from '@cryptomines/api-react';
+import { Tooltip } from '@floteo/core';
+import { useGetCatListQuery } from '@floteo/api-react';
 import { VerifiedUser as VerifiedUserIcon, VerifiedUserProps } from '@mui/icons-material';
 import styled from 'styled-components';
-import type { Wallet } from '@cryptomines/api';
-import { WalletType } from '@cryptomines/api';
+import type { Wallet } from '@floteo/api';
+import { WalletType } from '@floteo/api';
 
 const StyledSmallBadge = styled(VerifiedUserIcon)`
   font-size: 1rem;

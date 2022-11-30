@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { ListItemIcon, ListItemText, Typography } from '@mui/material';
-import { Dropdown, Flex, Loading, useTrans } from '@cryptomines/core';
-import { useGetWalletsQuery } from '@cryptomines/api-react';
-import { WalletType, type Wallet } from '@cryptomines/api';
+import { Dropdown, Flex, Loading, useTrans } from '@floteo/core';
+import { useGetWalletsQuery } from '@floteo/api-react';
+import { WalletType, type Wallet } from '@floteo/api';
 import { useNavigate } from 'react-router';
 import WalletName from '../constants/WalletName';
 import WalletIcon from './WalletIcon';
@@ -11,7 +11,7 @@ import WalletBadge from './WalletBadge';
 function getPrimaryTitle(wallet: Wallet): string {
   switch (wallet.type) {
     case WalletType.STANDARD_WALLET:
-      return 'KOP';
+      return 'FLO';
     default:
       return wallet.name;
   }

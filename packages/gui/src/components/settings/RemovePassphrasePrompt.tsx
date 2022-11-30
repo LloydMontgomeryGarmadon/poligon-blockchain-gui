@@ -14,8 +14,8 @@ import {
   KeyboardCapslock as KeyboardCapslockIcon,
   Visibility as VisibilityIcon,
 } from '@mui/icons-material';
-import { AlertDialog, Button, DialogActions, Flex, TooltipIcon, useOpenDialog, Suspender } from '@cryptomines/core';
-import { useRemoveKeyringPassphraseMutation, useGetKeyringStatusQuery } from '@cryptomines/api-react';
+import { AlertDialog, Button, DialogActions, Flex, TooltipIcon, useOpenDialog, Suspender } from '@floteo/core';
+import { useRemoveKeyringPassphraseMutation, useGetKeyringStatusQuery } from '@floteo/api-react';
 
 type Props = {
   onSuccess: () => void;

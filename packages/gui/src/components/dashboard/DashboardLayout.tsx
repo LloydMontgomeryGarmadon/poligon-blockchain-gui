@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react';
 import styled from 'styled-components';
-import { Flex, Box } from '@cryptomines/core';
+import { Flex, Box } from '@floteo/core';
 
 const StyledRoot = styled(Flex)`
   width: 100%;

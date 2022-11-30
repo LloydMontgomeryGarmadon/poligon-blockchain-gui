@@ -1,10 +1,10 @@
-export const service_wallet = 'cryptomines_wallet';
-export const service_full_node = 'cryptomines_full_node';
-export const service_farmer = 'cryptomines_farmer';
-export const service_harvester = 'cryptomines_harvester';
-export const service_simulator = 'cryptomines_full_node_simulator';
+export const service_wallet = 'floteo_wallet';
+export const service_full_node = 'floteo_full_node';
+export const service_farmer = 'floteo_farmer';
+export const service_harvester = 'floteo_harvester';
+export const service_simulator = 'floteo_full_node_simulator';
 export const service_daemon = 'daemon';
-export const service_plotter = 'cryptomines_plotter';
+export const service_plotter = 'floteo_plotter';
 
 // Corresponds with outbound_message.py NodeTypes
 export const service_connection_types = {

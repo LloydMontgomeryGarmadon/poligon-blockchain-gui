@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Trans, t } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { SyncingStatus } from '@cryptomines/api';
+import { SyncingStatus } from '@floteo/api';
 import {
   useExtendDerivationIndexMutation,
   useGetCurrentDerivationIndexQuery,
-} from '@cryptomines/api-react';
+} from '@floteo/api-react';
 import {
   AlertDialog,
   ButtonLoading,
@@ -13,8 +13,8 @@ import {
   Form,
   TextField,
   useOpenDialog,
-} from '@cryptomines/core';
-import { useWalletState } from '@cryptomines/wallets';
+} from '@floteo/core';
+import { useWalletState } from '@floteo/wallets';
 
 type FormData = {
   index: string;

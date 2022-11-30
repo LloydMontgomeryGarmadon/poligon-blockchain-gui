@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo } from 'react';
 import { Trans } from '@lingui/macro';
 import { IconButton, Typography } from '@mui/material';
-import { Flex } from '@cryptomines/core';
+import { Flex } from '@floteo/core';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import IdentitiesPanel from './IdentitiesPanel';
-import { LayoutDashboardSub } from '@cryptomines/core';
+import { LayoutDashboardSub } from '@floteo/core';
 import ProfileView from './ProfileView';
 import ProfileAdd from './ProfileAdd';
 import { Add } from '@mui/icons-material';
-import { useGetWalletsQuery } from '@cryptomines/api-react';
-import { WalletType } from '@cryptomines/api';
+import { useGetWalletsQuery } from '@floteo/api-react';
+import { WalletType } from '@floteo/api';
 
 export default function SettingsProfiles() {
   const navigate = useNavigate();
