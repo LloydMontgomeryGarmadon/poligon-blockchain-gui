@@ -5,10 +5,10 @@ import BigNumber from 'bignumber.js';
 import { orderBy, groupBy, map } from 'lodash';
 import { /* Typography, */ Paper } from '@mui/material';
 import styled from 'styled-components';
-import { useGetWalletBalanceQuery } from '@floteo/api-react';
-import { TransactionType } from '@floteo/api';
-import type { Transaction } from '@floteo/api';
-import { mojoToChia, blockHeightToTimestamp } from '@floteo/core';
+import { useGetWalletBalanceQuery } from '@cryptomines/api-react';
+import { TransactionType } from '@cryptomines/api';
+import type { Transaction } from '@cryptomines/api';
+import { mojoToChia, blockHeightToTimestamp } from '@cryptomines/core';
 import useWalletTransactions from '../hooks/useWalletTransactions';
 
 /*

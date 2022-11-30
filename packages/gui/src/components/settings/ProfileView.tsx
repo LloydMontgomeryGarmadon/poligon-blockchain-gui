@@ -6,16 +6,16 @@ import {
   Suspender,
   Tooltip,
   truncateValue,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { Box, Card, TextField, Typography } from '@mui/material';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
-import { fromBech32m } from '@floteo/api';
+import { fromBech32m } from '@cryptomines/api';
 import {
   useGetDIDQuery,
   useGetDIDNameQuery,
   useSetDIDNameMutation,
-} from '@floteo/api-react';
+} from '@cryptomines/api-react';
 import { stripHexPrefix } from '../../util/utils';
 import { didToDIDId } from '../../util/dids';
 

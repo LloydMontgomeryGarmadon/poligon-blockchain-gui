@@ -1,4 +1,4 @@
-import { toBech32m, fromBech32m } from '@floteo/api';
+import { toBech32m, fromBech32m } from '@cryptomines/api';
 
 export function isValidNFTId(nftId: string): boolean {
   return launcherIdFromNFTId(nftId) !== undefined;

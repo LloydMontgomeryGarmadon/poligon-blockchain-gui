@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import NumberFormat from 'react-number-format';
 import {
   Flex,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   InputAdornment,
   TextField,
@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { ImportExport } from '@mui/icons-material';
 import { AssetIdMapEntry } from '../../hooks/useAssetIdName';
-import { WalletType } from '@floteo/api';
+import { WalletType } from '@cryptomines/api';
 
 interface OfferExchangeRateNumberFormatProps {
   inputRef: (instance: NumberFormat | null) => void;

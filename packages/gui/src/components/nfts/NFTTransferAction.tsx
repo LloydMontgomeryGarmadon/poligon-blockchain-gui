@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Plural, Trans } from '@lingui/macro';
 import styled from 'styled-components';
-import type { NFTInfo } from '@floteo/api';
+import type { NFTInfo } from '@cryptomines/api';
 import {
   Button,
   ButtonLoading,
@@ -17,7 +17,7 @@ import {
   useOpenDialog,
   validAddress,
   useShowError,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   Box,
   Dialog,
@@ -29,7 +29,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useForm } from 'react-hook-form';
-import { useTransferNFTMutation } from '@floteo/api-react';
+import { useTransferNFTMutation } from '@cryptomines/api-react';
 import NFTSummary from './NFTSummary';
 
 /* ========================================================================== */

@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router';
 import { t, Trans } from '@lingui/macro';
-import { defaultPlotter, toBech32m } from '@floteo/api';
+import { defaultPlotter, toBech32m } from '@cryptomines/api';
 import {
   useStartPlottingMutation,
   useCreateNewPoolWalletMutation,
-} from '@floteo/api-react';
+} from '@cryptomines/api-react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { Back, useShowError, ButtonLoading, Flex, Form } from '@floteo/core';
+import { Back, useShowError, ButtonLoading, Flex, Form } from '@cryptomines/core';
 import PlotAddChoosePlotter from './PlotAddChoosePlotter';
 import PlotAddChooseSize from './PlotAddChooseSize';
 import PlotAddNumberOfPlots from './PlotAddNumberOfPlots';

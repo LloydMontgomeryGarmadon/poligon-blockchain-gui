@@ -1,13 +1,13 @@
 import React from 'react';
 import { Trans, t } from '@lingui/macro';
-import { useGetNFTInfoQuery } from '@floteo/api-react';
+import { useGetNFTInfoQuery } from '@cryptomines/api-react';
 import {
   Button,
   Flex,
   Loading,
   TooltipIcon,
   useColorModeValue,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { Card, Typography } from '@mui/material';
 import NFTCard from '../nfts/NFTCard';
 import { launcherIdFromNFTId } from '../../util/nfts';

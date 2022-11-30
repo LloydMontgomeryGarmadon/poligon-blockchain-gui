@@ -1,12 +1,12 @@
 import React from 'react';
 import { Trans, t } from '@lingui/macro';
-import { Back, ButtonLoading, Card, Flex, Form, TextField } from '@floteo/core';
+import { Back, ButtonLoading, Card, Flex, Form, TextField } from '@cryptomines/core';
 import { Grid } from '@mui/material';
-import { useAddCATTokenMutation } from '@floteo/api-react';
+import { useAddCATTokenMutation } from '@cryptomines/api-react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
 import useWalletState from '../../hooks/useWalletState';
-import { SyncingStatus } from '@floteo/api';
+import { SyncingStatus } from '@cryptomines/api';
 
 type CreateExistingCATWalletData = {
   name: string;

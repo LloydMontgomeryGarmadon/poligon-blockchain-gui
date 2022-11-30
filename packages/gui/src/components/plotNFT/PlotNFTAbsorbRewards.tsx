@@ -13,9 +13,9 @@ import {
   mojoToChiaLocaleString,
   chiaToMojo,
   Back,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { useForm } from 'react-hook-form';
-import { usePwAbsorbRewardsMutation, useGetPlotNFTsQuery, useGetCurrentAddressQuery } from '@floteo/api-react'
+import { usePwAbsorbRewardsMutation, useGetPlotNFTsQuery, useGetCurrentAddressQuery } from '@cryptomines/api-react'
 import { ChevronRight as ChevronRightIcon } from '@mui/icons-material';
 import { Grid, Typography } from '@mui/material';
 import { useParams } from 'react-router';

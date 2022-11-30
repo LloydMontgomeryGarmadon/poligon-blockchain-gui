@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { CardSimple } from '@floteo/core';
+import { CardSimple } from '@cryptomines/core';
 import moment from 'moment';
-import { useGetLatestPeakTimestampQuery } from '@floteo/api-react';
+import { useGetLatestPeakTimestampQuery } from '@cryptomines/api-react';
 
 export default function FullNodeCardPeakTime() {
   const { data: timestamp, isLoading, error } = useGetLatestPeakTimestampQuery();

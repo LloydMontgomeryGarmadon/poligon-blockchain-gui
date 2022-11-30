@@ -8,7 +8,7 @@
       "esnext"
     ],
     "paths": {
-      "@floteo/*": ["./components/*"]
+      "@cryptomines/*": ["./components/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

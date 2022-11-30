@@ -3,8 +3,8 @@ import { Trans } from '@lingui/macro';
 import {
   Grid, Typography,
 } from '@mui/material';
-import { useGetWalletsQuery } from '@floteo/api-react';
-import { Flex, Loading } from '@floteo/core';
+import { useGetWalletsQuery } from '@cryptomines/api-react';
+import { Flex, Loading } from '@cryptomines/core';
 import { useNavigate } from 'react-router';
 import { Eco as HomeWorkIcon, Add as AddIcon } from '@mui/icons-material';
 import Wallet from '../../types/Wallet';

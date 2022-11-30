@@ -6,7 +6,7 @@ import {
   colors,
   animals,
 } from 'unique-names-generator';
-import type { PlotNFTExternal, PlotNFT } from '@floteo/api';
+import type { PlotNFTExternal, PlotNFT } from '@cryptomines/api';
 
 const uniqueNames: {
   [key: string]: string;

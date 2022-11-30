@@ -7,11 +7,11 @@ import {
   FormatLargeNumber,
   TooltipIcon,
   mojoToCATLocaleString,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { Box, Typography } from '@mui/material';
 import useAssetIdName from '../../hooks/useAssetIdName';
-import { WalletType } from '@floteo/api';
-import { useGetNFTInfoQuery } from '@floteo/api-react';
+import { WalletType } from '@cryptomines/api';
+import { useGetNFTInfoQuery } from '@cryptomines/api-react';
 import { formatAmountForWalletType } from './utils';
 import { launcherIdToNFTId } from '../../util/nfts';
 import { stripHexPrefix } from '../../util/utils';

@@ -18,7 +18,7 @@ import {
   useShowError,
   useOpenExternal,
   mojoToChiaLocaleString,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   Box,
   Button,
@@ -38,8 +38,8 @@ import {
   OfferTradeRecord,
   OfferCoinOfInterest,
   WalletType,
-} from '@floteo/api';
-import { useCheckOfferValidityMutation } from '@floteo/api-react';
+} from '@cryptomines/api';
+import { useCheckOfferValidityMutation } from '@cryptomines/api-react';
 import { colorForOfferState, displayStringForOfferState } from './utils';
 import useAcceptOfferHook from '../../hooks/useAcceptOfferHook';
 import OfferHeader from './OfferHeader';
@@ -217,7 +217,7 @@ function OfferDetails(props: OfferDetailsProps) {
               onClick={(event: React.SyntheticEvent) =>
                 handleLinkClicked(
                   event,
-                  `https://alltheblocks.net/floteo/coin/${coin.parentCoinInfo}`,
+                  `https://alltheblocks.net/cryptomines/coin/${coin.parentCoinInfo}`,
                 )
               }
             >
@@ -245,7 +245,7 @@ function OfferDetails(props: OfferDetailsProps) {
               onClick={(event: React.SyntheticEvent) =>
                 handleLinkClicked(
                   event,
-                  `https://alltheblocks.net/floteo/puzzlehash/${coin.puzzleHash}`,
+                  `https://alltheblocks.net/cryptomines/puzzlehash/${coin.puzzleHash}`,
                 )
               }
             >

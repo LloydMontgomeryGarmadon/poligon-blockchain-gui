@@ -7,7 +7,7 @@ import {
   Tooltip,
   Truncate,
   truncateValue,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { Box, Typography } from '@mui/material';
 import { stripHexPrefix } from '../../util/utils';
 import { didToDIDId } from '../../util/dids';

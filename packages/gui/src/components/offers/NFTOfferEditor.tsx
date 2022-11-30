@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import BigNumber from 'bignumber.js';
 import { Trans, t } from '@lingui/macro';
 import { useLocalStorage } from '@rehooks/local-storage';
-import type { NFTInfo, Wallet } from '@floteo/api';
+import type { NFTInfo, Wallet } from '@cryptomines/api';
 import {
   useCreateOfferForIdsMutation,
   useGetNFTInfoQuery,
   useGetNFTWallets,
-} from '@floteo/api-react';
+} from '@cryptomines/api-react';
 import {
   Amount,
   AmountProps,
@@ -29,7 +29,7 @@ import {
   useCurrencyCode,
   useOpenDialog,
   useShowError,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   Box,
   Divider,
@@ -55,7 +55,7 @@ import styled from 'styled-components';
 
 /* ========================================================================== */
 /*              Temporary home for the NFT-specific Offer Editor              */
-/*        An NFT offer consists of a single NFT being offered for FLO         */
+/*        An NFT offer consists of a single NFT being offered for KOP         */
 /* ========================================================================== */
 
 const StyledWarningIcon = styled(WarningIcon)`
@@ -252,12 +252,12 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
       >
         <Tab
           value={NFTOfferExchangeType.NFTForXCH}
-          label={<Trans>NFT for FLO</Trans>}
+          label={<Trans>NFT for KOP</Trans>}
           disabled={disabled}
         />
         <Tab
           value={NFTOfferExchangeType.XCHForNFT}
-          label={<Trans>FLO for NFT</Trans>}
+          label={<Trans>KOP for NFT</Trans>}
           disabled={disabled}
         />
       </Tabs>
@@ -434,7 +434,7 @@ NFTOfferConditionalsPanel.defaultProps = {
 
 /* ========================================================================== */
 /*                              NFT Offer Editor                              */
-/*             Currently only supports a single NFT <--> FLO offer            */
+/*             Currently only supports a single NFT <--> KOP offer            */
 /* ========================================================================== */
 
 type NFTOfferEditorFormData = {

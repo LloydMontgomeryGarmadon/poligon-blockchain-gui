@@ -8,10 +8,10 @@ import {
   useOpenDialog,
   useSerializedNavigationState,
   useShowError,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { Button, Grid, Typography } from '@mui/material';
-import { useGetOfferSummaryMutation } from '@floteo/api-react';
-import { type OfferSummaryRecord } from '@floteo/api';
+import { useGetOfferSummaryMutation } from '@cryptomines/api-react';
+import { type OfferSummaryRecord } from '@cryptomines/api';
 import OfferDataEntryDialog from './OfferDataEntryDialog';
 import { offerContainsAssetOfType } from './utils';
 import fs, { Stats } from 'fs';

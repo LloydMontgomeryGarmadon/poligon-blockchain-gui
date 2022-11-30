@@ -1,4 +1,4 @@
-import { ServiceName } from '@floteo/api';
+import { ServiceName } from '@cryptomines/api';
 import useService, { ServiceState } from './useService';
 
 type Options = {

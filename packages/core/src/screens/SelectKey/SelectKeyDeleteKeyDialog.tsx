@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetPrivateKeyQuery } from '@floteo/api-react';
+import { useGetPrivateKeyQuery } from '@cryptomines/api-react';
 import { Grid, Typography } from '@mui/material';
 import styled from 'styled-components';
 import AlertDialog from '../../components/AlertDialog';

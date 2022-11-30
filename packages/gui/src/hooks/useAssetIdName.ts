@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
-import { useGetCatListQuery, useGetWalletsQuery } from '@floteo/api-react';
-import { CATToken, Wallet, useCurrencyCode } from '@floteo/core';
-import { WalletType } from '@floteo/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@cryptomines/api-react';
+import { CATToken, Wallet, useCurrencyCode } from '@cryptomines/core';
+import { WalletType } from '@cryptomines/api';
 
 export type AssetIdMapEntry = {
   walletId: number;
@@ -36,7 +36,7 @@ export default function useAssetIdName() {
 
       if (walletType === WalletType.STANDARD_WALLET) {
         assetId = 'flo';
-        name = 'FLO';
+        name = 'KOP';
         symbol = currencyCode;
         isVerified = true;
       } else if (walletType === WalletType.CAT) {
@@ -89,11 +89,11 @@ export default function useAssetIdName() {
       assetIdNameMapping.set(assetId, entry);
     });
 
-    // If using testnet, add a TFLO assetId entry
+    // If using testnet, add a TKOP assetId entry
     if (currencyCode === 'tflo') {
       const assetId = 'tflo';
-      const name = 'Floteo (Testnet)';
-      const symbol = 'TFLO';
+      const name = 'Cryptomines (Testnet)';
+      const symbol = 'TKOP';
       const displayName = symbol ? symbol : name;
       const entry: AssetIdMapEntry = {
         walletId: 1,

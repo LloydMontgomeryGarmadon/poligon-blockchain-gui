@@ -1,14 +1,14 @@
 import { useMemo } from 'react';
-import { WalletType } from '@floteo/api';
-import type { Wallet } from '@floteo/api';
-import { useShowError } from '@floteo/core';
+import { WalletType } from '@cryptomines/api';
+import type { Wallet } from '@cryptomines/api';
+import { useShowError } from '@cryptomines/core';
 import { orderBy } from 'lodash';
 import {
   useGetWalletsQuery,
   useGetStrayCatsQuery,
   useGetCatListQuery,
   useAddCATTokenMutation,
-} from '@floteo/api-react';
+} from '@cryptomines/api-react';
 import useHiddenWallet from './useHiddenWallet';
 
 type ListItem = {
@@ -155,7 +155,7 @@ export default function useWalletsList(
         hidden: isHidden(wallet.id),
         walletId: wallet.id,
         assetId: wallet.meta?.assetId,
-        name: wallet.type === WalletType.STANDARD_WALLET ? 'FLO' : wallet.name,
+        name: wallet.type === WalletType.STANDARD_WALLET ? 'KOP' : wallet.name,
       })),
       ...catBaseWallets.map((wallet: Wallet) => ({
         id: wallet.id,

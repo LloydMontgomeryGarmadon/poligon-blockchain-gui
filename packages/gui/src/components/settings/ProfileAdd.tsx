@@ -8,7 +8,7 @@ import {
   Flex,
   Form,
   mojoToChiaLocaleString,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   Card,
   Typography,
@@ -17,13 +17,13 @@ import styled from 'styled-components';
 import {
   useCreateNewWalletMutation,
   useGetWalletBalanceQuery,
-} from '@floteo/api-react';
+} from '@cryptomines/api-react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
 import {
   WalletType,
   type Wallet,
- } from '@floteo/api';
+ } from '@cryptomines/api';
 import useOpenExternal from '../../hooks/useOpenExternal';
 import isNumeric from 'validator/es/lib/isNumeric';
 
@@ -59,7 +59,7 @@ export default function ProfileAdd() {
   const openExternal = useOpenExternal();
 
   function handleClick() {
-    openExternal('https://faucet.floteoblockchain.pl/');
+    openExternal('https://faucet.cryptominesblockchain.pl/');
   }
 
   async function handleSubmit(data: CreateProfileData) {
@@ -93,11 +93,11 @@ export default function ProfileAdd() {
         </Flex>
         <StyledCard>
           <Flex flexDirection="column" gap={2.5} paddingBottom={1}>
-            <Trans><strong>Need some FLO?</strong></Trans>
+            <Trans><strong>Need some KOP?</strong></Trans>
           </Flex>
           <div style={{cursor: "pointer"}}>
             <Flex paddingBottom={5}>
-              <Typography onClick={handleClick} sx={{ textDecoration: "underline" }}>Get it from the Floteo Faucet</Typography>
+              <Typography onClick={handleClick} sx={{ textDecoration: "underline" }}>Get it from the Cryptomines Faucet</Typography>
             </Flex>
           </div>
           <Flex flexDirection="column" gap={2.5} paddingBottom={1}>
@@ -105,7 +105,7 @@ export default function ProfileAdd() {
           </Flex>
           <Flex flexDirection="column" gap={2.5} paddingBottom={3}>
             <Typography variant="caption">
-              <Trans>Balance: {standardBalance} FLO</Trans>
+              <Trans>Balance: {standardBalance} KOP</Trans>
             </Typography>
           </Flex>
           <Flex flexDirection="column" gap={2.5} paddingBottom={1}>
@@ -120,7 +120,7 @@ export default function ProfileAdd() {
           </Flex>
           <Flex flexDirection="column" gap={2.5} paddingBottom={3}>
             <Typography variant="caption">
-              <Trans>Recommended: 0.000005 FLO</Trans>
+              <Trans>Recommended: 0.000005 KOP</Trans>
             </Typography>
           </Flex>
           <Flex justifyContent="flex-end">

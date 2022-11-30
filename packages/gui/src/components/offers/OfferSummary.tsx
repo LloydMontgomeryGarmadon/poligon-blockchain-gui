@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Plural, Trans } from '@lingui/macro';
-import { type OfferSummaryRecord } from '@floteo/api';
+import { type OfferSummaryRecord } from '@cryptomines/api';
 import {
   Flex,
   FormatLargeNumber,
@@ -8,7 +8,7 @@ import {
   TooltipIcon,
   mojoToChia,
   mojoToCAT,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { Box, Divider, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styled from 'styled-components';

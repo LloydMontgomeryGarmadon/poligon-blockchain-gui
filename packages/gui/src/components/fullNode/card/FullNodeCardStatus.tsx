@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple, StateColor } from '@floteo/core';
-import { useGetBlockchainStateQuery } from '@floteo/api-react';
+import { FormatLargeNumber, CardSimple, StateColor } from '@cryptomines/core';
+import { useGetBlockchainStateQuery } from '@cryptomines/api-react';
 import styled from 'styled-components';
 
 const StyledWarning = styled.span`

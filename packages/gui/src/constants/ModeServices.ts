@@ -1,5 +1,5 @@
-import { ServiceName } from '@floteo/api';
-import { Mode } from '@floteo/core';
+import { ServiceName } from '@cryptomines/api';
+import { Mode } from '@cryptomines/core';
 
 export default {
   [Mode.WALLET]: [

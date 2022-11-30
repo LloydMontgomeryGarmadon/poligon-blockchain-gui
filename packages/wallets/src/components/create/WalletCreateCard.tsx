@@ -1,5 +1,5 @@
 import React, { useState, ReactNode } from 'react';
-import { Card, Flex, Loading } from '@floteo/core';
+import { Card, Flex, Loading } from '@cryptomines/core';
 import { Typography } from '@mui/material';
 import styled from 'styled-components';
 

@@ -3,7 +3,7 @@ import { useHistory, useRouteMatch } from "react-router";
 import { Trans } from '@lingui/macro';
 import { Grid, Typography } from '@mui/material';
 import { Share as ShareIcon, Speed as SpeedIcon, HomeWork as HomeWorkIcon } from '@mui/icons-material';
-import { Flex } from '@floteo/core';
+import { Flex } from '@cryptomines/core';
 import WalletCreateCard from './WalletCreateCard';
 
 export default function WalletCreateList() {

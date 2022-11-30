@@ -17,12 +17,12 @@ import {
   useCurrencyCode,
   getTransactionResult,
   TooltipIcon,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   useSpendCATMutation,
   useFarmBlockMutation,
-} from '@floteo/api-react';
-import { SyncingStatus, toBech32m } from '@floteo/api';
+} from '@cryptomines/api-react';
+import { SyncingStatus, toBech32m } from '@cryptomines/api';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import { Grid, Typography } from '@mui/material';
@@ -115,7 +115,7 @@ export default function WalletCATSend(props: Props) {
     }
 
     if (address.includes('colour')) {
-      throw new Error(t`Cannot send Floteo to coloured address. Please enter a Floteo address.`);
+      throw new Error(t`Cannot send Cryptomines to coloured address. Please enter a Cryptomines address.`);
     }
 
     if (address.includes('chia_addr') || address.includes('colour_desc')) {

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@floteo/core';
-import { useGetFarmedAmountQuery } from '@floteo/api-react';
+import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@cryptomines/core';
+import { useGetFarmedAmountQuery } from '@cryptomines/api-react';
 
 export default function FarmCardTotalChiaFarmed() {
   const currencyCode = useCurrencyCode();
@@ -24,7 +24,7 @@ export default function FarmCardTotalChiaFarmed() {
 
   return (
     <CardSimple
-      title={<Trans>Total FLO Farmed</Trans>}
+      title={<Trans>Total KOP Farmed</Trans>}
       value={totalChiaFarmed}
       loading={isLoading}
       error={error}

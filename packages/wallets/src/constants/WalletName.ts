@@ -1,5 +1,5 @@
 import { defineMessage } from '@lingui/macro';
-import { WalletType } from '@floteo/api';
+import { WalletType } from '@cryptomines/api';
 
 const WalletName = {
   [WalletType.STANDARD_WALLET]: defineMessage({

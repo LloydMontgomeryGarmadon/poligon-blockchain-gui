@@ -1,4 +1,4 @@
-import type { Plot } from '@floteo/api';
+import type { Plot } from '@cryptomines/api';
 
 export default function combineHarvesters(harvesters): {
   plots: Plot[];

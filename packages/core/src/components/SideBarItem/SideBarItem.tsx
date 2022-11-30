@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react';
 import { useNavigate, useMatch } from 'react-router-dom';
 import { ListItem, ListItemIcon, Typography } from '@mui/material';
-import { Flex } from '@floteo/core';
+import { Flex } from '@cryptomines/core';
 import { styled } from '@mui/system';
 import useColorModeValue from '../../utils/useColorModeValue';
 

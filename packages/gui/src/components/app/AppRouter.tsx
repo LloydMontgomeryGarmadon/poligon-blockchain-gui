@@ -6,13 +6,13 @@ import {
   LayoutDashboard,
   Mode,
   useMode,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   WalletAdd,
   WalletImport,
   Wallets,
   WalletStatusHeader,
-} from '@floteo/wallets';
+} from '@cryptomines/wallets';
 import AppProviders from './AppProviders';
 import FullNode from '../fullNode/FullNode';
 import Block from '../block/Block';

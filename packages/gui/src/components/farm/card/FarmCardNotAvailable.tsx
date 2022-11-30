@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
-import { State, StateIndicator, CardSimple } from '@floteo/core';
+import { State, StateIndicator, CardSimple } from '@cryptomines/core';
 
 type Props = {
   title: ReactNode;

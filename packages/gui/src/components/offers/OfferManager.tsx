@@ -26,8 +26,8 @@ import {
   useShowSaveDialog,
   Tooltip,
   LayoutDashboardSub,
-} from '@floteo/core';
-import { OfferSummaryRecord, OfferTradeRecord } from '@floteo/api';
+} from '@cryptomines/core';
+import { OfferSummaryRecord, OfferTradeRecord } from '@cryptomines/api';
 import {
   Box,
   Checkbox,
@@ -50,12 +50,12 @@ import {
   Reply as Share,
   Visibility,
 } from '@mui/icons-material';
-import { Offers } from '@floteo/icons';
+import { Offers } from '@cryptomines/icons';
 import {
   useCancelOfferMutation,
   useGetOfferDataMutation,
   useGetWalletsQuery,
-} from '@floteo/api-react';
+} from '@cryptomines/api-react';
 import {
   colorForOfferState,
   displayStringForOfferState,
@@ -253,7 +253,7 @@ function OfferList(props: OfferListProps) {
   const [saveOffer] = useSaveOfferFile();
   const { data: wallets, isLoading: isLoadingWallets } = useGetWalletsQuery();
   const { lookupByAssetId } = useAssetIdName();
-  const testnet = useCurrencyCode() === 'TFLO';
+  const testnet = useCurrencyCode() === 'TKOP';
   const openDialog = useOpenDialog();
   const { navigate } = useSerializedNavigationState();
   const {
@@ -549,7 +549,7 @@ export function OfferManager() {
               <Offers color="primary" fontSize="extraLarge" />
               <Typography variant="body1">
                 <Trans>
-                  Create an offer to exchange assets including FLO, tokens, and
+                  Create an offer to exchange assets including KOP, tokens, and
                   NFTs. View an offer to inspect and accept an offer made by
                   another party.
                 </Trans>
@@ -616,7 +616,7 @@ export function CreateOffer() {
   const locationState = getLocationState(); // For cases where we know that the state has been serialized
   const openDialog = useOpenDialog();
   const [saveOffer] = useSaveOfferFile();
-  const testnet = useCurrencyCode() === 'TFLO';
+  const testnet = useCurrencyCode() === 'TKOP';
 
   async function handleOfferCreated(obj: { offerRecord: any, offerData: any }) {
   }

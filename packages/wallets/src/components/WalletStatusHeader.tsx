@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, Loading, StateColor, StateIndicatorDot } from '@floteo/core';
-import { useGetWalletConnectionsQuery } from '@floteo/api-react';
+import { Flex, Loading, StateColor, StateIndicatorDot } from '@cryptomines/core';
+import { useGetWalletConnectionsQuery } from '@cryptomines/api-react';
 import { Box, ButtonGroup, Button } from '@mui/material';
 import WalletStatus from './WalletStatus';
 import { useTheme } from '@mui/styles';

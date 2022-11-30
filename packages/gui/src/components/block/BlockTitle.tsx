@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Flex } from '@floteo/core';
+import { Flex } from '@cryptomines/core';
 import { ArrowBackIos as ArrowBackIosIcon } from '@mui/icons-material';
 import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';

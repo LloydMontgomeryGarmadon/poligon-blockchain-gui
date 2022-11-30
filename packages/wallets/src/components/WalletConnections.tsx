@@ -5,10 +5,10 @@ import {
   FormatBytes,
   Loading,
   Table,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import { Tooltip } from '@mui/material';
-import { Connection, ServiceConnectionName } from '@floteo/api';
-import { useGetWalletConnectionsQuery } from '@floteo/api-react';
+import { Connection, ServiceConnectionName } from '@cryptomines/api';
+import { useGetWalletConnectionsQuery } from '@cryptomines/api-react';
 
 const cols = [
   {

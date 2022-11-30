@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
-import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@floteo/core';
-import { useGetFarmedAmountQuery } from '@floteo/api-react';
+import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@cryptomines/core';
+import { useGetFarmedAmountQuery } from '@cryptomines/api-react';
 
 export default function FarmCardBlockRewards() {
   const currencyCode = useCurrencyCode();

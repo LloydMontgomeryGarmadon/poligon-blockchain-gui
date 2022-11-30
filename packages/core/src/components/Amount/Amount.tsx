@@ -62,7 +62,7 @@ export default function Amount(props: AmountProps) {
   const correctedValue = value && value[0] === '.' ? `0${value}` : value;
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
-  const isChiaCurrency = ['FLO', 'TFLO'].includes(currencyCode);
+  const isChiaCurrency = ['KOP', 'TKOP'].includes(currencyCode);
   const mojo = isChiaCurrency
     ? chiaToMojo(correctedValue)
     : catToMojo(correctedValue);

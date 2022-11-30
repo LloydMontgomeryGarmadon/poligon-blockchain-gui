@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Loading, State, StateIndicator } from '@floteo/core';
-import { useGetSyncStatusQuery } from '@floteo/api-react';
+import { Loading, State, StateIndicator } from '@cryptomines/core';
+import { useGetSyncStatusQuery } from '@cryptomines/api-react';
 import { Box, Typography } from '@mui/material';
 import getWalletSyncingStatus from '../utils/getWalletSyncingStatus';
-import { SyncingStatus } from '@floteo/api';
+import { SyncingStatus } from '@cryptomines/api';
 import WalletStatusHeight from './WalletStatusHeight';
 
 export type WalletStatusProps = {

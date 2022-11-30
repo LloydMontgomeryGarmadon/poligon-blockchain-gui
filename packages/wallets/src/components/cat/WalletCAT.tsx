@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Trans } from '@lingui/macro';
-import { Flex, Loading, useOpenDialog } from '@floteo/core';
+import { Flex, Loading, useOpenDialog } from '@cryptomines/core';
 import { Alert, Typography } from '@mui/material';
 import {
   Edit as RenameIcon,
   Fingerprint as FingerprintIcon,
 } from '@mui/icons-material';
 import { Box, ListItemIcon, MenuItem } from '@mui/material';
-import { WalletType } from '@floteo/api';
-import { useSetCATNameMutation, useGetCatListQuery } from '@floteo/api-react';
-import { Offers as OffersIcon } from '@floteo/icons';
+import { WalletType } from '@cryptomines/api';
+import { useSetCATNameMutation, useGetCatListQuery } from '@cryptomines/api-react';
+import { Offers as OffersIcon } from '@cryptomines/icons';
 import WalletHistory from '../WalletHistory';
 import useWallet from '../../hooks/useWallet';
 import WalletReceiveAddress from '../WalletReceiveAddress';

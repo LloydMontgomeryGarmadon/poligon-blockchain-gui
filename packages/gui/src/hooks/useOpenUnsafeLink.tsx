@@ -7,7 +7,7 @@ import {
   Flex,
   useOpenDialog,
   useOpenExternal,
-} from '@floteo/core';
+} from '@cryptomines/core';
 import {
   Checkbox,
   FormControlLabel,

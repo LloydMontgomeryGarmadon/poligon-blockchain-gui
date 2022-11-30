@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, More, useOpenDialog } from '@floteo/core';
+import { Flex, More, useOpenDialog } from '@cryptomines/core';
 import {
   Box,
   MenuItem,

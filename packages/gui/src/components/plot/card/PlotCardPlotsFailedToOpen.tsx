@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple } from '@floteo/core';
-import { useGetTotalHarvestersSummaryQuery } from '@floteo/api-react';
+import { FormatLargeNumber, CardSimple } from '@cryptomines/core';
+import { useGetTotalHarvestersSummaryQuery } from '@cryptomines/api-react';
 
 export default function PlotCardPlotsFailedToOpen() {
   const { failedToOpenFilenames, initializedHarvesters, isLoading } = useGetTotalHarvestersSummaryQuery();

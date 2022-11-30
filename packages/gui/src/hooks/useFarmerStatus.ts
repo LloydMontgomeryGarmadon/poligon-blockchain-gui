@@ -1,5 +1,5 @@
-import { ServiceName } from '@floteo/api';
-import { useIsServiceRunningQuery } from '@floteo/api-react';
+import { ServiceName } from '@cryptomines/api';
+import { useIsServiceRunningQuery } from '@cryptomines/api-react';
 import FarmerStatus from '../constants/FarmerStatus';
 import FullNodeState from '../constants/FullNodeState';
 import useFullNodeState from './useFullNodeState';

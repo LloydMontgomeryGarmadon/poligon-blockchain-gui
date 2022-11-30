@@ -3,7 +3,7 @@ import { Trans } from '@lingui/macro';
 import {
   AlertDialog,
   Flex,
-} from '@floteo/core';
+} from '@cryptomines/core';
 
 type WalletSendTransactionResultDialogProps = {
   success: boolean;

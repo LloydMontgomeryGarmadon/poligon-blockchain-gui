@@ -8,10 +8,10 @@ import {
   FormatBytes,
   FormatConnectionStatus,
   Card,
-} from '@floteo/core';
-import { useIsServiceRunningQuery, useGetHarvesterConnectionsQuery } from '@floteo/api-react';
-import type { Connection } from '@floteo/api';
-import { ServiceName } from '@floteo/api';
+} from '@cryptomines/core';
+import { useIsServiceRunningQuery, useGetHarvesterConnectionsQuery } from '@cryptomines/api-react';
+import type { Connection } from '@cryptomines/api';
+import { ServiceName } from '@cryptomines/api';
 import FarmCloseConnection from './FarmCloseConnection';
 
 const StyledIconButton = styled(IconButton)`

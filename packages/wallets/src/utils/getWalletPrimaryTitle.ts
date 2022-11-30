@@ -1,10 +1,10 @@
-import { WalletType } from '@floteo/api';
-import type { Wallet } from '@floteo/api';
+import { WalletType } from '@cryptomines/api';
+import type { Wallet } from '@cryptomines/api';
 
 export default function getWalletPrimaryTitle(wallet: Wallet): string {
   switch (wallet.type) {
     case WalletType.STANDARD_WALLET:
-      return 'FLO';
+      return 'KOP';
     default:
       return wallet.name;
   }

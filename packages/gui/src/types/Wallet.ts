@@ -1,4 +1,4 @@
-import { WalletType } from '@floteo/api';
+import { WalletType } from '@cryptomines/api';
 import type Transaction from './Transaction';
 import WalletBalance from './WalletBalance';
 

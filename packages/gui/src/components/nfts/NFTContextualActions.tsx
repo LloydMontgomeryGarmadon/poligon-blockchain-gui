@@ -2,15 +2,15 @@ import React, { useMemo, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCopyToClipboard } from 'react-use';
 import { Trans } from '@lingui/macro';
-import type { NFTInfo } from '@floteo/api';
-import { useSetNFTStatusMutation } from '@floteo/api-react';
-import { AlertDialog, DropdownActions, useOpenDialog } from '@floteo/core';
-import type { DropdownActionsChildProps } from '@floteo/core';
+import type { NFTInfo } from '@cryptomines/api';
+import { useSetNFTStatusMutation } from '@cryptomines/api-react';
+import { AlertDialog, DropdownActions, useOpenDialog } from '@cryptomines/core';
+import type { DropdownActionsChildProps } from '@cryptomines/core';
 import {
   LinkSmall as LinkSmallIcon,
   NFTsSmall as NFTsSmallIcon,
   OffersSmall as OffersSmallIcon,
-} from '@floteo/icons';
+} from '@cryptomines/icons';
 import { ListItemIcon, MenuItem, Typography } from '@mui/material';
 import {
   ArrowForward as TransferIcon,

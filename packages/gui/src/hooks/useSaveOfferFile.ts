@@ -1,6 +1,6 @@
-import { OfferTradeRecord } from '@floteo/api';
-import { useGetOfferDataMutation } from '@floteo/api-react';
-import { useShowSaveDialog } from '@floteo/core';
+import { OfferTradeRecord } from '@cryptomines/api';
+import { useGetOfferDataMutation } from '@cryptomines/api-react';
+import { useShowSaveDialog } from '@cryptomines/core';
 import fs from 'fs';
 import { suggestedFilenameForOffer } from '../components/offers/utils';
 import useAssetIdName from './useAssetIdName';
