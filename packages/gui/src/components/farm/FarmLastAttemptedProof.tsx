@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Link, Table, Card } from '@floteo/core';
-import { useGetFarmingInfoQuery } from '@floteo/api-react';
+import { Link, Table, Card } from '@poligon/core';
+import { useGetFarmingInfoQuery } from '@poligon/api-react';
 import moment from 'moment';
 import type { Row } from '../core/components/Table/Table';
 // import usePlots from '../../hooks/usePlots';

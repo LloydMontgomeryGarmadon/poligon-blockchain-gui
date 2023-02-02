@@ -1,4 +1,4 @@
-import { useCloseFarmerConnectionMutation } from '@floteo/api-react';
+import { useCloseFarmerConnectionMutation } from '@poligon/api-react';
 
 type Props = {
   nodeId: string;

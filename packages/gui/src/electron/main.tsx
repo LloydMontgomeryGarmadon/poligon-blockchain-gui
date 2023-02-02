@@ -16,7 +16,7 @@ import chiaEnvironment from '../util/chiaEnvironment';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
-import AppIcon from '../assets/img/floteo64x64.png';
+import AppIcon from '../assets/img/poligon64x64.png';
 
 
 const NET = 'mainnet';
@@ -533,7 +533,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/serwisgalena/floteo-blockchain/releases',
+                'https://github.com/serwisgalena/poligon-blockchain/releases',
               );
             },
           },
@@ -541,7 +541,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/serwisgalena/floteo-blockchain/issues',
+                'https://github.com/serwisgalena/poligon-blockchain/issues',
               );
             },
           },
@@ -550,12 +550,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // Floteo Blockchain menu (Mac)
+      // Poligon Blockchain menu (Mac)
       template.unshift({
-        label: i18n._(/* i18n */ { id: 'Floteo' }),
+        label: i18n._(/* i18n */ { id: 'Poligon' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About Floteo Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About Poligon Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -642,7 +642,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About Floteo Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About Poligon Blockchain' }),
           click() {
             openAbout();
           },

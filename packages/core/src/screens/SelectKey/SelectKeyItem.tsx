@@ -17,7 +17,7 @@ import {
   useCheckDeleteKeyMutation,
   useDeleteKeyMutation,
   useGetKeyringStatusQuery,
-} from '@floteo/api-react';
+} from '@poligon/api-react';
 import SelectKeyDetailDialog from './SelectKeyDetailDialog';
 import ConfirmDialog from '../../components/ConfirmDialog';
 import LoadingOverlay from '../../components/LoadingOverlay';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatBytes, CardSimple } from '@floteo/core';
-import { useGetBlockchainStateQuery } from '@floteo/api-react';
+import { FormatBytes, CardSimple } from '@poligon/core';
+import { useGetBlockchainStateQuery } from '@poligon/api-react';
 
 export default function FullNodeEstimatedNetworkSpace() {
   const { data, isLoading, error } = useGetBlockchainStateQuery();

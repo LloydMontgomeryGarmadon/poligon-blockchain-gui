@@ -1,5 +1,5 @@
-import { Harvester } from '@floteo/api';
-import type { Plot } from '@floteo/api';
+import { Harvester } from '@poligon/api';
+import type { Plot } from '@poligon/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 import { apiWithTag } from './farmer';

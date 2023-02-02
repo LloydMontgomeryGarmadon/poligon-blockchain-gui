@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { orderBy } from 'lodash';
-import { useGetHarvestersSummaryQuery } from '@floteo/api-react';
+import { useGetHarvestersSummaryQuery } from '@poligon/api-react';
 import { Trans } from '@lingui/macro';
-import { Loading, Flex } from '@floteo/core';
+import { Loading, Flex } from '@poligon/core';
 import { Typography } from '@mui/material';
 import PlotHarvester from './PlotHarvester';
 import isLocalhost from '../../util/isLocalhost';

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
-import { useGetCatListQuery, useGetWalletsQuery } from '@floteo/api-react';
-import { CATToken, Wallet, useCurrencyCode } from '@floteo/core';
-import { WalletType } from '@floteo/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@poligon/api-react';
+import { CATToken, Wallet, useCurrencyCode } from '@poligon/core';
+import { WalletType } from '@poligon/api';
 
 export type AssetIdMapEntry = {
   walletId: number;
@@ -35,8 +35,8 @@ export default function useAssetIdName() {
       let isVerified = false;
 
       if (walletType === WalletType.STANDARD_WALLET) {
-        assetId = 'flo';
-        name = 'FLO';
+        assetId = 'pol';
+        name = 'POL';
         symbol = currencyCode;
         isVerified = true;
       } else if (walletType === WalletType.CAT) {
@@ -89,11 +89,11 @@ export default function useAssetIdName() {
       assetIdNameMapping.set(assetId, entry);
     });
 
-    // If using testnet, add a TFLO assetId entry
-    if (currencyCode === 'tflo') {
-      const assetId = 'tflo';
-      const name = 'Floteo (Testnet)';
-      const symbol = 'TFLO';
+    // If using testnet, add a TPOL assetId entry
+    if (currencyCode === 'tpol') {
+      const assetId = 'tpol';
+      const name = 'Poligon (Testnet)';
+      const symbol = 'TPOL';
       const displayName = symbol ? symbol : name;
       const entry: AssetIdMapEntry = {
         walletId: 1,

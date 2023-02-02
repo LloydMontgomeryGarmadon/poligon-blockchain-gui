@@ -1,4 +1,4 @@
-import { SyncingStatus } from '@floteo/api';
+import { SyncingStatus } from '@poligon/api';
 
 export default function getWalletSyncingStatus(walletState) {
   const { syncing, synced } = walletState;

@@ -4,7 +4,7 @@ import {
   useGetSyncStatusQuery,
   useSendTransactionMutation,
   useFarmBlockMutation,
-} from '@floteo/api-react';
+} from '@poligon/api-react';
 import {
   Amount,
   ButtonLoading,
@@ -18,7 +18,7 @@ import {
   getTransactionResult,
   useIsSimulator,
   TooltipIcon,
-} from '@floteo/core';
+} from '@poligon/core';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import {
@@ -100,10 +100,10 @@ export default function WalletSend(props: SendCardProps) {
 
     let address = data.address;
     if (address.includes('colour')) {
-      throw new Error(t`Cannot send Floteo to coloured address. Please enter a Floteo address.`);
+      throw new Error(t`Cannot send Poligon to coloured address. Please enter a Poligon address.`);
     }
 
-    if (address.slice(0, 12) === 'flo_addr://') {
+    if (address.slice(0, 12) === 'pol_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {

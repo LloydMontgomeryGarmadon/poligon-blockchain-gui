@@ -1,8 +1,8 @@
 import { Alert } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import { Trans } from '@lingui/macro';
-import { Suspender } from '@floteo/core';
-import { WalletType } from '@floteo/api';
+import { Suspender } from '@poligon/core';
+import { WalletType } from '@poligon/api';
 import React from 'react';
 import WalletStandard from './standard/WalletStandard';
 import WalletCAT from './cat/WalletCAT';

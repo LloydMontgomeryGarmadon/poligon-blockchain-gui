@@ -1,6 +1,6 @@
-import { toBech32m, fromBech32m } from '@floteo/api';
-import type { PlotNFT } from '@floteo/api';
-import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@floteo/api-react';
+import { toBech32m, fromBech32m } from '@poligon/api';
+import type { PlotNFT } from '@poligon/api';
+import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@poligon/api-react';
 
 export default function usePayoutAddress(nft: PlotNFT): {
   loading: boolean;

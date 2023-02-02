@@ -2,8 +2,8 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
 import { Grid, Typography } from '@mui/material';
-import { Button, CardHero } from '@floteo/core';
-import { Pooling } from '@floteo/icons';
+import { Button, CardHero } from '@poligon/core';
+import { Pooling } from '@poligon/icons';
 
 export default function PoolHero() {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ export default function PoolHero() {
           <Pooling color="primary" fontSize="extraLarge" />
           <Typography variant="body1">
             <Trans>
-              Smooth out your Floteo farming rewards by joining a pool.
+              Smooth out your Poligon farming rewards by joining a pool.
             </Trans>
           </Typography>
           <Button onClick={handleJoinPool} variant="contained" color="primary">

@@ -1,8 +1,8 @@
 {
-  "name": "@floteo/core",
-  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://floteoblockchain.pl/)",
-  "description": "Floteo Core Library",
-  "productName": "Floteo Blockchain",
+  "name": "@poligon/core",
+  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://poligonblockchain.pl/)",
+  "description": "Poligon Core Library",
+  "productName": "Poligon Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.16.7",
-    "@floteo/icons": "1.0.0",
+    "@poligon/icons": "1.0.0",
     "@fontsource/roboto": "4.5.1",
     "@lingui/macro": "3.13.0",
     "@mui/utils": "5.5.3",
@@ -54,8 +54,8 @@
     "@babel/preset-env": "7.16.8",
     "@babel/preset-react": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
-    "@floteo/api": "1.0.0",
-    "@floteo/api-react": "1.0.0",
+    "@poligon/api": "1.0.0",
+    "@poligon/api-react": "1.0.0",
     "@lingui/cli": "3.13.0",
     "@lingui/core": "3.13.0",
     "@lingui/react": "3.13.0",
@@ -92,8 +92,8 @@
     "typescript": "4.5.4"
   },
   "peerDependencies": {
-    "@floteo/api": "1.0.0",
-    "@floteo/api-react": "1.0.0",
+    "@poligon/api": "1.0.0",
+    "@poligon/api-react": "1.0.0",
     "@lingui/core": "3.13.0",
     "@lingui/react": "3.13.0",
     "@mui/icons-material": "5.5.1",

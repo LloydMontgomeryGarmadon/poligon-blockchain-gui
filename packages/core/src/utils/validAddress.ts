@@ -1,4 +1,4 @@
-import { decodeBech32m } from '@floteo/api';
+import { decodeBech32m } from '@poligon/api';
 
 export default function validAddress(address: string, allowedPrefixes?: string[]) {
   const response = decodeBech32m(address);

@@ -1,4 +1,4 @@
-import type NFTInfo from '@floteo/api';
+import type NFTInfo from '@poligon/api';
 
 type NFTSelection = {
   items: NFTInfo[];

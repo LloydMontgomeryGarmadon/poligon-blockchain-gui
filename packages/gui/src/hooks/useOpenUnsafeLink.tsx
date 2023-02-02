@@ -7,7 +7,7 @@ import {
   Flex,
   useOpenDialog,
   useOpenExternal,
-} from '@floteo/core';
+} from '@poligon/core';
 import {
   Checkbox,
   FormControlLabel,

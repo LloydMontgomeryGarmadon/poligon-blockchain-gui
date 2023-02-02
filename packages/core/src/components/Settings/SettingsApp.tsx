@@ -5,7 +5,7 @@ import useDarkMode from '../../hooks/useDarkMode';
 import Button from '../Button';
 import Link from '../Link';
 import { ButtonGroup } from '@mui/material';
-import { Farming } from '@floteo/icons';
+import { Farming } from '@poligon/icons';
 import {
   WbSunny as WbSunnyIcon,
   NightsStay as NightsStayIcon,

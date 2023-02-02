@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
-import type { Wallet } from '@floteo/api';
-import { WalletType } from '@floteo/api';
-import { useGetWalletsQuery, useGetWalletBalanceQuery } from '@floteo/api-react';
+import type { Wallet } from '@poligon/api';
+import { WalletType } from '@poligon/api';
+import { useGetWalletsQuery, useGetWalletBalanceQuery } from '@poligon/api-react';
 
 export default function useStandardWallet(): {
   loading: boolean;

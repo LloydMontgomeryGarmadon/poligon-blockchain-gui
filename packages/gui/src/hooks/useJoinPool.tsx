@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useDispatch } from 'react-redux';
-import { AlertDialog } from '@floteo/core';
+import { AlertDialog } from '@poligon/core';
 import type PlotNFT from '../types/PlotNFT';
 import { pwJoinPool } from '../modules/plotNFT';
 import useOpenDialog from './useOpenDialog';

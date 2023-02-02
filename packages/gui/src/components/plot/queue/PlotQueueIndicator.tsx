@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, Indicator, StateColor, TooltipIcon } from '@floteo/core';
+import { Flex, Indicator, StateColor, TooltipIcon } from '@poligon/core';
 import { Box } from '@mui/material';
 import PlotStatusEnum from '../../../constants/PlotStatus';
 import type PlotQueueItem from '../../../types/PlotQueueItem';

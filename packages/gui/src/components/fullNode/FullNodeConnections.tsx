@@ -10,8 +10,8 @@ import {
   Table,
   IconButton,
   useOpenDialog,
-} from '@floteo/core';
-import { useGetFullNodeConnectionsQuery } from '@floteo/api-react';
+} from '@poligon/core';
+import { useGetFullNodeConnectionsQuery } from '@poligon/api-react';
 import { Tooltip } from '@mui/material';
 import { service_connection_types } from '../../util/service_names';
 import Connection from '../../types/Connection';

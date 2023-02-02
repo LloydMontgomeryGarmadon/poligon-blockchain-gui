@@ -1,5 +1,5 @@
-import { ServiceName } from '@floteo/api';
-import { Mode } from '@floteo/core';
+import { ServiceName } from '@poligon/api';
+import { Mode } from '@poligon/core';
 
 export default {
   [Mode.WALLET]: [

@@ -1,4 +1,4 @@
-import type { Service } from '@floteo/api';
+import type { Service } from '@poligon/api';
 
 type Invalidate = {
   command: string;

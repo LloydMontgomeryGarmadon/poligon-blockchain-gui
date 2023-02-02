@@ -1,4 +1,4 @@
-import type { PoolState } from '@floteo/api';
+import type { PoolState } from '@poligon/api';
 import removeOldPoints from './removeOldPoints';
 
 export default function normalizePoolState(poolState: PoolState): PoolState {

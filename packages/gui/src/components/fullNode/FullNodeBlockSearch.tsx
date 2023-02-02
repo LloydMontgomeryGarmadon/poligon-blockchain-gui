@@ -4,7 +4,7 @@ import { Box, IconButton, Paper } from '@mui/material';
 import { Search as SearchIcon } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { Flex, Form, InputBase } from '@floteo/core';
+import { Flex, Form, InputBase } from '@poligon/core';
 import { useForm } from 'react-hook-form';
 
 const StyledInputBase = styled(InputBase)`

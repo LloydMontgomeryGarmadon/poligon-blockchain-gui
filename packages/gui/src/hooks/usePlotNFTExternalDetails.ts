@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import type { Plot, PlotNFTExternal } from '@floteo/api';
-import { useIsWalletSynced } from '@floteo/wallets';
+import type { Plot, PlotNFTExternal } from '@poligon/api';
+import { useIsWalletSynced } from '@poligon/wallets';
 import usePlotNFTName from './usePlotNFTName';
 
 export default function usePlotNFTExternalDetails(nft: PlotNFTExternal): {

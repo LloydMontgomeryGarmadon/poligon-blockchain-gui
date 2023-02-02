@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import type { NFTInfo } from '@floteo/api';
-import { useGetNFTsQuery } from '@floteo/api-react';
+import type { NFTInfo } from '@poligon/api';
+import { useGetNFTsQuery } from '@poligon/api-react';
 
 type UseFetchNFTsResult = {
   nfts: NFTInfo[];

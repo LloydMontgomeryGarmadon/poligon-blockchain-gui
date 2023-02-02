@@ -1,8 +1,8 @@
 {
-  "name": "@floteo/api",
-  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://floteoblockchain.pl/)",
-  "description": "Floteo API Library",
-  "productName": "Floteo Blockchain",
+  "name": "@poligon/api",
+  "author": "Kopalnie Krypto <kontakt@kopalniekrypto.pl> (https://poligonblockchain.pl/)",
+  "description": "Poligon API Library",
+  "productName": "Poligon Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

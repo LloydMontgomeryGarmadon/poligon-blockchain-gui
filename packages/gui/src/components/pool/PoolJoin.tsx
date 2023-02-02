@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, useOpenDialog } from '@floteo/core';
+import { AlertDialog, useOpenDialog } from '@poligon/core';
 import type PlotNFT from '../../types/PlotNFT';
 import usePlotNFTDetails from '../../hooks/usePlotNFTDetails';
 

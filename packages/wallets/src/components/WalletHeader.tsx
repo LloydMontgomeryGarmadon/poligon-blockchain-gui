@@ -5,7 +5,7 @@ import {
   ConfirmDialog,
   useOpenDialog,
   DropdownActions,
-} from '@floteo/core';
+} from '@poligon/core';
 import {
   Typography,
   ListItemIcon,
@@ -16,7 +16,7 @@ import {
 import {
   Delete as DeleteIcon,
 } from '@mui/icons-material';
-import { useDeleteUnconfirmedTransactionsMutation } from '@floteo/api-react';
+import { useDeleteUnconfirmedTransactionsMutation } from '@poligon/api-react';
 import WalletName from './WalletName';
 
 type StandardWalletProps = {

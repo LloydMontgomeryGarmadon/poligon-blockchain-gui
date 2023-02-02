@@ -112,14 +112,14 @@ describe('units', () => {
     });
     it('updates an existing display', () => {
       units.setDisplay('chia', {
-        format: '{amount} TFLO',
+        format: '{amount} TPOL',
         fractionDigits: 0,
       });
 
       const result = units.getDisplay('chia');
 
       expect(result).toEqual({
-        format: '{amount} TFLO',
+        format: '{amount} TPOL',
         fractionDigits: 0,
       });
     });

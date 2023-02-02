@@ -7,9 +7,9 @@ import {
   useCheckOfferValidityMutation,
   useGetNFTInfoQuery,
   useGetNFTWallets,
-} from '@floteo/api-react';
-import type { Wallet } from '@floteo/api';
-import { OfferSummaryRecord, OfferTradeRecord } from '@floteo/api';
+} from '@poligon/api-react';
+import type { Wallet } from '@poligon/api';
+import { OfferSummaryRecord, OfferTradeRecord } from '@poligon/api';
 import {
   Back,
   Button,
@@ -26,7 +26,7 @@ import {
   useColorModeValue,
   useCurrencyCode,
   useShowError,
-} from '@floteo/core';
+} from '@poligon/core';
 import { Box, Divider, Grid, Typography } from '@mui/material';
 import { Warning as WarningIcon } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';
@@ -92,7 +92,7 @@ function NFTOfferSummaryRow(props: NFTOfferSummaryRowProps) {
         const infoDict = summaryInfo[key];
         let assetType: OfferAsset | undefined;
 
-        if (['flo', 'tflo'].includes(key.toLowerCase())) {
+        if (['pol', 'tpol'].includes(key.toLowerCase())) {
           assetType = OfferAsset.CHIA;
         } else if (infoDict?.type) {
           switch (infoDict.type.toLowerCase()) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog } from '@floteo/core';
+import { ConfirmDialog } from '@poligon/core';
 import { Typography } from '@mui/material';
 
 /* ========================================================================== */

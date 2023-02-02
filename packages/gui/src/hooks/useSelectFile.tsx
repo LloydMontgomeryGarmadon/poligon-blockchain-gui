@@ -1,4 +1,4 @@
-import { useShowSaveDialog, useShowError } from '@floteo/core';
+import { useShowSaveDialog, useShowError } from '@poligon/core';
 
 export default function useSelectFile(): () => Promise<string | undefined> {
   const showSaveDialog = useShowSaveDialog();

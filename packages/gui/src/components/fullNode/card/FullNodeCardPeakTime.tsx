@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { CardSimple } from '@floteo/core';
+import { CardSimple } from '@poligon/core';
 import moment from 'moment';
-import { useGetLatestPeakTimestampQuery } from '@floteo/api-react';
+import { useGetLatestPeakTimestampQuery } from '@poligon/api-react';
 
 export default function FullNodeCardPeakTime() {
   const { data: timestamp, isLoading, error } = useGetLatestPeakTimestampQuery();

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import moment from 'moment';
-import { OfferTradeRecord } from '@floteo/api';
-import { Flex, useColorModeValue } from '@floteo/core';
+import { OfferTradeRecord } from '@poligon/api';
+import { Flex, useColorModeValue } from '@poligon/core';
 import { Typography } from '@mui/material';
 import path from 'path';
 import styled from 'styled-components';

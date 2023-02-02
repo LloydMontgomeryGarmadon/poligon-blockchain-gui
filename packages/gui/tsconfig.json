@@ -8,7 +8,7 @@
       "esnext"
     ],
     "paths": {
-      "@floteo/*": ["./components/*"]
+      "@poligon/*": ["./components/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

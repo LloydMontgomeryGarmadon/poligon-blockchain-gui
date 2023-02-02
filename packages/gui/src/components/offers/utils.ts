@@ -1,16 +1,16 @@
-import { WalletType } from '@floteo/api';
+import { WalletType } from '@poligon/api';
 import { t } from '@lingui/macro';
 import type { ChipProps } from '@mui/material';
 import type {
   OfferSummaryAssetInfo,
   OfferSummaryInfos,
   OfferSummaryRecord,
-} from '@floteo/api';
+} from '@poligon/api';
 import {
   mojoToChia,
   mojoToChiaLocaleString,
   mojoToCATLocaleString,
-} from '@floteo/core';
+} from '@poligon/core';
 import NFTOfferExchangeType from './NFTOfferExchangeType';
 import OfferState from './OfferState';
 import OfferAsset from './OfferAsset';
@@ -49,7 +49,7 @@ export function summaryStringsForNFTOffer(
   ) => string,
 ): [makerString: string, takerString: string] {
   // const makerAssetType = offerAssetTypeForAssetId
-  // TODO: Remove 1:1 NFT <--> FLO assumption
+  // TODO: Remove 1:1 NFT <--> POL assumption
   const makerEntry: [string, string] = Object.entries(summary.offered)[0];
   const takerEntry: [string, string] = Object.entries(summary.requested)[0];
   const makerAssetType = offerAssetTypeForAssetId(makerEntry[0], summary);
@@ -236,7 +236,7 @@ export function offerAssetTypeForAssetId(
 ): OfferAsset | undefined {
   let assetType: OfferAsset | undefined;
 
-  if (['flo', 'tflo'].includes(assetId)) {
+  if (['pol', 'tpol'].includes(assetId)) {
     assetType = OfferAsset.CHIA;
   } else {
     const infos: OfferSummaryInfos = offerSummary.infos;
@@ -313,8 +313,8 @@ export function determineNFTOfferExchangeType(
 export function getNFTPriceWithoutRoyalties(
   summary: OfferSummaryRecord,
 ): number | undefined {
-  // NFTs can only be exchanged for FLO currently
-  const amountInMojos = offerAssetAmountForAssetId('flo', summary);
+  // NFTs can only be exchanged for POL currently
+  const amountInMojos = offerAssetAmountForAssetId('pol', summary);
   if (amountInMojos === undefined) {
     return undefined;
   }

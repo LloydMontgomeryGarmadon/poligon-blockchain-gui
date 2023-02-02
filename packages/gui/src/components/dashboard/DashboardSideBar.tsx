@@ -11,8 +11,8 @@ import {
   Offers as OffersIcon,
   Tokens as TokensIcon,
   Settings as SettingsIcon,
-} from '@floteo/icons';
-import { Flex, SideBarItem } from '@floteo/core';
+} from '@poligon/icons';
+import { Flex, SideBarItem } from '@poligon/core';
 
 const StyledItemsContainer = styled(Flex)`
   flex-direction: column;

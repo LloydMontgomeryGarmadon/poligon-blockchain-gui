@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import { useLocalStorage } from '@floteo/core';
-import { useGetLoggedInFingerprintQuery } from '@floteo/api-react';
+import { useLocalStorage } from '@poligon/core';
+import { useGetLoggedInFingerprintQuery } from '@poligon/api-react';
 
 
 export default function useHiddenWallet(): {

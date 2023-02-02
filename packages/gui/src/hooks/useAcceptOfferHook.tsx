@@ -1,14 +1,14 @@
 import React from 'react';
 import BigNumber from 'bignumber.js';
 import { Trans, t } from '@lingui/macro';
-import { OfferSummaryRecord } from '@floteo/api';
-import { useTakeOfferMutation } from '@floteo/api-react';
+import { OfferSummaryRecord } from '@poligon/api';
+import { useTakeOfferMutation } from '@poligon/api-react';
 import {
   AlertDialog,
   chiaToMojo,
   useOpenDialog,
   useShowError,
-} from '@floteo/core';
+} from '@poligon/core';
 import useAssetIdName from './useAssetIdName';
 import OfferAcceptConfirmationDialog from '../components/offers/OfferAcceptConfirmationDialog';
 import OfferAsset from '../components/offers/OfferAsset';

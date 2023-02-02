@@ -1,5 +1,5 @@
-import type { PoolInfo } from '@floteo/api';
-import { toCamelCase } from '@floteo/api';
+import type { PoolInfo } from '@poligon/api';
+import { toCamelCase } from '@poligon/api';
 
 export default async function getPoolInfo(poolUrl: string): PoolInfo {
   const url = `${poolUrl}/pool_info`;

@@ -9,9 +9,9 @@ import {
   StateColor,
   Table,
   LayoutDashboardSub,
-} from '@floteo/core';
-import { Status } from '@floteo/icons';
-import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@floteo/api-react';
+} from '@poligon/core';
+import { Status } from '@poligon/icons';
+import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@poligon/api-react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Tooltip, Typography } from '@mui/material';
 // import HelpIcon from '@mui/icons-material/Help';

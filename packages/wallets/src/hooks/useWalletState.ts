@@ -1,5 +1,5 @@
-import { useGetSyncStatusQuery } from '@floteo/api-react';
-import { SyncingStatus } from '@floteo/api';
+import { useGetSyncStatusQuery } from '@poligon/api-react';
+import { SyncingStatus } from '@poligon/api';
 import getWalletSyncingStatus from '../utils/getWalletSyncingStatus';
 
 export default function useWalletState(): {

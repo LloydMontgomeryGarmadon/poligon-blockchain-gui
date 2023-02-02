@@ -1,5 +1,5 @@
-import { Daemon, optionsForPlotter, defaultsForPlotter } from '@floteo/api';
-import type { KeyringStatus, ServiceName } from '@floteo/api';
+import { Daemon, optionsForPlotter, defaultsForPlotter } from '@poligon/api';
+import type { KeyringStatus, ServiceName } from '@poligon/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 

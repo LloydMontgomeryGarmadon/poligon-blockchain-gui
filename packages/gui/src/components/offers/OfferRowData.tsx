@@ -1,5 +1,5 @@
 import type BigNumber from 'bignumber.js';
-import { type WalletType } from '@floteo/api';
+import { type WalletType } from '@poligon/api';
 
 type OfferRowData = {
   amount: string;

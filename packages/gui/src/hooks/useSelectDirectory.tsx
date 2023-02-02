@@ -1,7 +1,7 @@
 import React from 'react';
 import isElectron from 'is-electron';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, useOpenDialog } from '@floteo/core';
+import { AlertDialog, useOpenDialog } from '@poligon/core';
 
 type Options = {
   defaultPath?: string;

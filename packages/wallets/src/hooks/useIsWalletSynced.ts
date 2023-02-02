@@ -1,4 +1,4 @@
-import { SyncingStatus } from '@floteo/api';
+import { SyncingStatus } from '@poligon/api';
 import useWalletState from './useWalletState';
 
 export default function useIsWalletSynced(): boolean {

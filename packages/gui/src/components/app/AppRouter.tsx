@@ -6,13 +6,13 @@ import {
   LayoutDashboard,
   Mode,
   useMode,
-} from '@floteo/core';
+} from '@poligon/core';
 import {
   WalletAdd,
   WalletImport,
   Wallets,
   WalletStatusHeader,
-} from '@floteo/wallets';
+} from '@poligon/wallets';
 import AppProviders from './AppProviders';
 import FullNode from '../fullNode/FullNode';
 import Block from '../block/Block';

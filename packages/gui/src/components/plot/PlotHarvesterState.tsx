@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, LinearProgress, type LinearProgressProps } from '@mui/material';
-import { useGetHarvesterStats } from '@floteo/api-react';
+import { useGetHarvesterStats } from '@poligon/api-react';
 
 function LinearProgressWithLabel(props: LinearProgressProps & { value: number }) {
   return (

@@ -9,9 +9,9 @@ import untildify from './untildify';
 function getConfigRootDir(net = 'mainnet'): string {
   const homedir = os.homedir();
 
-  return 'FLOTEO_ROOT' in process.env 
-    ? untildify(process.env.FLOTEO_ROOT)
-    : path.join(homedir, '.floteo', net);
+  return 'POLIGON_ROOT' in process.env 
+    ? untildify(process.env.POLIGON_ROOT)
+    : path.join(homedir, '.poligon', net);
 }
 
 export function readConfigFile(net?: string): string {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple } from '@floteo/core';
-import { useGetBlockchainStateQuery } from '@floteo/api-react';
+import { FormatLargeNumber, CardSimple } from '@poligon/core';
+import { useGetBlockchainStateQuery } from '@poligon/api-react';
 
 export default function FullNodeCardPeakHeight() {
   const { data, isLoading, error } = useGetBlockchainStateQuery();

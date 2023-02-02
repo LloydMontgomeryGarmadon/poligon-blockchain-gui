@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ServiceName } from '@floteo/api';
+import { ServiceName } from '@poligon/api';
 import { useClientStartServiceMutation } from '../services/client';
 import { useIsServiceRunningQuery, useStopServiceMutation } from '../services/daemon';
 

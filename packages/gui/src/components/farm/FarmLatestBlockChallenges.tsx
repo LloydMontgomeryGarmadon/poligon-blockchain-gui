@@ -1,11 +1,11 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { Typography } from '@mui/material';
-import { Link, Table, Card } from '@floteo/core';
+import { Link, Table, Card } from '@poligon/core';
 import {
   useGetSignagePointsQuery,
   useGetTotalHarvestersSummaryQuery,
-} from '@floteo/api-react';
+} from '@poligon/api-react';
 import type { Row } from '../core/components/Table/Table';
 
 const cols = [
@@ -65,10 +65,10 @@ export default function FarmLatestBlockChallenges() {
       />
       <Typography variant="caption">
         <Trans>
-          *Want to explore Floteo’s blocks further? Check out{' '}
+          *Want to explore Poligon’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://alltheblocks.net/floteo"
+            href="https://alltheblocks.net/poligon"
             target="_blank"
           >
             All The Blocks

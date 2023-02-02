@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatBytes, CardSimple } from '@floteo/core';
-import { useGetTotalHarvestersSummaryQuery } from '@floteo/api-react';
+import { FormatBytes, CardSimple } from '@poligon/core';
+import { useGetTotalHarvestersSummaryQuery } from '@poligon/api-react';
 
 export default function PlotCardTotalPlotsSize() {
   const { totalPlotSize, initializedHarvesters, isLoading } = useGetTotalHarvestersSummaryQuery();

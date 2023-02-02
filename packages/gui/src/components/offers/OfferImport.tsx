@@ -8,10 +8,10 @@ import {
   useOpenDialog,
   useSerializedNavigationState,
   useShowError,
-} from '@floteo/core';
+} from '@poligon/core';
 import { Button, Grid, Typography } from '@mui/material';
-import { useGetOfferSummaryMutation } from '@floteo/api-react';
-import { type OfferSummaryRecord } from '@floteo/api';
+import { useGetOfferSummaryMutation } from '@poligon/api-react';
+import { type OfferSummaryRecord } from '@poligon/api';
 import OfferDataEntryDialog from './OfferDataEntryDialog';
 import { offerContainsAssetOfType } from './utils';
 import fs, { Stats } from 'fs';

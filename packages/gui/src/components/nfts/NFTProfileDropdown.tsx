@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Trans } from '@lingui/macro';
-import type { Wallet } from '@floteo/api';
-import { DropdownActions } from '@floteo/core';
+import type { Wallet } from '@poligon/api';
+import { DropdownActions } from '@poligon/core';
 import {
   AutoAwesome as AutoAwesomeIcon,
   PermIdentity as PermIdentityIcon,
@@ -11,8 +11,8 @@ import {
   useGetDIDsQuery,
   useGetNFTWallets,
   useGetNFTWalletsWithDIDsQuery,
-} from '@floteo/api-react';
-import { NFTsSmall as NFTsSmallIcon } from '@floteo/icons';
+} from '@poligon/api-react';
+import { NFTsSmall as NFTsSmallIcon } from '@poligon/icons';
 import { orderBy } from 'lodash';
 
 type Profile = Wallet & {

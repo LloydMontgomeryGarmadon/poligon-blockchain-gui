@@ -1,14 +1,14 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
-import { Button, Flex, Logo, Card, useMode, Mode } from '@floteo/core';
+import { Button, Flex, Logo, Card, useMode, Mode } from '@poligon/core';
 import {
   AccountBalanceWallet as AccountBalanceWalletIcon,
   EnergySavingsLeaf as EcoIcon,
   Settings as SettingsIcon,
   Check as CheckIcon,
 } from '@mui/icons-material';
-import { Farming as FarmingIcon } from '@floteo/icons';
+import { Farming as FarmingIcon } from '@poligon/icons';
 import { Box, Typography, Container, Grid } from '@mui/material';
 
 const StyledCheckIcon = styled(CheckIcon)`
@@ -89,7 +89,7 @@ export default function AppSelectMode() {
                     <Flex gap={1} alignItems="center">
                       <StyledCheckIcon color="primary" />
                       <Typography variant="body2">
-                        <Trans>Store and Send FLO</Trans>
+                        <Trans>Store and Send POL</Trans>
                       </Typography>
                     </Flex>
                     <Flex gap={1} alignItems="center">

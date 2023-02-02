@@ -1,13 +1,13 @@
 enum ServiceName {
-  WALLET = 'floteo_wallet',
-  FULL_NODE = 'floteo_full_node',
-  FARMER = 'floteo_farmer',
-  HARVESTER = 'floteo_harvester',
-  SIMULATOR = 'floteo_full_node_simulator',
+  WALLET = 'poligon_wallet',
+  FULL_NODE = 'poligon_full_node',
+  FARMER = 'poligon_farmer',
+  HARVESTER = 'poligon_harvester',
+  SIMULATOR = 'poligon_full_node_simulator',
   DAEMON = 'daemon',
-  PLOTTER = 'floteo_plotter',
-  TIMELORD = 'floteo_timelord',
-  INTRODUCER = 'floteo_introducer',
+  PLOTTER = 'poligon_plotter',
+  TIMELORD = 'poligon_timelord',
+  INTRODUCER = 'poligon_introducer',
   EVENTS = 'wallet_ui',
 };
 

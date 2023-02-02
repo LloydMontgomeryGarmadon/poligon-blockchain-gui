@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCurrencyCode } from '@floteo/core';
+import { useCurrencyCode } from '@poligon/core';
 import styled from 'styled-components';
-import { useGetCatListQuery } from '@floteo/api-react';
-import { WalletType, type Wallet } from '@floteo/api';
+import { useGetCatListQuery } from '@poligon/api-react';
+import { WalletType, type Wallet } from '@poligon/api';
 import { Typography, type TypographyProps } from '@mui/material';
 
 const StyledSymbol = styled(Typography)`

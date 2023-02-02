@@ -1,5 +1,5 @@
 import { sumBy } from 'lodash';
-import type { Point } from '@floteo/api';
+import type { Point } from '@poligon/api';
 
 function sumPoints(points: Point[]): number {
   return sumBy(points, (point) => point[1]) ?? 0;

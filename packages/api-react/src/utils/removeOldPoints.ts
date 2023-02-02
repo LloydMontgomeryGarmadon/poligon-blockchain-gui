@@ -1,4 +1,4 @@
-import type { Point } from '@floteo/api';
+import type { Point } from '@poligon/api';
 
 const DAY_SECONDS = 60 * 60 * 24;
 

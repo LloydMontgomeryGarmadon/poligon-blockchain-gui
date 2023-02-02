@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetWalletBalanceQuery } from '@floteo/api-react';
-import { CardSimple } from '@floteo/core';
+import { useGetWalletBalanceQuery } from '@poligon/api-react';
+import { CardSimple } from '@poligon/core';
 import useWallet from '../../hooks/useWallet';
 import useWalletHumanValue from '../../hooks/useWalletHumanValue';
 

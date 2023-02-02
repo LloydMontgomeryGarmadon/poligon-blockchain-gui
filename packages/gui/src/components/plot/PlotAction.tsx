@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { ConfirmDialog, More, useOpenDialog } from '@floteo/core';
+import { ConfirmDialog, More, useOpenDialog } from '@poligon/core';
 import { Box, ListItemIcon, MenuItem, Typography } from '@mui/material';
 import { DeleteForever as DeleteForeverIcon } from '@mui/icons-material';
-import { useDeletePlotMutation } from '@floteo/api-react';
-import type { Plot } from '@floteo/api';
+import { useDeletePlotMutation } from '@poligon/api-react';
+import type { Plot } from '@poligon/api';
 
 export type PlotActionProps = {
   plot: Plot;

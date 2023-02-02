@@ -14,7 +14,7 @@ import {
 import styled from 'styled-components';
 import { ChevronRight as ChevronRightIcon, EnergySavingsLeaf as EcoIcon, Add as AddIcon } from '@mui/icons-material';
 import {  useSelector } from 'react-redux';
-import { Back, Flex, FormatLargeNumber, Loading, Logo } from '@floteo/core';
+import { Back, Flex, FormatLargeNumber, Loading, Logo } from '@poligon/core';
 import StandardWallet from '../standard/WalletStandard';
 import { CreateWalletView } from '../create/WalletCreate';
 import WalletCAT from '../cat/WalletCAT';

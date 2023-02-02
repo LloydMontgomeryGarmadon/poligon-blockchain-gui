@@ -1,5 +1,5 @@
 import React from 'react';
-import { ModeProvider, Persist } from '@floteo/core';
+import { ModeProvider, Persist } from '@poligon/core';
 import AppRouter from './AppRouter';
 
 export default function App() {

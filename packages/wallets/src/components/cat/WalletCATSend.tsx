@@ -17,12 +17,12 @@ import {
   useCurrencyCode,
   getTransactionResult,
   TooltipIcon,
-} from '@floteo/core';
+} from '@poligon/core';
 import {
   useSpendCATMutation,
   useFarmBlockMutation,
-} from '@floteo/api-react';
-import { SyncingStatus, toBech32m } from '@floteo/api';
+} from '@poligon/api-react';
+import { SyncingStatus, toBech32m } from '@poligon/api';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import { Grid, Typography } from '@mui/material';
@@ -115,7 +115,7 @@ export default function WalletCATSend(props: Props) {
     }
 
     if (address.includes('colour')) {
-      throw new Error(t`Cannot send Floteo to coloured address. Please enter a Floteo address.`);
+      throw new Error(t`Cannot send Poligon to coloured address. Please enter a Poligon address.`);
     }
 
     if (address.includes('chia_addr') || address.includes('colour_desc')) {
@@ -129,7 +129,7 @@ export default function WalletCATSend(props: Props) {
       }
     }
 
-    if (address.slice(0, 12) === 'flo_addr://') {
+    if (address.slice(0, 12) === 'pol_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {

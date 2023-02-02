@@ -1,5 +1,5 @@
-import { ServiceName } from '@floteo/api';
-import { useIsServiceRunningQuery } from '@floteo/api-react';
+import { ServiceName } from '@poligon/api';
+import { useIsServiceRunningQuery } from '@poligon/api-react';
 import FarmerStatus from '../constants/FarmerStatus';
 import FullNodeState from '../constants/FullNodeState';
 import useFullNodeState from './useFullNodeState';

@@ -1,6 +1,6 @@
-import { OfferTradeRecord } from '@floteo/api';
-import { useGetOfferDataMutation } from '@floteo/api-react';
-import { useShowSaveDialog } from '@floteo/core';
+import { OfferTradeRecord } from '@poligon/api';
+import { useGetOfferDataMutation } from '@poligon/api-react';
+import { useShowSaveDialog } from '@poligon/core';
 import fs from 'fs';
 import { suggestedFilenameForOffer } from '../components/offers/utils';
 import useAssetIdName from './useAssetIdName';

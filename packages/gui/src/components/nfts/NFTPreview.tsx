@@ -15,9 +15,9 @@ import {
   Flex,
   SandboxedIframe,
   usePersistState,
-} from '@floteo/core';
+} from '@poligon/core';
 import styled from 'styled-components';
-import { type NFTInfo } from '@floteo/api';
+import { type NFTInfo } from '@poligon/api';
 import isURL from 'validator/lib/isURL';
 import useNFTHash from '../../hooks/useNFTHash';
 

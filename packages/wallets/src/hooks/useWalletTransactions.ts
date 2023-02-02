@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@floteo/api-react';
-import type { Transaction } from '@floteo/api';
+import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@poligon/api-react';
+import type { Transaction } from '@poligon/api';
 
 export default function useWalletTransactions(
   walletId: number, 

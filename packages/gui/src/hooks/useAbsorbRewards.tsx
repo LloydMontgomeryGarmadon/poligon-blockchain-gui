@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, ConfirmDialog, UnitFormat, useOpenDialog } from '@floteo/core';
-import type { PlotNFT } from '@floteo/api';
-import { usePwAbsorbRewardsMutation } from '@floteo/api-react';
+import { AlertDialog, ConfirmDialog, UnitFormat, useOpenDialog } from '@poligon/core';
+import type { PlotNFT } from '@poligon/api';
+import { usePwAbsorbRewardsMutation } from '@poligon/api-react';
 import usePlotNFTDetails from './usePlotNFTDetails';
 import PlotNFTState from '../constants/PlotNFTState';
 

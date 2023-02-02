@@ -2,12 +2,12 @@ import React, { useMemo, useState, useEffect } from 'react';
 import { Trans } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-import { Button, Flex, Form, TextField, Loading } from '@floteo/core';
-import { fromBech32m } from '@floteo/api';
+import { Button, Flex, Form, TextField, Loading } from '@poligon/core';
+import { fromBech32m } from '@poligon/api';
 import {
   useSetRewardTargetsMutation,
   useGetRewardTargetsQuery,
-} from '@floteo/api-react';
+} from '@poligon/api-react';
 import {
   Alert,
   Dialog,

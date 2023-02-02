@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useGetWalletsQuery } from '../services';
-import { Wallet, WalletType } from '@floteo/api';
+import { Wallet, WalletType } from '@poligon/api';
 
 export default function useGetNFTWallets() {
   const { data, isLoading } = useGetWalletsQuery();

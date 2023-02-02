@@ -10,8 +10,8 @@ import {
 } from '@mui/material';
 import moment from 'moment';
 import { Trans } from '@lingui/macro';
-import { toBech32m } from '@floteo/api';
-import { useGetBlockQuery, useGetBlockRecordQuery  } from '@floteo/api-react'
+import { toBech32m } from '@poligon/api';
+import { useGetBlockQuery, useGetBlockRecordQuery  } from '@poligon/api-react'
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Back,
@@ -28,7 +28,7 @@ import {
   useCurrencyCode,
   mojoToChia,
   Suspender,
-} from '@floteo/core';
+} from '@poligon/core';
 import {
   hex_to_array,
   arr_to_hex,
@@ -246,7 +246,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://alltheblocks.net/floteo/puzzlehash/${blockRecord.farmerPuzzleHash}`}
+          href={`https://alltheblocks.net/poligon/puzzlehash/${blockRecord.farmerPuzzleHash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -262,7 +262,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://alltheblocks.net/floteo/puzzlehash/${blockRecord.poolPuzzleHash}`}
+          href={`https://alltheblocks.net/poligon/puzzlehash/${blockRecord.poolPuzzleHash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -312,7 +312,7 @@ export default function Block() {
         title={
           <Back variant="h5">
             <Trans>
-              Block at height {blockRecord.height} in the Floteo blockchain
+              Block at height {blockRecord.height} in the Poligon blockchain
             </Trans>
           </Back>
         }

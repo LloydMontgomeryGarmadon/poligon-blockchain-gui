@@ -1,8 +1,8 @@
 import React, { useMemo, ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router';
-import { useGetPlotNFTsQuery, usePwSelfPoolMutation, usePwJoinPoolMutation } from '@floteo/api-react';
-import { Flex, State, Loading, StateTypography } from '@floteo/core';
+import { useGetPlotNFTsQuery, usePwSelfPoolMutation, usePwJoinPoolMutation } from '@poligon/api-react';
+import { Flex, State, Loading, StateTypography } from '@poligon/core';
 import { ChevronRight as ChevronRightIcon } from '@mui/icons-material';
 import { useParams } from 'react-router';
 import PlotNFTSelectPool, { SubmitData } from './select/PlotNFTSelectPool';

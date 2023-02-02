@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router';
-import { useRefreshPlotsMutation } from '@floteo/api-react';
-import { Button, Flex, useOpenDialog, More } from '@floteo/core';
+import { useRefreshPlotsMutation } from '@poligon/api-react';
+import { Button, Flex, useOpenDialog, More } from '@poligon/core';
 import { Box, MenuItem, ListItemIcon, Typography } from '@mui/material';
 import { Add, Refresh } from '@mui/icons-material';
 import PlotOverviewCards from './PlotOverviewCards';

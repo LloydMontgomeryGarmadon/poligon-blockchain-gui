@@ -1,4 +1,4 @@
-import { ServiceName } from '@floteo/api';
+import { ServiceName } from '@poligon/api';
 import useService, { ServiceState } from './useService';
 
 type Options = {

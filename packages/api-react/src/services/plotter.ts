@@ -1,5 +1,5 @@
-import { Plotter } from '@floteo/api';
-import type { Plot } from '@floteo/api';
+import { Plotter } from '@poligon/api';
+import type { Plot } from '@poligon/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 

@@ -13,7 +13,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Tooltip } from '@mui/material';
 import HelpIcon from '@mui/icons-material/Help';
-import { AlertDialog, Card, Flex, chiaToMojo, mojoToChiaLocaleString } from '@floteo/core';
+import { AlertDialog, Card, Flex, chiaToMojo, mojoToChiaLocaleString } from '@poligon/core';
 import {
   send_transaction,
   rl_set_user_info_action,
@@ -398,7 +398,7 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (Floteo per interval):{' '}
+                  Spending Limit (Poligon per interval):{' '}
                   {mojoToChiaLocaleString(limit)}
                 </Trans>
               </Typography>
@@ -445,7 +445,7 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (Floteo per interval):{' '}
+                  Spending Limit (Poligon per interval):{' '}
                   {mojoToChiaLocaleString(limit)}
                 </Trans>
               </Typography>

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Plural, Trans } from '@lingui/macro';
-import { type OfferSummaryRecord } from '@floteo/api';
+import { type OfferSummaryRecord } from '@poligon/api';
 import {
   Flex,
   FormatLargeNumber,
@@ -8,7 +8,7 @@ import {
   TooltipIcon,
   mojoToChia,
   mojoToCAT,
-} from '@floteo/core';
+} from '@poligon/core';
 import { Box, Divider, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styled from 'styled-components';
@@ -53,13 +53,13 @@ export default function OfferSummary(props: Props) {
     takerEntries.length === 1 ? lookupByAssetId(takerEntries[0][0]) : undefined;
   const makerAmount =
     makerEntries.length > 0
-      ? ['flo', 'tflo'].includes(makerEntries[0][0].toLowerCase())
+      ? ['pol', 'tpol'].includes(makerEntries[0][0].toLowerCase())
         ? mojoToChia(makerEntries[0][1])
         : mojoToCAT(makerEntries[0][1])
       : undefined;
   const takerAmount =
     takerEntries.length > 0
-      ? ['flo', 'tflo'].includes(takerEntries[0][0].toLowerCase())
+      ? ['pol', 'tpol'].includes(takerEntries[0][0].toLowerCase())
         ? mojoToChia(takerEntries[0][1])
         : mojoToCAT(takerEntries[0][1])
       : undefined;

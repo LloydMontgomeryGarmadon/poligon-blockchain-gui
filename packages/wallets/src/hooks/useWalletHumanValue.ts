@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
-import type { Wallet } from '@floteo/api';
-import { WalletType } from '@floteo/api';
+import type { Wallet } from '@poligon/api';
+import { WalletType } from '@poligon/api';
 import BigNumber from 'bignumber.js';
-import { mojoToCATLocaleString, mojoToChiaLocaleString, useLocale } from '@floteo/core';
+import { mojoToCATLocaleString, mojoToChiaLocaleString, useLocale } from '@poligon/core';
 
 export default function useWalletHumanValue(wallet: Wallet, value?: string | number | BigNumber, unit?: string): string {
   const [locale] = useLocale();

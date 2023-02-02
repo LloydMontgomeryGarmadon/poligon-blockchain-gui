@@ -12,11 +12,11 @@ import {
   mojoToCAT,
   mojoToCATLocaleString,
   useLocale,
-} from '@floteo/core';
+} from '@poligon/core';
 import { Box, Divider, IconButton, Typography } from '@mui/material';
 import { Add, Remove } from '@mui/icons-material';
-import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@floteo/api-react';
-import { Wallet, WalletType } from '@floteo/api';
+import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@poligon/api-react';
+import { Wallet, WalletType } from '@poligon/api';
 import type OfferEditorRowData from './OfferEditorRowData';
 import OfferAssetSelector from './OfferAssetSelector';
 import OfferExchangeRate from './OfferExchangeRate';

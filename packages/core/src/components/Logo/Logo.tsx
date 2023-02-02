@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, BoxProps } from '@mui/material';
-import { Chia } from '@floteo/icons';
+import { Chia } from '@poligon/icons';
 
 const StyledChia = styled(Chia)`
   max-width: 100%;

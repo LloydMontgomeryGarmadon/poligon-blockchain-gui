@@ -1,4 +1,4 @@
-import { WalletType } from '@floteo/api';
+import { WalletType } from '@poligon/api';
 import type Wallet from '../types/Wallet';
 
 // deprecated

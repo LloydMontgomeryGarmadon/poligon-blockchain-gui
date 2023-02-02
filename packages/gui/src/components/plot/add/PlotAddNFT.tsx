@@ -1,6 +1,6 @@
 import React, { useState, forwardRef } from 'react';
 import { Trans } from '@lingui/macro';
-import { Button, CardStep, Select, Flex, Loading } from '@floteo/core';
+import { Button, CardStep, Select, Flex, Loading } from '@poligon/core';
 import {
   Box,
   Grid,
@@ -47,7 +47,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
         title={<Trans>Create a Plot NFT</Trans>}
         description={
           <Trans>
-            Join a pool and get consistent Floteo farming rewards. The average
+            Join a pool and get consistent Poligon farming rewards. The average
             returns are the same, but it is much less volatile.
           </Trans>
         }
@@ -136,7 +136,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
         <>
           <Typography variant="subtitle1">
             <Trans>
-              Join a pool and get more consistent Floteo farming rewards. Create a
+              Join a pool and get more consistent Poligon farming rewards. Create a
               plot NFT and assign your new plots to a group.
             </Trans>
           </Typography>

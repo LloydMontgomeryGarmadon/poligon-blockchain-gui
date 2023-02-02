@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { Address, TableControlled, Flex, FormatBytes, Tooltip, StateColor } from '@floteo/core';
+import { Address, TableControlled, Flex, FormatBytes, Tooltip, StateColor } from '@poligon/core';
 import { Warning as WarningIcon } from '@mui/icons-material';
-import { type Plot } from '@floteo/api';
-import { useGetHarvesterPlotsValidQuery, useGetHarvesterQuery } from '@floteo/api-react';
+import { type Plot } from '@poligon/api';
+import { useGetHarvesterPlotsValidQuery, useGetHarvesterQuery } from '@poligon/api-react';
 import styled from 'styled-components';
 import { Box, Typography } from '@mui/material';
 import PlotStatus from './PlotStatus';

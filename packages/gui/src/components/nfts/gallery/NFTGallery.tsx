@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { Flex, LayoutDashboardSub, Loading, useTrans, usePersistState } from '@floteo/core';
+import { Flex, LayoutDashboardSub, Loading, useTrans, usePersistState } from '@poligon/core';
 import { defineMessage } from '@lingui/macro';
-import { WalletReceiveAddressField } from '@floteo/wallets';
-import type { NFTInfo, Wallet } from '@floteo/api';
-import { useGetNFTWallets } from '@floteo/api-react';
+import { WalletReceiveAddressField } from '@poligon/wallets';
+import type { NFTInfo, Wallet } from '@poligon/api';
+import { useGetNFTWallets } from '@poligon/api-react';
 import { Box, Grid } from '@mui/material';
 // import NFTGallerySidebar from './NFTGallerySidebar';
 import NFTCardLazy from '../NFTCardLazy';

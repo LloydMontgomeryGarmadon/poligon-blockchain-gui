@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
-import type { NFTAttribute } from '@floteo/api';
+import type { NFTAttribute } from '@poligon/api';
 import { Trans } from '@lingui/macro';
-import { CopyToClipboard, Flex, Tooltip } from '@floteo/core';
+import { CopyToClipboard, Flex, Tooltip } from '@poligon/core';
 import { Box, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import isRankingAttribute from '../../util/isRankingAttribute';

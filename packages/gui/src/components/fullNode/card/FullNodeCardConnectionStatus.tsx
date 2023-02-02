@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { CardSimple } from '@floteo/core';
-import { ServiceName } from '@floteo/api';
-import { useIsServiceRunningQuery } from '@floteo/api-react';
+import { CardSimple } from '@poligon/core';
+import { ServiceName } from '@poligon/api';
+import { useIsServiceRunningQuery } from '@poligon/api-react';
 
 export default function FullNodeCardConnectionStatus() {
   const { data: isRunning, isLoading, error } = useIsServiceRunningQuery({

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
-import { useRefreshPlotsMutation } from '@floteo/api-react';
+import { useRefreshPlotsMutation } from '@poligon/api-react';
 import { Grid, Typography, Divider } from '@mui/material';
-import { Button, CardHero, Flex, Link, useOpenDialog } from '@floteo/core';
-import { Plots } from '@floteo/icons';
+import { Button, CardHero, Flex, Link, useOpenDialog } from '@poligon/core';
+import { Plots } from '@poligon/icons';
 import PlotAddDirectoryDialog from '../PlotAddDirectoryDialog';
 
 export default function PlotOverviewHero() {
@@ -31,7 +31,7 @@ export default function PlotOverviewHero() {
           <Plots color="primary" fontSize="extraLarge" />
           <Typography variant="body1">
             <Trans>
-              Plots are allocated space on your hard drive used to farm and earn Floteo.
+              Plots are allocated space on your hard drive used to farm and earn Poligon.
             </Trans>
           </Typography>
           <Flex gap={1}>

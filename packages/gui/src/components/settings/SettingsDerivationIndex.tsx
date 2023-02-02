@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Trans, t } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { SyncingStatus } from '@floteo/api';
+import { SyncingStatus } from '@poligon/api';
 import {
   useExtendDerivationIndexMutation,
   useGetCurrentDerivationIndexQuery,
-} from '@floteo/api-react';
+} from '@poligon/api-react';
 import {
   AlertDialog,
   ButtonLoading,
@@ -13,8 +13,8 @@ import {
   Form,
   TextField,
   useOpenDialog,
-} from '@floteo/core';
-import { useWalletState } from '@floteo/wallets';
+} from '@poligon/core';
+import { useWalletState } from '@poligon/wallets';
 
 type FormData = {
   index: string;

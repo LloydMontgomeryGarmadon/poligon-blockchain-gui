@@ -13,8 +13,8 @@ import {
   StateTypography,
   State,
   TooltipIcon,
-} from '@floteo/core';
-import { useGetKeyringStatusQuery } from '@floteo/api-react';
+} from '@poligon/core';
+import { useGetKeyringStatusQuery } from '@poligon/api-react';
 import {
   Grid,
   Typography,
@@ -220,7 +220,7 @@ export default function SettingsPanel() {
             <TooltipIcon>
               <Trans>
                 The derivation index sets the range of wallet addresses that the wallet scans the blockchain for.
-                This number is generally higher if you have a lot of transactions or canceled offers for FLO, tokens, or NFTs.
+                This number is generally higher if you have a lot of transactions or canceled offers for POL, tokens, or NFTs.
                 If you believe your balance is incorrect because it’s missing coins,
                 then increasing the derivation index could help the wallet include the missing coins in the balance total.
               </Trans>

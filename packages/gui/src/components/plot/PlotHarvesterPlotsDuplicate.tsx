@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { TableControlled } from '@floteo/core';
-import { type Plot } from '@floteo/api';
-import { useGetHarvesterPlotsDuplicatesQuery, useGetHarvesterQuery } from '@floteo/api-react';
+import { TableControlled } from '@poligon/core';
+import { type Plot } from '@poligon/api';
+import { useGetHarvesterPlotsDuplicatesQuery, useGetHarvesterQuery } from '@poligon/api-react';
 import { Typography } from '@mui/material';
 import PlotAction from './PlotAction';
 

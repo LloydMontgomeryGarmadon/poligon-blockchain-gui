@@ -18,8 +18,8 @@ import {
   Visibility as VisibilityIcon,
 } from '@mui/icons-material';
 import { t, Trans } from '@lingui/macro';
-import { AlertDialog, Button, DialogActions, Flex, useValidateChangePassphraseParams, useOpenDialog, Suspender } from '@floteo/core';
-import { useGetKeyringStatusQuery, useSetKeyringPassphraseMutation } from '@floteo/api-react';
+import { AlertDialog, Button, DialogActions, Flex, useValidateChangePassphraseParams, useOpenDialog, Suspender } from '@poligon/core';
+import { useGetKeyringStatusQuery, useSetKeyringPassphraseMutation } from '@poligon/api-react';
 
 type Props = {
   onSuccess: () => void;
@@ -235,7 +235,7 @@ export default function SetPassphrasePrompt(props: Props) {
               label={t`Save passphrase`}
               style={{ marginRight: '8px' }}
             />
-            <Tooltip title={t`Your passphrase can be stored in your system's secure credential store. Floteo will be able to access your keys without prompting for your passphrase.`}>
+            <Tooltip title={t`Your passphrase can be stored in your system's secure credential store. Poligon will be able to access your keys without prompting for your passphrase.`}>
               <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
             </Tooltip>
           </Box>

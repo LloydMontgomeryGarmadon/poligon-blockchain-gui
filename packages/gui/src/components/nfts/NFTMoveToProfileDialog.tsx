@@ -1,13 +1,13 @@
 import React, { useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Trans, t } from '@lingui/macro';
-import { NFTInfo } from '@floteo/api';
-import type { Wallet } from '@floteo/api';
+import { NFTInfo } from '@poligon/api';
+import type { Wallet } from '@poligon/api';
 import {
   useGetDIDsQuery,
   useGetNFTWallets,
   useSetNFTDIDMutation,
-} from '@floteo/api-react';
+} from '@poligon/api-react';
 import {
   AlertDialog,
   Button,
@@ -23,7 +23,7 @@ import {
   truncateValue,
   useOpenDialog,
   useShowError,
-} from '@floteo/core';
+} from '@poligon/core';
 import { PermIdentity as PermIdentityIcon } from '@mui/icons-material';
 import {
   Box,

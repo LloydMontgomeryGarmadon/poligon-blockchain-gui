@@ -8,7 +8,7 @@ import {
   CardStep,
   Flex,
   TextField,
-} from '@floteo/core';
+} from '@poligon/core';
 import { Typography } from '@mui/material';
 import useSelectDirectory from '../../../hooks/useSelectDirectory';
 import Plotter from '../../../types/Plotter';

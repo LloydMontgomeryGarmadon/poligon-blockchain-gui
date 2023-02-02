@@ -8,10 +8,10 @@ import {
   FormatBytes,
   FormatConnectionStatus,
   Card,
-} from '@floteo/core';
-import { useIsServiceRunningQuery, useGetHarvesterConnectionsQuery } from '@floteo/api-react';
-import type { Connection } from '@floteo/api';
-import { ServiceName } from '@floteo/api';
+} from '@poligon/core';
+import { useIsServiceRunningQuery, useGetHarvesterConnectionsQuery } from '@poligon/api-react';
+import type { Connection } from '@poligon/api';
+import { ServiceName } from '@poligon/api';
 import FarmCloseConnection from './FarmCloseConnection';
 
 const StyledIconButton = styled(IconButton)`

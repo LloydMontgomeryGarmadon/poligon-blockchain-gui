@@ -11,8 +11,8 @@ import {
   useOpenDialog,
   useSkipMigration,
   LayoutDashboardSub,
-} from '@floteo/core';
-import { useGetKeyringStatusQuery } from '@floteo/api-react';
+} from '@poligon/core';
+import { useGetKeyringStatusQuery } from '@poligon/api-react';
 import { Grid, Typography, Box, Tooltip, Tab, Tabs } from '@mui/material';
 import {
   Help as HelpIcon,

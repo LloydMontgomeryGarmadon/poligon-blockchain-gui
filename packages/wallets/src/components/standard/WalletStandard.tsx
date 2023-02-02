@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
-import { WalletType } from '@floteo/api';
-import { Flex } from '@floteo/core';
-import { Offers as OffersIcon } from '@floteo/icons';
+import { WalletType } from '@poligon/api';
+import { Flex } from '@poligon/core';
+import { Offers as OffersIcon } from '@poligon/icons';
 import { Box, Typography, ListItemIcon, MenuItem } from '@mui/material';
 import WalletHistory from '../WalletHistory';
 import WalletStandardCards from './WalletStandardCards';
