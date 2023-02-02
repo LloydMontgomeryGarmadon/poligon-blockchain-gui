@@ -117,7 +117,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) {currentYear} Kopalnie Krypto</div>
+        <div className="copyright">Copyright (c) {currentYear} Lloyd Montgomery Garmadon</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (
@@ -147,7 +147,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/serwisgalena/poligon-blockchain/issues"
+          href="https://github.com/LloydMontgomeryGarmadon/poligon-blockchain/issues"
           target="_blank"
         >
           Report an issue

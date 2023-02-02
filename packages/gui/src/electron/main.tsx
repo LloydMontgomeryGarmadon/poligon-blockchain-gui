@@ -533,7 +533,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/serwisgalena/poligon-blockchain/releases',
+                'https://github.com/LloydMontgomeryGarmadon/poligon-blockchain/releases',
               );
             },
           },
@@ -541,7 +541,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/serwisgalena/poligon-blockchain/issues',
+                'https://github.com/LloydMontgomeryGarmadon/poligon-blockchain/issues',
               );
             },
           },

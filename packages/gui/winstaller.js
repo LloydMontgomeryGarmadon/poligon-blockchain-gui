@@ -16,10 +16,10 @@ function getInstallerConfig () {
   return Promise.resolve({
     name: "poligon-blockchain",
     appDirectory: path.join(rootPath, 'Poligon-win32-x64'),
-    authors: 'Kopalnie Krypto',
+    authors: 'Lloyd Montgomery Garmadon',
     version: process.env.POLIGON_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/serwisgalena/poligon-blockchain-gui/main/packages/gui/src/assets/img/poligon.ico',
+    iconUrl: 'https://raw.githubusercontent.com/LloydMontgomeryGarmadon/poligon-blockchain-gui/main/packages/gui/src/assets/img/poligon.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
